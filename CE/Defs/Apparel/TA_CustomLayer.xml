@@ -9,7 +9,19 @@
 290 - Shield
 400 - Overhead
 500 - EyeCover
+
+drawheight:
+20 - Skin
+21 - Middle
+22 - Shell
+23 - body armor
+24 - belt
+25 - unbuttoned coat
+26 - close webbing
+27 - shoulder slung coat
+28 - outer webbing
 -->
+
 <Defs>
 
 	<ApparelLayerDef>

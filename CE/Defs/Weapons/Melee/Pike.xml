@@ -41,7 +41,7 @@
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
 		<WorkToMake>10000</WorkToMake>
-		<Mass>3.5</Mass>
+		<Mass>2.75</Mass>
 		<Bulk>10</Bulk>
 		<MeleeCounterParryBonus>0.45</MeleeCounterParryBonus>
     </statBases>

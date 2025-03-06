@@ -37,6 +37,11 @@
       <li>Fabric</li>
     </stuffCategories>
     <apparel>
+			<drawData>
+				<defaultData>
+					<layer>28</layer>
+				</defaultData>
+			</drawData>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <careIfWornByCorpse>false</careIfWornByCorpse>
 			<wornGraphicPath>Apparel/Accessories/TA_Bag/TA_Bag</wornGraphicPath>

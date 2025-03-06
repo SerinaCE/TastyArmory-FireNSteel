@@ -27,7 +27,7 @@
 			<WorkToMake>5000</WorkToMake>
 			<Bulk>3</Bulk>
 			<WornBulk>0.5</WornBulk>
-			<Mass>1.3</Mass>
+			<Mass>1.2</Mass>
 			<StuffEffectMultiplierArmor>1.5</StuffEffectMultiplierArmor>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
@@ -56,6 +56,25 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+						<parts>
+							<li>Arm</li>
+							<li>Leg</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+						<parts>
+							<li>Arm</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
 		<tradeTags>
 			<li>Clothing</li>
 			<li>Armor</li>
