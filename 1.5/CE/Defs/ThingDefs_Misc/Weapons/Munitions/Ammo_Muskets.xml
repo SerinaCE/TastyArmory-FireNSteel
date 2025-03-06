@@ -25,7 +25,7 @@
 		<label>.75 Caliber Ball</label>
 		<ammoTypes>
 			<Ammo_MusketBall>Bullet_75CalBall370mps</Ammo_MusketBall>
-            <!--Ammo_BlunderbussShot>Bullet_BlunderbussShot</Ammo_BlunderbussShot-->
+            <Ammo_BlunderbussShot>Bullet_BlunderbussShot</Ammo_BlunderbussShot>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 

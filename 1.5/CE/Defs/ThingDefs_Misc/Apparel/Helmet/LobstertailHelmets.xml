@@ -84,7 +84,7 @@
 	
 	<ThingDef ParentName="TA_LobstertailHelmet_base">
 		<defName>TA_LobstertailHelmet</defName>
-		<label>hussar helmet</label>
+		<label>lobstertail helmet</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_LobsterHelmet/TA_LobsterHelmet</texPath>
@@ -103,7 +103,7 @@
 
 	<ThingDef ParentName="TA_LobstertailHelmet_base">
 		<defName>TA_HussarHelmet</defName>
-		<label>lobstertail helmet</label>
+		<label>hussar helmet</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_HussarHelmet/TA_HussarHelmet</texPath>
