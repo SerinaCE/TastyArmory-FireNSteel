@@ -1,13 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Tastier Armory - Pike and Shot</name>
-	<author>al9000</author>
+	<name>Tastier Armory - Fire and Steel</name>
+	<author>al9000, Airo</author>
 	<supportedVersions>
 	  <li>1.5</li>
 	</supportedVersions>
-		<packageId>al9000.pikeandshot</packageId>
+		<packageId>al9000.fireandsteel</packageId>
 	<description>stuff</description>
 	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>CETeam.CombatExtended</li>
 	</loadAfter>
 </ModMetaData>
