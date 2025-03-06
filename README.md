@@ -1,6 +1,7 @@
 TODO:  
 (defs of)  
--hats  
+-hats
+-saber scabbard, hussar wings
 -wheellock grenade launcher  
 -grenades  
 -melee weapons  
