@@ -23,7 +23,7 @@
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToMake>5000</WorkToMake>
-			<Mass>1</Mass>
+			<Mass>0.7</Mass>
 			<Bulk>1</Bulk>
 			<EquipDelay>1</EquipDelay>
 		</statBases>

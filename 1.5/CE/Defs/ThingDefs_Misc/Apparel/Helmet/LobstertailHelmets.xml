@@ -87,10 +87,10 @@
 		<label>hussar helmet</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Helmets/TA_LobsterHelmet</texPath>
+			<texPath>Apparel/Helmets/TA_LobsterHelmet/TA_LobsterHelmet</texPath>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Apparel/Helmets/TA_LobsterHelmet</wornGraphicPath>
+			<wornGraphicPath>Apparel/Helmets/TA_LobsterHelmet/TA_LobsterHelmet</wornGraphicPath>
 			<tags>
 				<li>MedievalMilitary</li>
 				<li>MedievalArmorDecent</li>
@@ -106,10 +106,10 @@
 		<label>lobstertail helmet</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Helmets/TA_HussarHelmet</texPath>
+			<texPath>Apparel/Helmets/TA_HussarHelmet/TA_HussarHelmet</texPath>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Apparel/Helmets/TA_HussarHelmet</wornGraphicPath>
+			<wornGraphicPath>Apparel/Helmets/TA_HussarHelmet/TA_HussarHelmet</wornGraphicPath>
 			<tags>
 				<li>MedievalMilitary</li>
 				<li>MedievalArmorDecent</li>
@@ -125,10 +125,10 @@
 		<label>sipahi helmet</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Helmets/TA_SipahiHelmet</texPath>
+			<texPath>Apparel/Helmets/TA_SipahiHelmet/TA_SipahiHelmet</texPath>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Apparel/Helmets/TA_SipahiHelmet</wornGraphicPath>
+			<wornGraphicPath>Apparel/Helmets/TA_SipahiHelmet/TA_SipahiHelmet</wornGraphicPath>
 			<tags>
 				<li>MedievalMilitary</li>
 				<li>MedievalArmorDecent</li>

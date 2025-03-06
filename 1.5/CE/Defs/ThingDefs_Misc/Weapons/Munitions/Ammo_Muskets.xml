@@ -15,7 +15,7 @@
 		<label>.75 Caliber Ball</label>
 		<ammoTypes>
 			<Ammo_MusketBall>Bullet_75CalBall500mps</Ammo_MusketBall>
-            <!--Ammo_75calBuckNBall>Bullet_75calBuckNBall425mps</Ammo_75calBuckNBall-->
+            <!--Ammo_MusketBuckNBall>Bullet_75CalBuckNBall425mps</Ammo_MusketBuckNBall-->
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 
@@ -25,7 +25,7 @@
 		<label>.75 Caliber Ball</label>
 		<ammoTypes>
 			<Ammo_MusketBall>Bullet_75CalBall370mps</Ammo_MusketBall>
-            <Ammo_BlunderbussShot>Bullet_BlunderbussShot</Ammo_BlunderbussShot>
+            <!--Ammo_BlunderbussShot>Bullet_BlunderbussShot</Ammo_BlunderbussShot-->
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 
@@ -85,15 +85,15 @@
 	</ThingDef>
 
 	<!--ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoBase">
-		<defName>Ammo_75calBuckNBall</defName>
-		<label>.75 caliber buck'n'ball</label>
+		<defName>Ammo_MusketBuckNBall</defName>
+		<label>musket buck'n'ball</label>
 		<description>Paper cartridge containing a large lead ball, 3 smaller lead pellets and black powder.</description>
 		<graphicData>
 			<texPath>Things/Ammo/Medieval/Musket/Paper</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<Mass>0.075</Mass>
+			<Mass>0.090</Mass>
 			<Bulk>0.15</Bulk>
             <MarketValue>0.5</MarketValue>
 		</statBases>
@@ -123,17 +123,18 @@
 	</ThingDef>
 
     <!--ThingDef ParentName="TA_MusketBallBullet_base">
-		<defName>Bullet_75calBuckNBall425mps</defName>
+		<defName>Bullet_75CalBuckNBall425mps</defName>
 		<label>musket buck'n'ball</label>
 		<thingClass>CombatExtended.ProjectileCE_Bursting</thingClass>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Smoke</damageDef>
-			<explosionRadius>1</explosionRadius>
+			<explosionRadius>0.5</explosionRadius>
 			<suppressionFactor>0.0</suppressionFactor>
 			<dangerFactor>0.0</dangerFactor>
 			<postExplosionGasType>BlindSmoke</postExplosionGasType>
 			<preExplosionSpawnChance>1</preExplosionSpawnChance>
-            <armingDelay>500</armingDelay>
+			<aimHeightOffset>0</aimHeightOffset>			
+            <armingDelay>0</armingDelay>
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
@@ -288,8 +289,8 @@
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_ArquebusBall</defName>
-		<label>make arquebus ball x100</label>
-		<description>Craft 500 arquebus balls.</description>
+		<label>make arquebus ball x50</label>
+		<description>Craft 50 arquebus balls.</description>
 		<jobString>Making arquebus balls.</jobString>
 		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
 		<workAmount>1000</workAmount>
@@ -321,5 +322,41 @@
 			<Ammo_ArquebusBall>50</Ammo_ArquebusBall>
 		</products>
 	</RecipeDef>
+
+	<!--RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_MusketBuckNBall</defName>
+		<label>make musket buck'n'ball x50</label>
+		<description>Craft 50 musket buck'n'ball shot.</description>
+		<jobString>Making musket balls.</jobString>
+		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
+		<workAmount>1400</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+                <li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_MusketBuckNBall>50</Ammo_MusketBuckNBall>
+		</products>
+	</RecipeDef-->
 
 </Defs>

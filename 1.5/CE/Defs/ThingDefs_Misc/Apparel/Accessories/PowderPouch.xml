@@ -8,7 +8,6 @@
 		<graphicData>
 			<texPath>Apparel/Accessories/TA_PowderPouch/TA_PowderPouch</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>

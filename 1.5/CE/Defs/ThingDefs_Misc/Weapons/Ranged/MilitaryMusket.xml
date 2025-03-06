@@ -19,7 +19,7 @@
     </weaponClasses>
     <statBases>
       <WorkToMake>13000</WorkToMake>
-      <Mass>6.00</Mass>
+      <Mass>6.50</Mass>
       <Bulk>14</Bulk>
       <ShotSpread>0.03</ShotSpread>
       <SwayFactor>2.18</SwayFactor>

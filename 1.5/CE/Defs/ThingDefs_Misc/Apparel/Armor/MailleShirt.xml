@@ -25,9 +25,9 @@
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>20000</WorkToMake>
-			<Bulk>15</Bulk>
+			<Bulk>10</Bulk>
 			<WornBulk>3</WornBulk>
-			<Mass>11</Mass>
+			<Mass>8</Mass>
 			<StuffEffectMultiplierArmor>1.70</StuffEffectMultiplierArmor>
 			<EquipDelay>6</EquipDelay>
 		</statBases>

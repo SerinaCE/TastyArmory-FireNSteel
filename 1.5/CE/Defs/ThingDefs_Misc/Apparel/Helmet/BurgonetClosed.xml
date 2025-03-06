@@ -5,7 +5,7 @@
 		<label>burgonet</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Helmets/TA_BurgonetClosed</texPath>
+			<texPath>Apparel/Helmets/TA_BurgonetClosed/TA_Burgonet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
@@ -42,7 +42,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/Headgear/Helmets/TA_BurgonetClosed</wornGraphicPath>
+			<wornGraphicPath>Apparel/Headgear/Helmets/TA_BurgonetClosed/TA_Burgonet</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 				<li>OnHead</li>
