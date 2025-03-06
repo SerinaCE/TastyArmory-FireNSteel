@@ -9,7 +9,7 @@
       <texPath>Weapons/TA_Lance</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>1.8</drawSize>
+			<drawSize>1.9</drawSize>
     </graphicData>
     <equippedAngleOffset>35</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>
@@ -41,7 +41,7 @@
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
 		<WorkToMake>10000</WorkToMake>
-		<Mass>2.4</Mass>
+		<Mass>2.5</Mass>
 		<Bulk>10</Bulk>
 		<MeleeCounterParryBonus>0.45</MeleeCounterParryBonus>
     </statBases>
@@ -93,19 +93,19 @@
 		<li Class="VFECore.ThingDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 			<weaponDraftedDrawOffsets>
 				<north>
-					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<drawOffset>(0.34,0,0.75)</drawOffset>
 					<angleOffset>-122</angleOffset>
 				</north>
 				<east>
-					<drawOffset>(0.1,0,0.70)</drawOffset>
+					<drawOffset>(0.1,0,0.75)</drawOffset>
 					<angleOffset>-122</angleOffset>
 				</east>
 				<south>
-					<drawOffset>(-0.34,0,0.70)</drawOffset>
+					<drawOffset>(-0.34,0,0.75)</drawOffset>
 					<angleOffset>-143</angleOffset>
 				</south>
 				<west>
-					<drawOffset>(-0.1,0,0.70)</drawOffset>
+					<drawOffset>(-0.1,0,0.75)</drawOffset>
 					<angleOffset>122</angleOffset>
 				</west>
 			</weaponDraftedDrawOffsets>		
