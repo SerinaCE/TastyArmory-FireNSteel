@@ -94,7 +94,7 @@
 			<weaponDraftedDrawOffsets>
 				<north>
 					<drawOffset>(0.34,0,0.70)</drawOffset>
-					<angleOffset>-143</angleOffset>
+					<angleOffset>-122</angleOffset>
 				</north>
 				<east>
 					<drawOffset>(0.1,0,0.70)</drawOffset>

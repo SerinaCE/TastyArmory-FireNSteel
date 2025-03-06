@@ -2,7 +2,7 @@ TODO:
 
 defs for:   
 -clothes: hats, saber scabbard, hussar wings, shields    
--ranged: wheellock grenade launcher, turkish bow, grenades  
+-ranged: wheellock grenade launcher, grenades  
 -melee weapons  
 -banners  
 -structures: gabions, artillery  

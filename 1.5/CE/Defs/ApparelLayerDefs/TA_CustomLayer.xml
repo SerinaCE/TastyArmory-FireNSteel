@@ -32,7 +32,7 @@ drawheight:
 	</ApparelLayerDef>
 
 	<ApparelLayerDef>
-		<!--for maille, mostly-->
+		<!--all things covering extremities-->
 		<defName>TA_BootGlove</defName>
 		<label>TA_BootGlove</label>
 		<drawOrder>110</drawOrder>

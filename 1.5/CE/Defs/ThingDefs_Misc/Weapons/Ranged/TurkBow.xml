@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!--Ammoset-->
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_TurkBow</defName>
+		<label>arrows</label>
+		<ammoTypes>
+			<Ammo_Arrow_Stone>Projectile_StreamlinedArrow_Stone</Ammo_Arrow_Stone>
+			<Ammo_Arrow_Steel>Projectile_TurkBow_Steel</Ammo_Arrow_Steel>
+			<Ammo_Arrow_Plasteel>Projectile_TurkBow_Plasteel</Ammo_Arrow_Plasteel>
+			<Ammo_Arrow_Venom>Projectile_StreamlinedArrow_Venom</Ammo_Arrow_Venom>
+			<Ammo_Arrow_Flame>Projectile_StreamlinedArrow_Flame</Ammo_Arrow_Flame>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!--Projectiles-->
+
+	<ThingDef ParentName="BaseStreamlinedArrowProjectile">
+		<defName>Projectile_TurkBow_Steel</defName>
+		<label>streamlined arrow (steel)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Arrows/Arrow_Steel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>46</speed>
+			<damageAmountBase>11</damageAmountBase>
+			<armorPenetrationSharp>1.25</armorPenetrationSharp>
+			<armorPenetrationBlunt>13</armorPenetrationBlunt>
+			<preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+			<preExplosionSpawnThingDef>Ammo_Arrow_Steel</preExplosionSpawnThingDef>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseStreamlinedArrowProjectile">
+		<defName>Projectile_TurkBow_Plasteel</defName>
+		<label>streamlined arrow (plasteel)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Arrows/Arrow_Plasteel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>50</speed>
+			<damageAmountBase>9</damageAmountBase>
+			<armorPenetrationSharp>2.25</armorPenetrationSharp>
+			<armorPenetrationBlunt>15</armorPenetrationBlunt>
+			<preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+			<preExplosionSpawnThingDef>Ammo_Arrow_Plasteel</preExplosionSpawnThingDef>
+		</projectile>
+	</ThingDef>
+
+	<!--Bow-->
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>TA_TurkBow</defName>
+		<label>turkish warbow</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/TA_TurkBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Bow_Large</soundInteract>
+		<costList>
+			<Leather_Plain>20</Leather_Plain>
+			<WoodLog>30</WoodLog>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>1</Mass>
+			<SightsEfficiency>0.8</SightsEfficiency>
+			<ShotSpread>1</ShotSpread>
+			<SwayFactor>2</SwayFactor>
+			<Bulk>6.00</Bulk>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>NeolithicRangedHeavy</li>
+			<li>NeolithicRangedChief</li>
+			<li>CE_Bow</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_TurkBow_Steel</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>30</range>
+				<soundCast>Bow_Large</soundCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<ammoSet>AmmoSet_TurkBow</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>Snapshot</aiAimMode>
+			</li>
+		</comps>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.6</cooldownTime>
+				<armorPenetrationBlunt>0.65</armorPenetrationBlunt>
+			</li>
+		</tools>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<researchPrerequisite>RecurveBow</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<rotateInShelves>false</rotateInShelves>
+	</ThingDef>
+
+
+</Defs>
