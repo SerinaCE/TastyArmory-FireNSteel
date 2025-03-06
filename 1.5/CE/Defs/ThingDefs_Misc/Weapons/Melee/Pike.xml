@@ -85,7 +85,7 @@
 			<cooldownTime>1.9</cooldownTime>
 			<chanceFactor>0.90</chanceFactor>
 			<armorPenetrationBlunt>4</armorPenetrationBlunt>
-			<armorPenetrationSharp>2.7</armorPenetrationSharp>
+			<armorPenetrationSharp>2.75</armorPenetrationSharp>
 			<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
 		</li>
 	</tools>
@@ -94,11 +94,11 @@
 			<weaponDraftedDrawOffsets>
 				<north>
 					<drawOffset>(0.25,0,0.70)</drawOffset>
-					<angleOffset>-132</angleOffset>
+					<angleOffset>-128</angleOffset>
 				</north>
 				<east>
 					<drawOffset>(0.1,0,0.70)</drawOffset>
-					<angleOffset>-132</angleOffset>
+					<angleOffset>-100</angleOffset>
 				</east>
 				<south>
 					<drawOffset>(-0.34,0,0.70)</drawOffset>
