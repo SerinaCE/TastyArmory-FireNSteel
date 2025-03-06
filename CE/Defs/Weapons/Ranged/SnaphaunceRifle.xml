@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- ==================== Flintlock Pistol ==================== -->
+
+  <ThingDef ParentName="BaseMakeableGun">
+    <defName>TA_SnaphaunceRifle</defName>
+    <label>Snaphaunce rifle</label>
+    <description>.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Weapons/TA_SnaphaunceRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>4.5</Mass>
+      <Bulk>13.5</Bulk>
+      <ShotSpread>0.1</ShotSpread>
+      <SwayFactor>1.8</SwayFactor>
+      <SightsEfficiency>1</SightsEfficiency>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>63</Steel>
+      <WoodLog>12</WoodLog>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.98</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_75CalBall500mps</defaultProjectile>
+        <warmupTime>1.4</warmupTime>
+        <range>40</range>
+        <soundCast>Shot_CE_Musket</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>10.5</reloadTime>
+        <ammoSet>AmmoSet_75CalBall500mps</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+      </recipeUsers>
+      <researchPrerequisite>CE_Gunpowder</researchPrerequisite>
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.05,1.05</DrawSize>
+				<DrawOffset>0.15,0.15</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+
+</Defs>

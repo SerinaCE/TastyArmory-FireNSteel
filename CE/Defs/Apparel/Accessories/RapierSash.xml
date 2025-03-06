@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="TA_ApparelCarryGearBase">
+		<defName>TA_RapierSash</defName>
+		<label>rapier Sash</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Accessories/TA_RapierSash/TA_RapierSash</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1</Mass>
+			<Bulk>1</Bulk>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.15</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+			<CarryBulk>12</CarryBulk>
+		</equippedStatOffsets>
+		<costStuffCount>35</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>26</layer>
+				</defaultData>
+			</drawData>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Webbing</li>
+			</layers>
+			<tags>
+				<li>MedievalArmorDecent</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/Accessories/TA_RapierSash/TA_RapierSash</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+</Defs>

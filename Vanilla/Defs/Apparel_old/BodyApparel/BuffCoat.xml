@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- ==================== Buffcoat ==================== -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>TC_BuffCoat</defName>
+		<label>buffcoat</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/BodyApparel/tm_BuffCoat/tm_BuffCoat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>105</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<equippedStatOffsets></equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>5</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/BodyApparel/tm_BuffCoat/tm_BuffCoat</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+				<li>TC_HelperLayerCoat</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Clothing</li>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

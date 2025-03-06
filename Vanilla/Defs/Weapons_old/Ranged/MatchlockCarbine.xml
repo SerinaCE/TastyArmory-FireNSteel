@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- ==================== Flintlock Blunderbuss ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Vanilla_Bullet_Blunderbuss</defName>
+		<label>blundershot</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+		<damageDef>Bullet</damageDef>
+		<damageAmountBase>18</damageAmountBase>
+		<speed>60</speed>
+		</projectile>
+	</ThingDef>
+			
+  <ThingDef ParentName="BaseMakeableGun">
+    <defName>TC_MatchlockCarbine</defName>
+    <label>matchlock carbine</label>
+    <description>.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Weapons/Ranged/tm_MatchlockCarbine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.95</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <costList>
+      <Steel>40</Steel>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>Gun</li>
+      <li>SimpleGun</li>
+      <li>NeolithicRangedHeavy</li>
+      <li>NeolithicRangedChief</li>
+      <li>CE_AI_BROOM</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+      </recipeUsers>
+      <researchPrerequisite>Vanilla_GunpowderWeaponry</researchPrerequisite>
+    </recipeMaker>
+			<statBases>
+				<WorkToMake>6000</WorkToMake>
+				<Mass>1.6</Mass>
+				<AccuracyTouch>0.60</AccuracyTouch>
+				<AccuracyShort>0.75</AccuracyShort>
+				<AccuracyMedium>0.45</AccuracyMedium>
+				<AccuracyLong>0.35</AccuracyLong>
+				<RangedWeapon_Cooldown>3.6</RangedWeapon_Cooldown>
+			</statBases>
+			<verbs>
+				<li>
+					<verbClass>Verb_Shoot</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Vanilla_Bullet_Blunderbuss</defaultProjectile>
+					<warmupTime>0.6</warmupTime>
+					<range>14.9</range>
+					<soundCast>Shot_Shotgun</soundCast>
+					<soundCastTail>GunTail_Light</soundCastTail>
+					<muzzleFlashScale>9</muzzleFlashScale>
+				</li>
+			</verbs>
+			<tools>
+				<li>
+					<label>grip</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>2</cooldownTime>
+				</li>
+				<li>
+					<label>barrel</label>
+					<capacities>
+						<li>Blunt</li>
+						<li>Poke</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>2</cooldownTime>
+				</li>
+			</tools>
+  </ThingDef>
+
+</Defs>

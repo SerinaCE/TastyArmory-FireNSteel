@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>TC_SapperAxe</defName>
+		<label>sapper axe</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>Weapons/TA_SapperAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+    <equippedAngleOffset>-25</equippedAngleOffset>
+		<techLevel>Medieval</techLevel>
+		<weaponTags Inherit="False">
+			<li>MedievalMeleeBasic</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>LongBlades</researchPrerequisite>
+			<recipeUsers>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<costList>
+			<WoodLog>30</WoodLog>
+		</costList>
+		<costStuffCount>65</costStuffCount>
+		<stuffCategories>
+			<li>Metallic_Weapon</li>
+		</stuffCategories>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+		<WorkToMake>10000</WorkToMake>
+		<Mass>1.7</Mass>
+		<Bulk>5</Bulk>
+		<MeleeCounterParryBonus>0.22</MeleeCounterParryBonus>
+    </statBases>
+	<equippedStatOffsets>
+		<MeleeCritChance>0.11</MeleeCritChance>
+		<MeleeParryChance>0.28</MeleeParryChance>
+		<MeleeDodgeChance>0.23</MeleeDodgeChance>
+	</equippedStatOffsets>
+	<tradeTags>
+		<li>WeaponMelee</li>
+	</tradeTags>
+	<tools>
+		<li Class="CombatExtended.ToolCE">
+			<label>shaft</label>
+			<capacities>
+				<li>Poke</li>
+			</capacities>
+			<power>3</power>
+			<cooldownTime>1.3</cooldownTime>
+			<chanceFactor>0.05</chanceFactor>
+			<armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+			<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
+		</li>
+		<li Class="CombatExtended.ToolCE">
+			<label>head</label>
+			<capacities>
+				<li>Demolish</li>
+			</capacities>
+			<power>17</power>
+			<cooldownTime>1.95</cooldownTime>
+			<chanceFactor>0.25</chanceFactor>
+			<armorPenetrationBlunt>9.6</armorPenetrationBlunt>
+			<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+		</li>
+		<li Class="CombatExtended.ToolCE">
+			<label>edge</label>
+			<capacities>
+				<li>Cut</li>
+			</capacities>
+			<power>29</power>
+			<cooldownTime>2.48</cooldownTime>
+			<chanceFactor>0.70</chanceFactor>
+			<armorPenetrationBlunt>9.6</armorPenetrationBlunt>
+			<armorPenetrationSharp>0.90</armorPenetrationSharp>
+			<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+		</li>
+	</tools>
+	<modExtensions>
+		<li Class="VFECore.ThingDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<weaponDraftedDrawOffsets>
+				<north>
+					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<angleOffset>-143</angleOffset>
+				</north>
+				<east>
+					<drawOffset>(0.1,0,0.70)</drawOffset>
+					<angleOffset>-122</angleOffset>
+				</east>
+				<south>
+					<drawOffset>(-0.34,0,0.70)</drawOffset>
+					<angleOffset>-143</angleOffset>
+				</south>
+				<west>
+					<drawOffset>(-0.1,0,0.70)</drawOffset>
+					<angleOffset>122</angleOffset>
+				</west>
+			</weaponDraftedDrawOffsets>		
+		</li>
+	</modExtensions>
+  </ThingDef>
+	
+</Defs>

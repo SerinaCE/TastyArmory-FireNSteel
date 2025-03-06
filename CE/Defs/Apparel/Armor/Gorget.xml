@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- ==================== PlateCuirass plate ==================== -->
+	<ThingDef ParentName="ArmorSmithableBase">
+		<defName>TC_Gorget</defName>
+		<label>gorget</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Armor/TA_Gorget/TA_Gorget</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Steeled</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>1</Mass>
+			<Bulk>2</Bulk>
+			<WornBulk>1</WornBulk>
+			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>22</layer>
+				</defaultData>
+			</drawData>
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Armor/TA_Gorget/TA_Gorget</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorDecent</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Clothing</li>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

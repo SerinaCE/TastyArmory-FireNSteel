@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--CombatExtended.AmmoCategoryDef>
+		<defName>MusketBuckNBall</defName>
+		<label>Buck'n'ball</label>
+		<description>large ball and multiple smaller pellets shot from a blackpowder firearm</description>
+	</CombatExtended.AmmoCategoryDef-->
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<!-- .75Cal 500 m/s -->
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_75CalBall500mps</defName>
+		<label>.75 Caliber Ball</label>
+		<ammoTypes>
+			<Ammo_MusketBall>Bullet_75CalBall500mps</Ammo_MusketBall>
+            <!--Ammo_75calBuckNBall>Bullet_75calBuckNBall425mps</Ammo_75calBuckNBall-->
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- .75Cal 370 m/s -->
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_75CalBall370mps</defName>
+		<label>.75 Caliber Ball</label>
+		<ammoTypes>
+			<Ammo_MusketBall>Bullet_75CalBall370mps</Ammo_MusketBall>
+            <Ammo_BlunderbussShot>Bullet_BlunderbussShot</Ammo_BlunderbussShot>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- .55Cal 525 m/s -->
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_55CalBall525mps</defName>
+		<label>.55 Caliber Ball</label>
+		<ammoTypes>
+			<Ammo_ArquebusBall>Bullet_55CalBall525mps</Ammo_ArquebusBall>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- .55Cal 450 m/s -->
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_55CalBall450mps</defName>
+		<label>.55 Caliber Ball</label>
+		<ammoTypes>
+			<Ammo_ArquebusBall>Bullet_55CalBall450mps</Ammo_ArquebusBall>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- .55Cal 300 m/s -->
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_55CalBall300mps</defName>
+		<label>.55 Caliber Ball</label>
+		<ammoTypes>
+			<Ammo_ArquebusBall>Bullet_55CalBall300mps</Ammo_ArquebusBall>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoBase">
+		<defName>Ammo_ArquebusBall</defName>
+		<label>arquebus ball</label>
+		<description>Paper cartridge containing a lead ball and black powder.</description>
+		<graphicData>
+			<texPath>Things/Ammo/Medieval/Musket/Paper</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.040</Mass>
+			<Bulk>0.08</Bulk>
+            <MarketValue>0.3</MarketValue>
+		</statBases>
+		<tradeTags>
+			<li>CE_PreIndustrialAmmo</li>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FueledSmithy</li>
+			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoMusketBall</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+        <ammoClass>MusketBall</ammoClass>
+	</ThingDef>
+
+	<!--ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoBase">
+		<defName>Ammo_75calBuckNBall</defName>
+		<label>.75 caliber buck'n'ball</label>
+		<description>Paper cartridge containing a large lead ball, 3 smaller lead pellets and black powder.</description>
+		<graphicData>
+			<texPath>Things/Ammo/Medieval/Musket/Paper</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.075</Mass>
+			<Bulk>0.15</Bulk>
+            <MarketValue>0.5</MarketValue>
+		</statBases>
+		<tradeTags>
+			<li>CE_PreIndustrialAmmo</li>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FueledSmithy</li>
+			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoMusketBall</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+        <ammoClass>MusketBuckNBall</ammoClass>
+	</ThingDef-->
+
+	<!-- ================== Projectiles ================== -->
+	<ThingDef Name="TA_MusketBallBullet_base" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<dropsCasings>false</dropsCasings>
+		</projectile>
+	</ThingDef>
+
+    <!--ThingDef ParentName="TA_MusketBallBullet_base">
+		<defName>Bullet_75calBuckNBall425mps</defName>
+		<label>musket buck'n'ball</label>
+		<thingClass>CombatExtended.ProjectileCE_Bursting</thingClass>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Smoke</damageDef>
+			<explosionRadius>1</explosionRadius>
+			<suppressionFactor>0.0</suppressionFactor>
+			<dangerFactor>0.0</dangerFactor>
+			<postExplosionGasType>BlindSmoke</postExplosionGasType>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+            <armingDelay>500</armingDelay>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Bullet_75CalBall425mps>1</Bullet_75CalBall425mps>
+                    <Bullet_3x00Shot300mps>1</Bullet_3x00Shot300mps>
+				</fragments>
+				<fragAngleRange>-1~1</fragAngleRange>
+			</li>
+		</comps>
+	</ThingDef>
+
+    <ThingDef ParentName="TA_MusketBallBullet_base">
+		<defName>Bullet_75CalBall425mps</defName>
+		<label>musket ball</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>94</speed>
+			<damageAmountBase>27</damageAmountBase>
+			<armorPenetrationSharp>5</armorPenetrationSharp>
+			<armorPenetrationBlunt>72</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BlunderbussShotBullet">
+		<defName>Bullet_3x00Shot300mps</defName>
+		<label>shot pellet</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>73</speed>
+			<damageAmountBase>7</damageAmountBase>
+			<armorPenetrationSharp>3</armorPenetrationSharp>
+			<armorPenetrationBlunt>3.14</armorPenetrationBlunt>
+			<spreadMult>5</spreadMult>
+		</projectile>
+	</ThingDef-->
+    
+	<ThingDef ParentName="TA_MusketBallBullet_base">
+		<defName>Bullet_75CalBall500mps</defName>
+		<label>musket ball</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>106</speed>
+			<damageAmountBase>31</damageAmountBase>
+			<armorPenetrationSharp>6</armorPenetrationSharp>
+			<armorPenetrationBlunt>100</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ProjectileFleck">
+				<FleckDatas>
+					<li>
+						<fleck>Fleck_CERocketSmoke</fleck>
+						<emissionsPerTick>3</emissionsPerTick>
+						<flecksPerEmission>5</flecksPerEmission>
+						<cutoffTickRange>1~2</cutoffTickRange>
+					</li>
+				</FleckDatas>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_MusketBallBullet_base">
+		<defName>Bullet_75CalBall370mps</defName>
+		<label>musket ball</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>85</speed>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationSharp>4</armorPenetrationSharp>
+			<armorPenetrationBlunt>55</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ProjectileFleck">
+				<FleckDatas>
+					<li>
+						<fleck>Fleck_CERocketSmoke</fleck>
+						<emissionsPerTick>2</emissionsPerTick>
+						<flecksPerEmission>5</flecksPerEmission>
+						<cutoffTickRange>1~2</cutoffTickRange>
+					</li>
+				</FleckDatas>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_MusketBallBullet_base">
+		<defName>Bullet_55CalBall525mps</defName>
+		<label>arquebus ball</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>110</speed>
+			<damageAmountBase>21</damageAmountBase>
+			<armorPenetrationSharp>5</armorPenetrationSharp>
+			<armorPenetrationBlunt>48</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ProjectileFleck">
+				<FleckDatas>
+					<li>
+						<fleck>Fleck_CERocketSmoke</fleck>
+						<emissionsPerTick>2</emissionsPerTick>
+						<flecksPerEmission>3</flecksPerEmission>
+						<cutoffTickRange>1~2</cutoffTickRange>
+					</li>
+				</FleckDatas>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_MusketBallBullet_base">
+		<defName>Bullet_55CalBall450mps</defName>
+		<label>arquebus ball</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>98</speed>
+			<damageAmountBase>18</damageAmountBase>
+			<armorPenetrationSharp>4.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>35</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ProjectileFleck">
+				<FleckDatas>
+					<li>
+						<fleck>Fleck_CERocketSmoke</fleck>
+						<emissionsPerTick>2</emissionsPerTick>
+						<flecksPerEmission>3</flecksPerEmission>
+						<cutoffTickRange>1~2</cutoffTickRange>
+					</li>
+				</FleckDatas>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_MusketBallBullet_base">
+		<defName>Bullet_55CalBall300mps</defName>
+		<label>arquebus ball</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>73</speed>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationSharp>3.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>15.6</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ProjectileFleck">
+				<FleckDatas>
+					<li>
+						<fleck>Fleck_CERocketSmoke</fleck>
+						<emissionsPerTick>2</emissionsPerTick>
+						<flecksPerEmission>3</flecksPerEmission>
+						<cutoffTickRange>1~2</cutoffTickRange>
+					</li>
+				</FleckDatas>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_ArquebusBall</defName>
+		<label>make arquebus ball x100</label>
+		<description>Craft 500 arquebus balls.</description>
+		<jobString>Making arquebus balls.</jobString>
+		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>7</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+                <li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_ArquebusBall>50</Ammo_ArquebusBall>
+		</products>
+	</RecipeDef>
+
+</Defs>

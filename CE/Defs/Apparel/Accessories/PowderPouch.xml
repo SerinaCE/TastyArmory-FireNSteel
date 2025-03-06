@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="TA_ApparelCarryGearBase">
+		<defName>TA_PowderPouch</defName>
+		<label>powder pouch</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Accessories/TA_PowderPouch/TA_PowderPouch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>1</Mass>
+			<Bulk>1</Bulk>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ReloadSpeed>0.1</ReloadSpeed>
+			<CarryBulk>23</CarryBulk>
+		</equippedStatOffsets>
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>28</layer>
+				</defaultData>
+			</drawData>
+			<wornGraphicPath>Apparel/Accessories/TA_PowderPouch/TA_PowderPouch</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Webbing</li>
+			</layers>
+			<tags>
+				<li>Medieval</li>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorDecent</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+</Defs>

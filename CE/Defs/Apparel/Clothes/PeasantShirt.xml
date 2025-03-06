@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>TA_PeasantShirt</defName>
+		<label>peasant shirt</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Clothes/TA_PeasantShirt/TA_PeasantShirt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<smeltable>false</smeltable>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>0.50</Mass>
+			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<apparel>
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Clothes/TA_PeasantShirt/TA_PeasantShirt</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Neolithic</li>
+				<li>Medieval</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>
