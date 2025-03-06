@@ -7,7 +7,7 @@ defs for:
 -banners  
 -structures: gabions, artillery  
 
-assets and defs for:
+assets and defs for:  
 -civilian clothes  
 -more buildings if needed i guess  
 
