@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="ArmorSmithableBase">
 		<defName>TA_ThreeQuartersPlate</defName>
-		<label>cuirassier plate</label>
+		<label>three quarters plate</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Apparel/Armor/TA_ThreeQuartersPlate/TA_ThreeQuartersPlate</texPath>
