@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 
@@ -8,22 +8,24 @@
     <description>.</description>
     <techLevel>Neolithic</techLevel>
     <graphicData>
-      <texPath>Apparel/Accessories/TA_HussarWing/TA_HussarWing_ico</texPath>
+      <texPath>Apparel/Accessories/TA_HussarWing/TA_HussarWing_Icon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
       <WorkToMake>8000</WorkToMake>
       <Mass>1</Mass>
-			<Bulk>8</Bulk>
+      <Bulk>8</Bulk>
     </statBases>
     <equippedStatOffsets>
-      <CarryBulk>30</CarryBulk>
+      <CarryBulk>20</CarryBulk>
+      <Suppressability>-0.5</Suppressability>
+      <PainShockThreshold>0.1</PainShockThreshold>
     </equippedStatOffsets>
-		<costList>
-			<WoodLog>20</WoodLog>
-			<Leather_Bird>15</Leather_Bird>
-		</costList>
+    <costList>
+      <WoodLog>20</WoodLog>
+      <Leather_Bird>15</Leather_Bird>
+    </costList>
     <recipeMaker>
       <recipeUsers>
         <li>CraftingSpot</li>
@@ -44,7 +46,7 @@
       </layers>
       <tags>
         <li>Neolithic</li>
-				<li>Medieval</li>
+        <li>Medieval</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -55,32 +57,41 @@
           <offset>(0,0.0)</offset>
         </east>
         <west>
-          <offset>(0,0.0)</offset>	  
+          <offset>(0,0.0)</offset>
         </west>
         <north>
           <offset>(0,0.0)</offset>
         </north>
         <south>
           <offset>(0,0)</offset>
-        </south>			
-          <male>  <scale>(1,1)</scale></male>
-          <female><scale>(1,1)</scale></female>
-          <thin>  <scale>(1,1)</scale></thin>
-          <hulk>  <scale>(1,1)</scale></hulk>
-          <fat>   <scale>(1,1)</scale></fat>
+        </south>
+        <male>
+          <scale>(1,1)</scale>
+        </male>
+        <female>
+          <scale>(1,1)</scale>
+        </female>
+        <thin>
+          <scale>(1,1)</scale>
+        </thin>
+        <hulk>
+          <scale>(1,1)</scale>
+        </hulk>
+        <fat>
+          <scale>(1,1)</scale>
+        </fat>
       </wornGraphicData>
-			<drawData>
-				<defaultData>
-					<layer>0</layer>
-          <offset>(0,0,0.35)</offset> 
-				</defaultData>
-				<dataNorth>
+      <drawData>
+        <defaultData>
+          <layer>0</layer>
+          <offset>(0,0,0.35)</offset>
+        </defaultData>
+        <dataNorth>
           <layer>90</layer>
-				</dataNorth>
-			</drawData>
+        </dataNorth>
+      </drawData>
     </apparel>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
-
 
 </Defs>
