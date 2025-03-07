@@ -1,10 +1,10 @@
 TODO:  
 
 defs for:   
--clothes: hats, saber scabbard, hussar wings, shields    
--ranged: wheellock grenade launcher, grenades  
+-clothes: hats, shields  
 -melee weapons  
 -banners  
+-ranged: wheellock grenade launcher, grenades  
 -structures: gabions, artillery  
 
 assets and defs for:  
