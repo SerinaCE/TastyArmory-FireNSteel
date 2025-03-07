@@ -1,7 +1,7 @@
 TODO:  
 
 defs for:   
--clothes: hats, shields  
+-clothes: shields  
 -melee weapons  
 -banners  
 -ranged: wheellock grenade launcher, grenades  
