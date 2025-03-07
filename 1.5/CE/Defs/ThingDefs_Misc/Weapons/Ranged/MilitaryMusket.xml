@@ -21,7 +21,7 @@
       <WorkToMake>13000</WorkToMake>
       <Mass>6.50</Mass>
       <Bulk>14</Bulk>
-      <ShotSpread>0.03</ShotSpread>
+      <ShotSpread>0.05</ShotSpread>
       <SwayFactor>2.18</SwayFactor>
       <SightsEfficiency>0.8</SightsEfficiency>
       <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>

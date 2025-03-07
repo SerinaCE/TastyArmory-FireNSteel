@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<ThingDef ParentName="ApparelMakeableBase" Name="TA_HatBase">
+	<ThingDef ParentName="ApparelMakeableBase" Name="TA_Hat">
 		<defName>TA_Hat</defName>
 		<label>hat</label>
 		<description>.</description>
@@ -113,7 +113,7 @@
 	
 	<ThingDef ParentName="TA_Hat">
 		<defName>TA_LandsknechtHat</defName>
-		<label>cavalier hat</label>
+		<label>landskecht hat</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Apparel/Hats/TA_LandsknechtHat/TA_LandsknechtHat</texPath>
@@ -209,7 +209,7 @@
 			<texPath>Apparel/Hats/TA_TurbanWhite/TA_TurbanWhite</texPath>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Apparel/Hats/TA_LandsknechtHat/TA_LandsknechtHat</wornGraphicPath>
+			<wornGraphicPath>Apparel/Hats/TA_TurbanWhite/TA_TurbanWhite</wornGraphicPath>
 		</apparel>
 	</ThingDef>	
 	
@@ -291,7 +291,6 @@
 		<costStuffCount>25</costStuffCount>
 		<costList>
 			<Leather_Bird>5</Leather_Bird>
-			<Gold>0.1</Gold>
 		</costList>
 		<equippedStatOffsets>
 			<SocialImpact>0.3</SocialImpact>
