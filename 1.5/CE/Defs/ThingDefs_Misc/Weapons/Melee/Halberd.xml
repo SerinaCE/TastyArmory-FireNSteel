@@ -44,7 +44,7 @@
 		<Mass>1.75</Mass>
 		<Bulk>10</Bulk>
 		<MeleeCounterParryBonus>1.08</MeleeCounterParryBonus>
-		<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2.84</VEF_MeleeWeaponRange>
+		<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.84</VEF_MeleeWeaponRange>
     </statBases>
 	<equippedStatOffsets>
 		<MeleeCritChance>0.22</MeleeCritChance>
