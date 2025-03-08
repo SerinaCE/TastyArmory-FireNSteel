@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
 	<!-- ==================== PlateCuirass plate ==================== -->
 	<ThingDef ParentName="ArmorSmithableBase">
-		<defName>TA_JustCuirass</defName>
+		<defName>TA_Cuirass</defName>
 		<label>cuirass</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Armor/TA_JustCuirass/TA_JustCuirass_Icon</texPath>
+			<texPath>Apparel/Armor/TA_Cuirass/TA_Cuirass_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
@@ -44,7 +45,7 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/Armor/TA_JustCuirass/TA_JustCuirass</wornGraphicPath>
+			<wornGraphicPath>Apparel/Armor/TA_Cuirass/TA_Cuirass</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 			</layers>
@@ -66,4 +67,5 @@
 			<li>Armor</li>
 		</tradeTags>
 	</ThingDef>
+
 </Defs>

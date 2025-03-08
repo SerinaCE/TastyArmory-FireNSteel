@@ -71,7 +71,7 @@
 		<defName>TA_DoubletVest</defName>
 		<label>sleeveless doublet</label>
 		<graphicData>
-			<texPath>Apparel/Clothes/TA_DoubletVest/TA_DoubletVest</texPath>
+			<texPath>Apparel/Clothes/TA_DoubletVest/TA_DoubletVest_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>

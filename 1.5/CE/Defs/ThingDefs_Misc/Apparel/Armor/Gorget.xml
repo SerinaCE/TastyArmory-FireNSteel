@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
 	<!-- ==================== PlateCuirass plate ==================== -->
 	<ThingDef ParentName="ArmorSmithableBase">
 		<defName>TC_Gorget</defName>
@@ -68,4 +69,5 @@
 			<li>Armor</li>
 		</tradeTags>
 	</ThingDef>
+
 </Defs>

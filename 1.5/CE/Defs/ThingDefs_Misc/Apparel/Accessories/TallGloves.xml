@@ -36,7 +36,7 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<apparel>
-			<careIfWornByCorpse>false</careIfWornByCorpse>      
+			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
 				<li>Hands</li>
 				<li>Arms</li>
@@ -60,4 +60,5 @@
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
+
 </Defs>

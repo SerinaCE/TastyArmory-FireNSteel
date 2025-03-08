@@ -1,6 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<!-- ==================== Bow =========================== -->
+
+	<!--Ammoset-->
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_TurkBow</defName>
+		<label>arrows</label>
+		<ammoTypes>
+			<Ammo_Arrow_Stone>Projectile_StreamlinedArrow_Stone</Ammo_Arrow_Stone>
+			<Ammo_Arrow_Steel>Projectile_TurkBow_Steel</Ammo_Arrow_Steel>
+			<Ammo_Arrow_Plasteel>Projectile_TurkBow_Plasteel</Ammo_Arrow_Plasteel>
+			<Ammo_Arrow_Venom>Projectile_StreamlinedArrow_Venom</Ammo_Arrow_Venom>
+			<Ammo_Arrow_Flame>Projectile_StreamlinedArrow_Flame</Ammo_Arrow_Flame>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!--Projectiles-->
+
+	<ThingDef ParentName="BaseStreamlinedArrowProjectile">
+		<defName>Projectile_TurkBow_Steel</defName>
+		<label>streamlined arrow (steel)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Arrows/Arrow_Steel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>46</speed>
+			<damageAmountBase>11</damageAmountBase>
+			<armorPenetrationSharp>1.25</armorPenetrationSharp>
+			<armorPenetrationBlunt>13</armorPenetrationBlunt>
+			<preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+			<preExplosionSpawnThingDef>Ammo_Arrow_Steel</preExplosionSpawnThingDef>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseStreamlinedArrowProjectile">
+		<defName>Projectile_TurkBow_Plasteel</defName>
+		<label>streamlined arrow (plasteel)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Arrows/Arrow_Plasteel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>50</speed>
+			<damageAmountBase>9</damageAmountBase>
+			<armorPenetrationSharp>2.25</armorPenetrationSharp>
+			<armorPenetrationBlunt>15</armorPenetrationBlunt>
+			<preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+			<preExplosionSpawnThingDef>Ammo_Arrow_Plasteel</preExplosionSpawnThingDef>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Musket =========================== -->
+
 	<!--CombatExtended.AmmoCategoryDef>
 		<defName>MusketBuckNBall</defName>
 		<label>Buck'n'ball</label>
@@ -15,7 +68,7 @@
 		<label>.75 Caliber Ball</label>
 		<ammoTypes>
 			<Ammo_MusketBall>Bullet_75CalBall500mps</Ammo_MusketBall>
-            <!--Ammo_MusketBuckNBall>Bullet_75CalBuckNBall425mps</Ammo_MusketBuckNBall-->
+			<!--Ammo_MusketBuckNBall>Bullet_75CalBuckNBall425mps</Ammo_MusketBuckNBall-->
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 
@@ -25,7 +78,7 @@
 		<label>.75 Caliber Ball</label>
 		<ammoTypes>
 			<Ammo_MusketBall>Bullet_75CalBall370mps</Ammo_MusketBall>
-            <Ammo_BlunderbussShot>Bullet_BlunderbussShot</Ammo_BlunderbussShot>
+			<Ammo_BlunderbussShot>Bullet_BlunderbussShot</Ammo_BlunderbussShot>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 
@@ -69,7 +122,7 @@
 		<statBases>
 			<Mass>0.040</Mass>
 			<Bulk>0.08</Bulk>
-            <MarketValue>0.3</MarketValue>
+			<MarketValue>0.3</MarketValue>
 		</statBases>
 		<tradeTags>
 			<li>CE_PreIndustrialAmmo</li>
@@ -81,13 +134,15 @@
 			<li>AmmoMusketBall</li>
 		</thingCategories>
 		<techLevel>Medieval</techLevel>
-        <ammoClass>MusketBall</ammoClass>
+		<ammoClass>MusketBall</ammoClass>
 	</ThingDef>
 
-	<!--ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoBase">
+	<!--ThingDef
+	Class="CombatExtended.AmmoDef" ParentName="AmmoBase">
 		<defName>Ammo_MusketBuckNBall</defName>
 		<label>musket buck'n'ball</label>
-		<description>Paper cartridge containing a large lead ball, 3 smaller lead pellets and black powder.</description>
+		<description>Paper cartridge containing a large lead ball, 3 smaller lead pellets and black
+	powder.</description>
 		<graphicData>
 			<texPath>Things/Ammo/Medieval/Musket/Paper</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -122,7 +177,8 @@
 		</projectile>
 	</ThingDef>
 
-    <!--ThingDef ParentName="TA_MusketBallBullet_base">
+	<!--ThingDef
+	ParentName="TA_MusketBallBullet_base">
 		<defName>Bullet_75CalBuckNBall425mps</defName>
 		<label>musket buck'n'ball</label>
 		<thingClass>CombatExtended.ProjectileCE_Bursting</thingClass>
@@ -169,7 +225,7 @@
 			<spreadMult>5</spreadMult>
 		</projectile>
 	</ThingDef-->
-    
+
 	<ThingDef ParentName="TA_MusketBallBullet_base">
 		<defName>Bullet_75CalBall500mps</defName>
 		<label>musket ball</label>
@@ -238,7 +294,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="TA_MusketBallBullet_base">
 		<defName>Bullet_55CalBall450mps</defName>
 		<label>arquebus ball</label>
@@ -261,7 +317,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="TA_MusketBallBullet_base">
 		<defName>Bullet_55CalBall300mps</defName>
 		<label>arquebus ball</label>
@@ -315,7 +371,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
-                <li>Cloth</li>
+				<li>Cloth</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -323,7 +379,8 @@
 		</products>
 	</RecipeDef>
 
-	<!--RecipeDef ParentName="AmmoRecipeBase">
+	<!--RecipeDef
+	ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_MusketBuckNBall</defName>
 		<label>make musket buck'n'ball x50</label>
 		<description>Craft 50 musket buck'n'ball shot.</description>

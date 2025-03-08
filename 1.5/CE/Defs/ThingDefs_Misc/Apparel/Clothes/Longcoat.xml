@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<ThingDef Name="TA_Longcoat" ParentName="ApparelMakeableBase" Abstract="True">
-		<label>longcoat</label>
-		<description>.</description>
+
+	<ThingDef Name="TA_Longcoat_Base" ParentName="ApparelMakeableBase" Abstract="True">
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
@@ -55,7 +54,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="TA_Longcoat">
+	<ThingDef ParentName="TA_Longcoat_Base">
 		<defName>TA_LongcoatClosed</defName>
 		<graphicData>
 			<texPath>Apparel/Clothes/TA_Longcoat/TA_Longcoat_Icon</texPath>
@@ -71,13 +70,13 @@
 		<comps>
 			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<SwitchTo>TA_LongcoatOpen</SwitchTo>
-				<graphicPath>Apparel/Clothes/TA_LongcoatOpen/TA_LongcoatOpen</graphicPath>
+				<graphicPath>Apparel/Clothes/TA_LongcoatOpen/TA_LongcoatOpen_Icon</graphicPath>
 				<Label>unbutton</Label>
 			</li>
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="TA_Longcoat">
+	<ThingDef ParentName="TA_Longcoat_Base">
 		<defName>TA_LongcoatOpen</defName>
 		<graphicData>
 			<texPath>Apparel/Clothes/TA_LongcoatOpen/TA_LongcoatOpen_Icon</texPath>
@@ -99,7 +98,7 @@
 		<comps>
 			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<SwitchTo>TA_LongcoatClosed</SwitchTo>
-				<graphicPath>Apparel/Clothes/TA_Longcoat/TA_Longcoat</graphicPath>
+				<graphicPath>Apparel/Clothes/TA_Longcoat/TA_Longcoat_Icon</graphicPath>
 				<Label>button up</Label>
 			</li>
 		</comps>

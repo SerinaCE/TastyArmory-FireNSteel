@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
 	<!-- ==================== Buffcoat ==================== -->
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>TC_BuffVest</defName>
@@ -65,4 +66,5 @@
 			<li>Armor</li>
 		</tradeTags>
 	</ThingDef>
+
 </Defs>

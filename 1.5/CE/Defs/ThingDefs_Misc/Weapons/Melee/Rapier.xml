@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>TC_Rapier</defName>
-    <label>rapier</label>
-    <description>.</description>
-    <graphicData>
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>TC_Rapier</defName>
+		<label>rapier</label>
+		<description>.</description>
+		<graphicData>
 			<texPath>Weapons/TA_Rapier</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
-    </graphicData>
+		</graphicData>
 		<equippedAngleOffset>40</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="False">
@@ -40,14 +40,16 @@
 			<WorkToMake>20000</WorkToMake>
 			<Mass>1</Mass>
 			<Bulk>8</Bulk>
-			<MeleeCounterParryBonus>1.75</MeleeCounterParryBonus>			
+			<MeleeCounterParryBonus>1.75</MeleeCounterParryBonus>
 		</statBases>
 		<equippedStatOffsets>
 			<MeleeCritChance>2.50</MeleeCritChance>
 			<MeleeParryChance>1</MeleeParryChance>
 			<MeleeDodgeChance>0.50</MeleeDodgeChance>
 		</equippedStatOffsets>
-		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
 		<tradeTags>
 			<li>WeaponMelee</li>
 		</tradeTags>
@@ -107,9 +109,9 @@
 						<drawOffset>(-0.1,0,-0.35)</drawOffset>
 						<angleOffset>0</angleOffset>
 					</west>
-				</weaponDraftedDrawOffsets>		
+				</weaponDraftedDrawOffsets>
 			</li>
 		</modExtensions>
-  </ThingDef>
-	
+	</ThingDef>
+
 </Defs>

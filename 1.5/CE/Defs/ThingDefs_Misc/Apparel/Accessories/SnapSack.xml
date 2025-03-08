@@ -4,7 +4,7 @@
 	<!-- ==================== Sack ==================== -->
 
 	<ThingDef ParentName="TA_ApparelCarryGearBase">
-		<defName>TA_Sack</defName>
+		<defName>TA_SnapSack</defName>
 		<label>snapsack</label>
 		<description>.</description>
 		<techLevel>Neolithic</techLevel>
@@ -120,6 +120,5 @@
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
-
 
 </Defs>

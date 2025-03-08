@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
 	<!-- ==================== Hauberk ==================== -->
 	<ThingDef ParentName="ArmorSmithableBase">
 		<defName>TA_MailleShirt</defName>
@@ -21,7 +22,7 @@
 			<li>Steeled</li>
 		</stuffCategories>
 		<costStuffCount>85</costStuffCount>
-		<equippedStatOffsets/>
+		<equippedStatOffsets />
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>20000</WorkToMake>
@@ -80,4 +81,5 @@
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
+
 </Defs>

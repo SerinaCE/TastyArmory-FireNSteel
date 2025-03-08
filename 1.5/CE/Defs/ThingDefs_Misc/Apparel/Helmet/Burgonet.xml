@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<ThingDef ParentName="ArmorSmithableBase">
-		<defName>TA_Burgonet</defName>
-		<label>burgonet</label>
-		<description>.</description>
-		<graphicData>
-			<texPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
+
+	<ThingDef Name="TA_Burgonet_Base" ParentName="ArmorSmithableBase" Abstract="True">
 		<recipeMaker>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
@@ -21,12 +15,12 @@
 			<li>Steeled</li>
 		</stuffCategories>
 		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
-			<WorkToMake>7500</WorkToMake>
-			<Mass>1.9</Mass>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>3</Mass>
 			<Bulk>5</Bulk>
-			<WornBulk>0</WornBulk>
-			<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+			<WornBulk>1</WornBulk>
+			<StuffEffectMultiplierArmor>3.5</StuffEffectMultiplierArmor>
 			<Insulation_Cold>4</Insulation_Cold>			
 			<EquipDelay>1</EquipDelay>
 		</statBases>
@@ -39,7 +33,6 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 				<li>OnHead</li>
@@ -55,6 +48,30 @@
 			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_Burgonet_Base">
+		<defName>TA_Burgonet</defName>
+		<label>burgonet</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet_Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit="False" />
+		<apparel>
+			<wornGraphicPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+				<SwitchTo>TA_BurgonetClosed</SwitchTo>
+				<graphicPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetClosed_Icon</graphicPath>
+				<Label>close visor</Label>
+			</li>
+		</comps>
 		<modExtensions>
 			<li Class="CombatExtended.PartialArmorExt">
 				<stats>
@@ -97,9 +114,31 @@
 				</stats>
 			</li>
 		</modExtensions>
-		<tradeTags>
-			<li>Armor</li>
-		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_Burgonet_Base">
+		<defName>TA_BurgonetClosed</defName>
+		<label>burgonet (closed)</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetClosed_Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedStatOffsets>
+			<AimingAccuracy>-0.4</AimingAccuracy>
+			<MeleeHitChance>-2</MeleeHitChance>
+			<Suppressability>-0.2</Suppressability>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetClosed</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+				<SwitchTo>TA_Burgonet</SwitchTo>
+				<graphicPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet_Icon</graphicPath>
+				<Label>open visor</Label>
+			</li>
+		</comps>
 	</ThingDef>
 
 </Defs>

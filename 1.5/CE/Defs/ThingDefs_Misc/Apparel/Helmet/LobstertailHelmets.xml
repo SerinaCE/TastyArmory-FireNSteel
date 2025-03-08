@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<ThingDef Name="TA_LobstertailHelmet_base" ParentName="ArmorSmithableBase" Abstract="True">
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
+
+	<ThingDef Name="TA_LobstertailHelmet_Base" ParentName="ArmorSmithableBase" Abstract="True">
 		<recipeMaker>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
@@ -88,6 +86,7 @@
 		<description>.</description>
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_LobsterHelmet/TA_LobsterHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
 			<wornGraphicPath>Apparel/Helmets/TA_LobsterHelmet/TA_LobsterHelmet</wornGraphicPath>
@@ -107,6 +106,7 @@
 		<description>.</description>
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_HussarHelmet/TA_HussarHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
 			<wornGraphicPath>Apparel/Helmets/TA_HussarHelmet/TA_HussarHelmet</wornGraphicPath>
@@ -126,6 +126,7 @@
 		<description>.</description>
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_SipahiHelmet/TA_SipahiHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
 			<wornGraphicPath>Apparel/Helmets/TA_SipahiHelmet/TA_SipahiHelmet</wornGraphicPath>

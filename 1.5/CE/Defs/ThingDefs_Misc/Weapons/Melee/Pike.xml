@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>TC_Pike</defName>
-    <label>pike</label>
-    <description>.</description>
-    <graphicData>
-      <texPath>Weapons/TA_Pike</texPath>
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>TC_Pike</defName>
+		<label>pike</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/TA_Pike</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.7</drawSize>
-    </graphicData>
-    <equippedAngleOffset>35</equippedAngleOffset>
+		</graphicData>
+		<equippedAngleOffset>35</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="False">
 			<li>MedievalMeleeBasic</li>
@@ -21,16 +21,16 @@
 			<li>Melee</li>
 			<li>MeleePiercer</li>
 		</weaponClasses>
-    <recipeMaker>
-      <researchPrerequisite>LongBlades</researchPrerequisite>
+		<recipeMaker>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
 			<recipeUsers>
 				<li>FueledSmithy</li>
 				<li>ElectricSmithy</li>
 			</recipeUsers>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-    </recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
 		<costList>
 			<WoodLog>80</WoodLog>
 		</costList>
@@ -38,80 +38,82 @@
 		<stuffCategories>
 			<li>Metallic_Weapon</li>
 		</stuffCategories>
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
-    <statBases>
-		<WorkToMake>10000</WorkToMake>
-		<Mass>2.8</Mass>
-		<Bulk>10</Bulk>
-		<MeleeCounterParryBonus>0.45</MeleeCounterParryBonus>
-		<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">3</VEF_MeleeWeaponRange>
-    </statBases>
-	<equippedStatOffsets>
-		<MeleeCritChance>0.18</MeleeCritChance>
-		<MeleeParryChance>1.50</MeleeParryChance>
-		<MeleeDodgeChance>0.9</MeleeDodgeChance>
-	</equippedStatOffsets>
-	<tradeTags>
-		<li>WeaponMelee</li>
-	</tradeTags>
-	<tools>
-		<li Class="CombatExtended.ToolCE">
-			<label>shaft</label>
-			<capacities>
-				<li>Blunt</li>
-			</capacities>
-			<power>7</power>
-			<cooldownTime>2.30</cooldownTime>
-			<chanceFactor>0.15</chanceFactor>
-			<armorPenetrationBlunt>2.25</armorPenetrationBlunt>
-			<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
-		</li>
-		<li Class="CombatExtended.ToolCE">
-			<label>shaft</label>
-			<capacities>
-				<li>Poke</li>
-			</capacities>
-			<power>4</power>
-			<cooldownTime>1.79</cooldownTime>
-			<chanceFactor>0.05</chanceFactor>
-			<armorPenetrationBlunt>1</armorPenetrationBlunt>
-			<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-		</li>
-		<li Class="CombatExtended.ToolCE">
-			<label>head</label>
-			<capacities>
-				<li>Stab</li>
-			</capacities>
-			<power>29</power>
-			<cooldownTime>1.9</cooldownTime>
-			<chanceFactor>0.90</chanceFactor>
-			<armorPenetrationBlunt>4</armorPenetrationBlunt>
-			<armorPenetrationSharp>2.75</armorPenetrationSharp>
-			<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
-		</li>
-	</tools>
-	<modExtensions>
-		<li Class="VFECore.ThingDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-			<weaponDraftedDrawOffsets>
-				<north>
-					<drawOffset>(0.25,0,0.75)</drawOffset>
-					<angleOffset>-128</angleOffset>
-				</north>
-				<east>
-					<drawOffset>(0.15,0,0.75)</drawOffset>
-					<angleOffset>-100</angleOffset>
-				</east>
-				<south>
-					<drawOffset>(-0.34,0,0.75)</drawOffset>
-					<angleOffset>-132</angleOffset>
-				</south>
-				<west>
-					<drawOffset>(-0.1,0,0.75)</drawOffset>
-					<angleOffset>132</angleOffset>
-				</west>
-			</weaponDraftedDrawOffsets>		
-		</li>
-	</modExtensions>
-  </ThingDef>
-	
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>2.8</Mass>
+			<Bulk>10</Bulk>
+			<MeleeCounterParryBonus>0.45</MeleeCounterParryBonus>
+			<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">3</VEF_MeleeWeaponRange>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.18</MeleeCritChance>
+			<MeleeParryChance>1.50</MeleeParryChance>
+			<MeleeDodgeChance>0.9</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<tradeTags>
+			<li>WeaponMelee</li>
+		</tradeTags>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2.30</cooldownTime>
+				<chanceFactor>0.15</chanceFactor>
+				<armorPenetrationBlunt>2.25</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>shaft</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.79</cooldownTime>
+				<chanceFactor>0.05</chanceFactor>
+				<armorPenetrationBlunt>1</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>29</power>
+				<cooldownTime>1.9</cooldownTime>
+				<chanceFactor>0.90</chanceFactor>
+				<armorPenetrationBlunt>4</armorPenetrationBlunt>
+				<armorPenetrationSharp>2.75</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0.25,0,0.75)</drawOffset>
+						<angleOffset>-128</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.15,0,0.75)</drawOffset>
+						<angleOffset>-100</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.34,0,0.75)</drawOffset>
+						<angleOffset>-132</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.1,0,0.75)</drawOffset>
+						<angleOffset>132</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
 </Defs>

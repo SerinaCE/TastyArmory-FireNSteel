@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<ThingDef Name="TA_Morion_base" ParentName="ArmorSmithableBase"  Abstract="True">
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
+
+	<ThingDef Name="TA_Morion_Base" ParentName="ArmorSmithableBase" Abstract="True">
 		<recipeMaker>
 			<researchPrerequisite>Smithing</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
@@ -21,9 +19,9 @@
 			<WorkToMake>4000</WorkToMake>
 			<Mass>1.2</Mass>
 			<Bulk>4</Bulk>
-			<WornBulk>0</WornBulk>
+			<WornBulk>1</WornBulk>
 			<StuffEffectMultiplierArmor>2.5</StuffEffectMultiplierArmor>
-			<Insulation_Cold>4</Insulation_Cold>			
+			<Insulation_Cold>4</Insulation_Cold>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets />
@@ -31,7 +29,7 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<apparel>
-      <parentTagDef>ApparelHead</parentTagDef>
+			<parentTagDef>ApparelHead</parentTagDef>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Eyes</li>
@@ -68,12 +66,13 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="TA_Morion_base">
+	<ThingDef ParentName="TA_Morion_Base">
 		<defName>TA_Morion</defName>
 		<label>morion</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_Morion/TA_Morion</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
 			<wornGraphicPath>Apparel/Helmets/TA_Morion/TA_Morion</wornGraphicPath>
@@ -88,12 +87,13 @@
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="TA_Morion_base">
+	<ThingDef ParentName="TA_Morion_Base">
 		<defName>TA_Cabasset</defName>
 		<label>cabasset</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_Cabasset/TA_Cabasset</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
 			<wornGraphicPath>Apparel/Helmets/TA_Cabasset/TA_Cabasset</wornGraphicPath>

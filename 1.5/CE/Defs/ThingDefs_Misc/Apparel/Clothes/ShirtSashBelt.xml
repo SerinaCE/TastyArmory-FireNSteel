@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
 	<ThingDef Name="TA_ShirtSashBelt" ParentName="ApparelMakeableBase">
 		<defName>TA_ShirtSashBelt</defName>
 		<label>shirt with sash belt</label>

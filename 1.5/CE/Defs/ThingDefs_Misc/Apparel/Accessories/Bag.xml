@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- ==================== Bag ==================== -->
-	<ThingDef ParentName="TA_ApparelCarryGearBase">
-		<defName>TA_Bag</defName>
-		<label>bag</label>
-		<description>Shoulder sling pouch.</description>
-		<graphicData>
-			<texPath>Apparel/Accessories/TA_Bag/TA_Bag_Icon</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>4</Crafting>
-			</skillRequirements>
-			<recipeUsers>
-				<li>HandTailoringBench</li>
-				<li>ElectricTailoringBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<statBases>
-			<MaxHitPoints>120</MaxHitPoints>
-			<WorkToMake>5000</WorkToMake>
-			<Mass>1</Mass>
-			<Bulk>2</Bulk>
-			<WornBulk>0</WornBulk>
-			<EquipDelay>1</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<CarryBulk>18</CarryBulk>
-		</equippedStatOffsets>
-		<costStuffCount>30</costStuffCount>
-		<stuffCategories>
-			<li>Leathery</li>
-			<li>Fabric</li>
-		</stuffCategories>
-		<apparel>
-			<drawData>
-				<defaultData>
-					<layer>28</layer>
-				</defaultData>
-			</drawData>
-			<countsAsClothingForNudity>false</countsAsClothingForNudity>
-			<careIfWornByCorpse>false</careIfWornByCorpse>
-			<wornGraphicPath>Apparel/Accessories/TA_Bag/TA_Bag</wornGraphicPath>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Shoulders</li>
-			</bodyPartGroups>
-			<layers>
-				<li>Webbing</li>
-			</layers>
-			<tags>
-				<li>Medieval</li>
-				<li>MedievalMilitary</li>
-				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
-				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
-		</apparel>
-	</ThingDef>
+  <!-- ==================== Bag ==================== -->
+  <ThingDef ParentName="TA_ApparelCarryGearBase">
+    <defName>TA_Bag</defName>
+    <label>bag</label>
+    <description>Shoulder sling pouch.</description>
+    <graphicData>
+      <texPath>Apparel/Accessories/TA_Bag/TA_Bag_Icon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>HandTailoringBench</li>
+        <li>ElectricTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1</Mass>
+      <Bulk>2</Bulk>
+      <WornBulk>0</WornBulk>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <CarryBulk>18</CarryBulk>
+    </equippedStatOffsets>
+    <costStuffCount>30</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+      <li>Fabric</li>
+    </stuffCategories>
+    <apparel>
+      <drawData>
+        <defaultData>
+          <layer>28</layer>
+        </defaultData>
+      </drawData>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <wornGraphicPath>Apparel/Accessories/TA_Bag/TA_Bag</wornGraphicPath>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Webbing</li>
+      </layers>
+      <tags>
+        <li>Medieval</li>
+        <li>MedievalMilitary</li>
+        <li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+        <li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
 
 </Defs>

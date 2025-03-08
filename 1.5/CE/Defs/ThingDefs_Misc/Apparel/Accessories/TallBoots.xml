@@ -60,4 +60,5 @@
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
+
 </Defs>
