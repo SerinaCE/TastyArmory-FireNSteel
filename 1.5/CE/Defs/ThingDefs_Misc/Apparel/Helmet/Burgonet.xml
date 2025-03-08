@@ -66,7 +66,7 @@
 			<wornGraphicPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet</wornGraphicPath>
 		</apparel>
 		<comps>
-			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<SwitchTo>TA_BurgonetClosed</SwitchTo>
 				<graphicPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetClosed_Icon</graphicPath>
 				<Label>close visor</Label>
@@ -116,7 +116,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="TA_Burgonet_Base">
+	<ThingDef ParentName="TA_Burgonet_Base" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 		<defName>TA_BurgonetClosed</defName>
 		<label>burgonet (closed)</label>
 		<description>.</description>
@@ -133,7 +133,7 @@
 			<wornGraphicPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetClosed</wornGraphicPath>
 		</apparel>
 		<comps>
-			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<SwitchTo>TA_Burgonet</SwitchTo>
 				<graphicPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet_Icon</graphicPath>
 				<Label>open visor</Label>

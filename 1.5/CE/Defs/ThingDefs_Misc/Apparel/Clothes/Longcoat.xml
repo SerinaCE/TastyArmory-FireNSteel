@@ -68,7 +68,7 @@
 			<wornGraphicPath>Apparel/Clothes/TA_Longcoat/TA_Longcoat</wornGraphicPath>
 		</apparel>
 		<comps>
-			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<SwitchTo>TA_LongcoatOpen</SwitchTo>
 				<graphicPath>Apparel/Clothes/TA_LongcoatOpen/TA_LongcoatOpen_Icon</graphicPath>
 				<Label>unbutton</Label>
@@ -76,7 +76,7 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="TA_Longcoat_Base">
+	<ThingDef ParentName="TA_Longcoat_Base" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 		<defName>TA_LongcoatOpen</defName>
 		<graphicData>
 			<texPath>Apparel/Clothes/TA_LongcoatOpen/TA_LongcoatOpen_Icon</texPath>
@@ -96,7 +96,7 @@
 			<wornGraphicPath>Apparel/Clothes/TA_LongcoatOpen/TA_LongcoatOpen</wornGraphicPath>
 		</apparel>
 		<comps>
-			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<SwitchTo>TA_LongcoatClosed</SwitchTo>
 				<graphicPath>Apparel/Clothes/TA_Longcoat/TA_Longcoat_Icon</graphicPath>
 				<Label>button up</Label>

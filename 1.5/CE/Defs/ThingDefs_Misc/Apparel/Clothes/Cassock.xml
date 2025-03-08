@@ -71,7 +71,7 @@
 			<wornGraphicPath>Apparel/Clothes/TA_Cassock/TA_Cassock</wornGraphicPath>
 		</apparel>
 		<comps>
-			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<SwitchTo>TA_CassockShoulder</SwitchTo>
 				<graphicPath>Apparel/Clothes/TA_CassockShoulder/TA_CassockShoulder_Icon</graphicPath>
 				<Label>unbutton</Label>
@@ -79,7 +79,7 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="TA_Cassock_Base">
+	<ThingDef ParentName="TA_Cassock_Base" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 		<defName>TA_CassockShoulder</defName>
 		<graphicData>
 			<texPath>Apparel/Clothes/TA_CassockShoulder/TA_CassockShoulder_Icon</texPath>
@@ -102,7 +102,7 @@
 			<wornGraphicPath>Apparel/Clothes/TA_CassockShoulder/TA_CassockShoulder</wornGraphicPath>
 		</apparel>
 		<comps>
-			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<SwitchTo>TA_CassockClosed</SwitchTo>
 				<graphicPath>Apparel/Clothes/TA_Cassock/TA_Cassock_Icon</graphicPath>
 				<Label>button up</Label>
