@@ -6,7 +6,7 @@
 		<label>tall gloves</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Accessories/TA_TallGloves</texPath>
+			<texPath>Apparel/Accessories/TA_TallGloves/TA_TallGloves</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>

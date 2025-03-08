@@ -6,7 +6,7 @@
 		<label>gauntlets</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Accessories/TA_Gauntlets</texPath>
+			<texPath>Apparel/Accessories/TA_Gauntlets/TA_Gauntlets</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>

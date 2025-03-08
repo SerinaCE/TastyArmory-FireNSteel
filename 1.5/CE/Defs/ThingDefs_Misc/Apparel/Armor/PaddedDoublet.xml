@@ -6,7 +6,7 @@
 		<label>padded doublet</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Armor/TA_PaddedDoublet/TA_PaddedDoublet</texPath>
+			<texPath>Apparel/Armor/TA_PaddedDoublet/TA_PaddedDoublet_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>

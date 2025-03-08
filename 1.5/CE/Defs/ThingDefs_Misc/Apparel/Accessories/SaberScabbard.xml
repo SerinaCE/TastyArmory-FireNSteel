@@ -6,9 +6,9 @@
 		<label>saber scabbard</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Accessories/TA_ScabbardSaber/TA_ScabbardSaber</texPath>
+			<texPath>Apparel/Accessories/TA_ScabbardSaber/TA_ScabbardSaber_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>			
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>

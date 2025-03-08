@@ -5,7 +5,7 @@
 		<label>peasant shirt</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Clothes/TA_PeasantShirt/TA_PeasantShirt</texPath>
+			<texPath>Apparel/Clothes/TA_PeasantShirt/TA_PeasantShirt_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>

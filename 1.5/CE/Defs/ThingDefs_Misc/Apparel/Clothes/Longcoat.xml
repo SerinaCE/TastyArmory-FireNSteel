@@ -58,7 +58,7 @@
 	<ThingDef ParentName="TA_Longcoat">
 		<defName>TA_LongcoatClosed</defName>
 		<graphicData>
-			<texPath>Apparel/Clothes/TA_Longcoat/TA_Longcoat</texPath>
+			<texPath>Apparel/Clothes/TA_Longcoat/TA_Longcoat_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -80,7 +80,7 @@
 	<ThingDef ParentName="TA_Longcoat">
 		<defName>TA_LongcoatOpen</defName>
 		<graphicData>
-			<texPath>Apparel/Clothes/TA_LongcoatOpen/TA_LongcoatOpen</texPath>
+			<texPath>Apparel/Clothes/TA_LongcoatOpen/TA_LongcoatOpen_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker Inherit="False" />

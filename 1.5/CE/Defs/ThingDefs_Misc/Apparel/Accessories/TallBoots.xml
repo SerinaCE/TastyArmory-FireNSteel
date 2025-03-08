@@ -6,7 +6,7 @@
 		<label>tall boots</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Accessories/TA_TallBoots</texPath>
+			<texPath>Apparel/Accessories/TA_TallBoots/TA_TallBoots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>

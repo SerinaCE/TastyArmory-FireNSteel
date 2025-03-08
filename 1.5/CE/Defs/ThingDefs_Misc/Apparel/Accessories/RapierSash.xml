@@ -6,7 +6,7 @@
 		<label>rapier Sash</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Accessories/TA_RapierSash/TA_RapierSash</texPath>
+			<texPath>Apparel/Accessories/TA_RapierSash/TA_RapierSash_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>

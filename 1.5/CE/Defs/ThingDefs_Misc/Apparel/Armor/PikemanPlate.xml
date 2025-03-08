@@ -6,7 +6,7 @@
 		<label>pikeman plate</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Armor/TA_PikemanPlate/TA_PikemanPlate</texPath>
+			<texPath>Apparel/Armor/TA_PikemanPlate/TA_PikemanPlate_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
