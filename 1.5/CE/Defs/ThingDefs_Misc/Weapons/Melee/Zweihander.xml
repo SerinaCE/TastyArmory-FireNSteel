@@ -39,16 +39,16 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<statBases>
-			<WorkToMake>10000</WorkToMake>
-			<Mass>1.75</Mass>
-			<Bulk>10</Bulk>
-			<MeleeCounterParryBonus>1.08</MeleeCounterParryBonus>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>3.2</Mass>
+			<Bulk>12</Bulk>
+			<MeleeCounterParryBonus>0.67</MeleeCounterParryBonus>
 			<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.84</VEF_MeleeWeaponRange>
 		</statBases>
 		<equippedStatOffsets>
-			<MeleeCritChance>0.22</MeleeCritChance>
-			<MeleeParryChance>1.53</MeleeParryChance>
-			<MeleeDodgeChance>0.67</MeleeDodgeChance>
+			<MeleeCritChance>0.16</MeleeCritChance>
+			<MeleeParryChance>0.5</MeleeParryChance>
+			<MeleeDodgeChance>0.53</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<tradeTags>
 			<li>WeaponMelee</li>
