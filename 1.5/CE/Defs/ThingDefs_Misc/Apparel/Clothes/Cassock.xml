@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<ThingDef Name="TA_Cassock_Base" ParentName="ApparelMakeableBase" Abstract="True">
+		<label>cassock</label>
+		<description>.</description>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
@@ -79,7 +81,7 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="TA_Cassock_Base" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+	<ThingDef ParentName="TA_Cassock_Base">
 		<defName>TA_CassockShoulder</defName>
 		<graphicData>
 			<texPath>Apparel/Clothes/TA_CassockShoulder/TA_CassockShoulder_ico</texPath>

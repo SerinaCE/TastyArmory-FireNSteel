@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<ThingDef Name="TA_Hat_Base" ParentName="HatMakeableBase">
+	<ThingDef Name="TA_Hat_Base" ParentName="HatMakeableBase" Abstract="True">
 		<possessionCount>1</possessionCount>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
@@ -207,11 +207,12 @@
 		<label>turban (white)</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Hats/TA_TurbanWhite/TA_TurbanWhite_ico</texPath>
+			<texPath>Apparel/Hats/TA_Turban/TA_Turban_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Apparel/Hats/TA_TurbanWhite/TA_TurbanWhite</wornGraphicPath>
+			<wornGraphicPath>Apparel/Hats/TA_Turban/TA_Turban</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 	</ThingDef>	

@@ -80,7 +80,7 @@
 		</tradeTags>
 	</ThingDef>
 	
-	<ThingDef ParentName="TA_LobstertailHelmet_base">
+	<ThingDef ParentName="TA_LobstertailHelmet_Base">
 		<defName>TA_LobstertailHelmet</defName>
 		<label>lobstertail helmet</label>
 		<description>.</description>
@@ -100,7 +100,7 @@
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="TA_LobstertailHelmet_base">
+	<ThingDef ParentName="TA_LobstertailHelmet_Base">
 		<defName>TA_HussarHelmet</defName>
 		<label>hussar helmet</label>
 		<description>.</description>
@@ -120,7 +120,7 @@
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="TA_LobstertailHelmet_base">
+	<ThingDef ParentName="TA_LobstertailHelmet_Base">
 		<defName>TA_SipahiHelmet</defName>
 		<label>sipahi helmet</label>
 		<description>.</description>

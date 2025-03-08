@@ -2,6 +2,8 @@
 <Defs>
 
 	<ThingDef Name="TA_Longcoat_Base" ParentName="ApparelMakeableBase" Abstract="True">
+		<label>longcoat</label>
+		<description>.</description>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
@@ -75,7 +77,7 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="TA_Longcoat_Base" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+	<ThingDef ParentName="TA_Longcoat_Base">
 		<defName>TA_LongcoatOpen</defName>
 		<graphicData>
 			<texPath>Apparel/Clothes/TA_LongcoatOpen/TA_LongcoatOpen_ico</texPath>
