@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
 	<ThingDef Name="TA_Cassock_Base" ParentName="ApparelMakeableBase" Abstract="True">
 		<label>cassock</label>
 		<description>.</description>

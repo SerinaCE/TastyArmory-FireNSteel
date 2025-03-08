@@ -15,12 +15,12 @@
 			<li>Steeled</li>
 		</stuffCategories>
 		<statBases>
-			<MaxHitPoints>180</MaxHitPoints>
-			<WorkToMake>10000</WorkToMake>
-			<Mass>3</Mass>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>7500</WorkToMake>
+			<Mass>1.9</Mass>
 			<Bulk>5</Bulk>
 			<WornBulk>1</WornBulk>
-			<StuffEffectMultiplierArmor>3.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
 			<Insulation_Cold>4</Insulation_Cold>			
 			<EquipDelay>1</EquipDelay>
 		</statBases>
@@ -61,17 +61,9 @@
 			<texPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker Inherit="False" />
 		<apparel>
 			<wornGraphicPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet</wornGraphicPath>
 		</apparel>
-		<comps>
-			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-				<SwitchTo>TA_BurgonetClosed</SwitchTo>
-				<graphicPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetClosed_ico</graphicPath>
-				<Label>close visor</Label>
-			</li>
-		</comps>
 		<modExtensions>
 			<li Class="CombatExtended.PartialArmorExt">
 				<stats>
@@ -116,7 +108,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="TA_Burgonet_Base" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+	<ThingDef ParentName="TA_Burgonet_Base">
 		<defName>TA_BurgonetClosed</defName>
 		<label>burgonet (closed)</label>
 		<description>.</description>
@@ -124,6 +116,13 @@
 			<texPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetClosed_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<costStuffCount>60</costStuffCount>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>3</Mass>
+			<StuffEffectMultiplierArmor>3.5</StuffEffectMultiplierArmor>
+		</statBases>
 		<equippedStatOffsets>
 			<AimingAccuracy>-0.4</AimingAccuracy>
 			<MeleeHitChance>-2</MeleeHitChance>
@@ -132,13 +131,6 @@
 		<apparel>
 			<wornGraphicPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetClosed</wornGraphicPath>
 		</apparel>
-		<comps>
-			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-				<SwitchTo>TA_Burgonet</SwitchTo>
-				<graphicPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet_ico</graphicPath>
-				<Label>open visor</Label>
-			</li>
-		</comps>
 	</ThingDef>
 
 </Defs>

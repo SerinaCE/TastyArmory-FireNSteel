@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
 	<ThingDef Name="TA_Doublet" ParentName="ApparelMakeableBase">
 		<defName>TA_Doublet</defName>
 		<label>doublet</label>
