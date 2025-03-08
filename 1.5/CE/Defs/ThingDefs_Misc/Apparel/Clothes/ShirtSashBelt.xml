@@ -61,13 +61,14 @@
 
 	<ThingDef ParentName="TA_ShirtSashBelt">
 		<defName>TA_ShirtSashBeltWhite</defName>
-		<label>white shirt with sash belt</label>
+		<label>shirt with sash belt (white)</label>
 		<graphicData>
-			<texPath>Apparel/Clothes/TA_ShirtSashBeltWhite/TA_ShirtSashBeltWhite_ico</texPath>
+			<texPath>Apparel/Clothes/TA_ShirtSashBelt/TA_ShirtSashBelt_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Apparel/Clothes/TA_ShirtSashBeltWhite/TA_ShirtSashBeltWhite</wornGraphicPath>
+			<wornGraphicPath>Apparel/Clothes/TA_ShirtSashBelt/TA_ShirtSashBelt</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 	</ThingDef>
