@@ -55,7 +55,7 @@
 	<ThingDef ParentName="TA_Cassock_Base">
 		<defName>TA_CassockClosed</defName>
 		<graphicData>
-			<texPath>Apparel/Clothes/TA_Cassock/TA_Cassock_Icon</texPath>
+			<texPath>Apparel/Clothes/TA_Cassock/TA_Cassock_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -73,7 +73,7 @@
 		<comps>
 			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<SwitchTo>TA_CassockShoulder</SwitchTo>
-				<graphicPath>Apparel/Clothes/TA_CassockShoulder/TA_CassockShoulder_Icon</graphicPath>
+				<graphicPath>Apparel/Clothes/TA_CassockShoulder/TA_CassockShoulder_ico</graphicPath>
 				<Label>unbutton</Label>
 			</li>
 		</comps>
@@ -82,7 +82,7 @@
 	<ThingDef ParentName="TA_Cassock_Base" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 		<defName>TA_CassockShoulder</defName>
 		<graphicData>
-			<texPath>Apparel/Clothes/TA_CassockShoulder/TA_CassockShoulder_Icon</texPath>
+			<texPath>Apparel/Clothes/TA_CassockShoulder/TA_CassockShoulder_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker Inherit="False" />
@@ -104,7 +104,7 @@
 		<comps>
 			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<SwitchTo>TA_CassockClosed</SwitchTo>
-				<graphicPath>Apparel/Clothes/TA_Cassock/TA_Cassock_Icon</graphicPath>
+				<graphicPath>Apparel/Clothes/TA_Cassock/TA_Cassock_ico</graphicPath>
 				<Label>button up</Label>
 			</li>
 		</comps>

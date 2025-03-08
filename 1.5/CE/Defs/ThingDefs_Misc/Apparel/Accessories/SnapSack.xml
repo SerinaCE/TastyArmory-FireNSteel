@@ -9,7 +9,7 @@
 		<description>.</description>
 		<techLevel>Neolithic</techLevel>
 		<graphicData>
-			<texPath>Apparel/Accessories/TA_Snapsack/TA_Snapsack_Icon</texPath>
+			<texPath>Apparel/Accessories/TA_Snapsack/TA_Snapsack_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>

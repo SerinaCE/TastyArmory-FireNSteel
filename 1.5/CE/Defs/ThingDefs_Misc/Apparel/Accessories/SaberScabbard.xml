@@ -6,7 +6,7 @@
 		<label>saber scabbard</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Accessories/TA_ScabbardSaber/TA_ScabbardSaber_Icon</texPath>
+			<texPath>Apparel/Accessories/TA_ScabbardSaber/TA_ScabbardSaber_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>

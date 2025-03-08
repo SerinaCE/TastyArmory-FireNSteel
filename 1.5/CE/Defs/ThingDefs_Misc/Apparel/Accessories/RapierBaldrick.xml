@@ -6,7 +6,7 @@
 		<label>rapier baldrick</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Accessories/TA_RapierBaldrick/TA_RapierBaldrick_Icon</texPath>
+			<texPath>Apparel/Accessories/TA_RapierBaldrick/TA_RapierBaldrick_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>

@@ -6,7 +6,7 @@
 		<label>shirt with sash belt</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Clothes/TA_ShirtSashBelt/TA_ShirtSashBelt_Icon</texPath>
+			<texPath>Apparel/Clothes/TA_ShirtSashBelt/TA_ShirtSashBelt_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
@@ -63,7 +63,7 @@
 		<defName>TA_ShirtSashBeltWhite</defName>
 		<label>white shirt with sash belt</label>
 		<graphicData>
-			<texPath>Apparel/Clothes/TA_ShirtSashBeltWhite/TA_ShirtSashBeltWhite_Icon</texPath>
+			<texPath>Apparel/Clothes/TA_ShirtSashBeltWhite/TA_ShirtSashBeltWhite_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>

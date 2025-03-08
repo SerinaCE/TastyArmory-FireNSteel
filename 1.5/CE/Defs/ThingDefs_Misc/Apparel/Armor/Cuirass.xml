@@ -7,7 +7,7 @@
 		<label>cuirass</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Armor/TA_Cuirass/TA_Cuirass_Icon</texPath>
+			<texPath>Apparel/Armor/TA_Cuirass/TA_Cuirass_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>

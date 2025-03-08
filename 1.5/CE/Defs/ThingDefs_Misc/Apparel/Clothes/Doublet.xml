@@ -5,7 +5,7 @@
 		<label>doublet</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Clothes/TA_Doublet/TA_Doublet_Icon</texPath>
+			<texPath>Apparel/Clothes/TA_Doublet/TA_Doublet_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
@@ -70,7 +70,7 @@
 		<defName>TA_DoubletVest</defName>
 		<label>sleeveless doublet</label>
 		<graphicData>
-			<texPath>Apparel/Clothes/TA_DoubletVest/TA_DoubletVest_Icon</texPath>
+			<texPath>Apparel/Clothes/TA_DoubletVest/TA_DoubletVest_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>

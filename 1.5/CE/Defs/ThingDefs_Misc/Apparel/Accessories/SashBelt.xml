@@ -6,7 +6,7 @@
 		<label>sash belt</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Accessories/TA_SashBelt/TA_SashBelt_Icon</texPath>
+			<texPath>Apparel/Accessories/TA_SashBelt/TA_SashBelt_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>

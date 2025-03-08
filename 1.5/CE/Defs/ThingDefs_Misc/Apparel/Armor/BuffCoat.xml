@@ -7,7 +7,7 @@
 		<label>buffcoat</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Armor/TA_BuffCoat/TA_BuffCoat_Icon</texPath>
+			<texPath>Apparel/Armor/TA_BuffCoat/TA_BuffCoat_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>

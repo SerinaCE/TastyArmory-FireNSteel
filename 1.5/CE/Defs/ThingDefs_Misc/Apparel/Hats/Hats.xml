@@ -45,7 +45,7 @@
 		<label>felt hat</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Hats/TA_FeltHat/TA_FeltHat_Icon</texPath>
+			<texPath>Apparel/Hats/TA_FeltHat/TA_FeltHat_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories>
@@ -64,7 +64,7 @@
 		<label>cavalier hat</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Hats/TA_CavalierHat/TA_CavalierHat_Icon</texPath>
+			<texPath>Apparel/Hats/TA_CavalierHat/TA_CavalierHat_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costList>
@@ -98,7 +98,7 @@
 		<label>musketeer hat</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Hats/TA_MusketeerHat/TA_MusketeerHat_Icon</texPath>
+			<texPath>Apparel/Hats/TA_MusketeerHat/TA_MusketeerHat_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costStuffCount>25</costStuffCount>
@@ -118,7 +118,7 @@
 		<label>landskecht hat</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Hats/TA_LandsknechtHat/TA_LandsknechtHat_Icon</texPath>
+			<texPath>Apparel/Hats/TA_LandsknechtHat/TA_LandsknechtHat_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costStuffCount>40</costStuffCount>
@@ -159,7 +159,7 @@
 		<label>bonnet</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Hats/TA_Bonnet/TA_Bonnet_Icon</texPath>
+			<texPath>Apparel/Hats/TA_Bonnet/TA_Bonnet_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
@@ -175,7 +175,7 @@
 		<label>turban</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Hats/TA_Turban/TA_Turban_Icon</texPath>
+			<texPath>Apparel/Hats/TA_Turban/TA_Turban_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costStuffCount>32</costStuffCount>
@@ -207,7 +207,7 @@
 		<label>turban (white)</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Hats/TA_TurbanWhite/TA_TurbanWhite_Icon</texPath>
+			<texPath>Apparel/Hats/TA_TurbanWhite/TA_TurbanWhite_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
@@ -221,7 +221,7 @@
 		<label>janissary hat</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Hats/TA_SpoonHat/TA_SpoonHat_Icon</texPath>
+			<texPath>Apparel/Hats/TA_SpoonHat/TA_SpoonHat_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costStuffCount>40</costStuffCount>
@@ -256,7 +256,7 @@
 		<label>fur hat</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Hats/TA_FurCap/TA_FurCap_Icon</texPath>
+			<texPath>Apparel/Hats/TA_FurCap/TA_FurCap_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories Inherit="False">
@@ -285,7 +285,7 @@
 		<label>fancy fur hat</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Hats/TA_NobleFurCap/TA_NobleFurCap_Icon</texPath>
+			<texPath>Apparel/Hats/TA_NobleFurCap/TA_NobleFurCap_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories Inherit="False">

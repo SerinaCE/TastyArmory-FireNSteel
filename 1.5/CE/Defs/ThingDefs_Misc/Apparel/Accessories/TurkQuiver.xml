@@ -7,7 +7,7 @@
 		<label>turkish quiver belt</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Accessories/TA_TurkQuiver/TA_TurkQuiver_Icon</texPath>
+			<texPath>Apparel/Accessories/TA_TurkQuiver/TA_TurkQuiver_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>

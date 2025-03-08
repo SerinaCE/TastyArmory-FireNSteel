@@ -85,7 +85,7 @@
 		<label>lobstertail helmet</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Helmets/TA_LobsterHelmet/TA_LobsterHelmet_Icon</texPath>
+			<texPath>Apparel/Helmets/TA_LobsterHelmet/TA_LobsterHelmet_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
@@ -105,7 +105,7 @@
 		<label>hussar helmet</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Helmets/TA_HussarHelmet/TA_HussarHelmet_Icon</texPath>
+			<texPath>Apparel/Helmets/TA_HussarHelmet/TA_HussarHelmet_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
@@ -125,7 +125,7 @@
 		<label>sipahi helmet</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Helmets/TA_SipahiHelmet/TA_SipahiHelmet_Icon</texPath>
+			<texPath>Apparel/Helmets/TA_SipahiHelmet/TA_SipahiHelmet_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>

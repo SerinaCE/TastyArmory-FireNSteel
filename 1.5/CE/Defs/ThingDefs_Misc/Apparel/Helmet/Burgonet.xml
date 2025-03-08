@@ -58,7 +58,7 @@
 		<label>burgonet</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet_Icon</texPath>
+			<texPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker Inherit="False" />
@@ -68,7 +68,7 @@
 		<comps>
 			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<SwitchTo>TA_BurgonetClosed</SwitchTo>
-				<graphicPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetClosed_Icon</graphicPath>
+				<graphicPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetClosed_ico</graphicPath>
 				<Label>close visor</Label>
 			</li>
 		</comps>
@@ -121,7 +121,7 @@
 		<label>burgonet (closed)</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetClosed_Icon</texPath>
+			<texPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetClosed_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<equippedStatOffsets>
@@ -135,7 +135,7 @@
 		<comps>
 			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<SwitchTo>TA_Burgonet</SwitchTo>
-				<graphicPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet_Icon</graphicPath>
+				<graphicPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet_ico</graphicPath>
 				<Label>open visor</Label>
 			</li>
 		</comps>

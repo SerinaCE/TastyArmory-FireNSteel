@@ -7,7 +7,7 @@
     <label>bag</label>
     <description>Shoulder sling pouch.</description>
     <graphicData>
-      <texPath>Apparel/Accessories/TA_Bag/TA_Bag_Icon</texPath>
+      <texPath>Apparel/Accessories/TA_Bag/TA_Bag_ico</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <recipeMaker>

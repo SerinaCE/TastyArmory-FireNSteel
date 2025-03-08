@@ -7,7 +7,7 @@
 		<label>gorget</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Armor/TA_Gorget/TA_Gorget_Icon</texPath>
+			<texPath>Apparel/Armor/TA_Gorget/TA_Gorget_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>

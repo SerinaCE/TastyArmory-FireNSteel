@@ -7,7 +7,7 @@
 		<description>.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Apparel/Helmets/TA_Skullcap/TA_Skullcap_Icon</texPath>
+			<texPath>Apparel/Helmets/TA_Skullcap/TA_Skullcap_ico</texPath>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>Smithing</researchPrerequisite>
