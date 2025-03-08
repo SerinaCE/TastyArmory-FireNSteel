@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="TA_ApparelCarryGearBase">
+	<ThingDef ParentName="TA_ApparelCarryGear_Base">
 		<defName>TA_HussarWings</defName>
 		<label>hussar wings</label>
 		<description>.</description>
@@ -28,8 +28,6 @@
 		<recipeMaker>
 			<recipeUsers>
 				<li>CraftingSpot</li>
-				<li>HandTailoringBench</li>
-				<li>ElectricTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<apparel>

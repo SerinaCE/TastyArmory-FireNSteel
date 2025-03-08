@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>TC_Rapier</defName>
+		<defName>TA_Rapier</defName>
 		<label>rapier</label>
 		<description>.</description>
 		<graphicData>
@@ -40,12 +40,12 @@
 			<WorkToMake>20000</WorkToMake>
 			<Mass>1</Mass>
 			<Bulk>8</Bulk>
-			<MeleeCounterParryBonus>1.75</MeleeCounterParryBonus>
+			<MeleeCounterParryBonus>0.5</MeleeCounterParryBonus>
 		</statBases>
 		<equippedStatOffsets>
-			<MeleeCritChance>2.50</MeleeCritChance>
-			<MeleeParryChance>1</MeleeParryChance>
-			<MeleeDodgeChance>0.50</MeleeDodgeChance>
+			<MeleeCritChance>0.83</MeleeCritChance>
+			<MeleeParryChance>0.5</MeleeParryChance>
+			<MeleeDodgeChance>0.4</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
@@ -91,7 +91,7 @@
 			</li>
 		</tools>
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(-0.1,0,-0.35)</drawOffset>

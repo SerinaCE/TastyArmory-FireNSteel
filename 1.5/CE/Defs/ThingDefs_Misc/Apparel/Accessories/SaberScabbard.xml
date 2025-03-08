@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="TA_ApparelCarryGearBase">
+	<ThingDef ParentName="TA_ApparelCarryGear_Base">
 		<defName>TA_SaberScabbard</defName>
 		<label>saber scabbard</label>
 		<description>.</description>
@@ -10,16 +10,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>LongBlades</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
-			<recipeUsers>
-				<li>HandTailoringBench</li>
-				<li>ElectricTailoringBench</li>
-			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>

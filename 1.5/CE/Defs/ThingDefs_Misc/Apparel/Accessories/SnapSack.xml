@@ -3,7 +3,7 @@
 
 	<!-- ==================== Sack ==================== -->
 
-	<ThingDef ParentName="TA_ApparelCarryGearBase">
+	<ThingDef ParentName="TA_ApparelCarryGear_Base">
 		<defName>TA_SnapSack</defName>
 		<label>snapsack</label>
 		<description>.</description>
@@ -28,8 +28,6 @@
 		<recipeMaker>
 			<recipeUsers>
 				<li>CraftingSpot</li>
-				<li>HandTailoringBench</li>
-				<li>ElectricTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<apparel>

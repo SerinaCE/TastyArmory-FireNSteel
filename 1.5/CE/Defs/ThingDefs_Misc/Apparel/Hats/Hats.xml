@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<ThingDef Name="TA_Hat_Base" ParentName="ApparelMakeableBase">
+	<ThingDef Name="TA_Hat_Base" ParentName="HatMakeableBase">
 		<possessionCount>1</possessionCount>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
@@ -22,11 +22,7 @@
 			<StuffEffectMultiplierInsulation_Heat>0.35</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
-		<thingCategories>
-			<li>Headgear</li>
-		</thingCategories>
 		<apparel>
-			<parentTagDef>ApparelHead</parentTagDef>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<bodyPartGroups>
 				<li>UpperHead</li>
@@ -138,6 +134,7 @@
 			<Mass>0.4</Mass>
 			<Bulk>1.5</Bulk>
 			<WornBulk>0.5</WornBulk>
+			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 		</statBases>

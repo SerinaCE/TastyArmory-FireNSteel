@@ -71,7 +71,7 @@
 		<label>morion</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Helmets/TA_Morion/TA_Morion</texPath>
+			<texPath>Apparel/Helmets/TA_Morion/TA_Morion_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
@@ -92,7 +92,7 @@
 		<label>cabasset</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Helmets/TA_Cabasset/TA_Cabasset</texPath>
+			<texPath>Apparel/Helmets/TA_Cabasset/TA_Cabasset_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>

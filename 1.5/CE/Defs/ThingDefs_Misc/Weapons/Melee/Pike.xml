@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>TC_Pike</defName>
+		<defName>TA_Pike</defName>
 		<label>pike</label>
 		<description>.</description>
 		<graphicData>

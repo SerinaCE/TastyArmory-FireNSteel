@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+			defName="TA_Bag" or
+			defName="TA_PowderPouch" or
+			defName="TM_SashBelt" or
+			defName="TA_TurkQuiver" or
+			@Name="TA_Cassock_Base" or
+			defName="TA_Doublet" or
+			@Name="TA_Longcoat_Base" or
+			defName="TA_PeasantShirt" or
+			defName="TA_ShirtSashBelt" or
+			@Name="TA_Hat_Base"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+			defName="TA_TallBoots" or
+			defName="TA_TallGloves" or
+			defName="TA_BuffCoat" or
+			defName="TA_BuffVest" or
+			defName="TA_PaddedDoublet"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TA_LandsknechtHat"]</xpath>
+		<value>
+			<recipeMaker>
+				<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+			</recipeMaker>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+			defName="TA_Halberd" or
+			defName="TA_Lance" or
+			defName="TA_Pike"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisite>DankPyon_MilitaryPolearms</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="TA_Pike"]/label</xpath>
+		<value>
+			<label>long pike</label>
+		</value>
+	</Operation>
+
+</Patch>

@@ -3,7 +3,7 @@
 
 	<!-- ==================== Buffcoat ==================== -->
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>TC_BuffVest</defName>
+		<defName>TA_BuffVest</defName>
 		<label>sleeveless buffcoat</label>
 		<description>.</description>
 		<graphicData>

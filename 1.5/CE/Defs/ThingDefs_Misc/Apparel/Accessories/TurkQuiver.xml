@@ -2,7 +2,7 @@
 <Defs>
 
 	<!--Quiver-->
-	<ThingDef ParentName="ApparelCarryGearBase">
+	<ThingDef ParentName="TA_ApparelCarryGear_Base">
 		<defName>TA_TurkQuiver</defName>
 		<label>turkish quiver belt</label>
 		<description>.</description>
@@ -17,10 +17,6 @@
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
-			<recipeUsers>
-				<li>HandTailoringBench</li>
-				<li>ElectricTailoringBench</li>
-			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>

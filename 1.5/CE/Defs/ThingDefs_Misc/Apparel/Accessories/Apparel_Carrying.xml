@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <ThingDef Name="TA_ApparelCarryGearBase" ParentName="ApparelBase" Abstract="True">
+  <ThingDef Name="TA_ApparelCarryGear_Base" ParentName="ApparelBase" Abstract="True">
     <techLevel>Medieval</techLevel>
     <category>Item</category>
     <thingClass>Apparel</thingClass>

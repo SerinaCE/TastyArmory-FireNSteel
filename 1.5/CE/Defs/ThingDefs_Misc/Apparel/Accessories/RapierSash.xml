@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="TA_ApparelCarryGearBase">
+	<ThingDef ParentName="TA_ApparelCarryGear_Base">
 		<defName>TA_RapierSash</defName>
 		<label>rapier Sash</label>
 		<description>.</description>
@@ -9,16 +9,11 @@
 			<texPath>Apparel/Accessories/TA_RapierSash/TA_RapierSash_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<researchPrerequisite>LongBlades</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
-			<recipeUsers>
-				<li>HandTailoringBench</li>
-				<li>ElectricTailoringBench</li>
-			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>

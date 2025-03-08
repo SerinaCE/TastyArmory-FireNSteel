@@ -12,7 +12,6 @@
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
-		<smeltable>false</smeltable>
 		<techLevel>Medieval</techLevel>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>

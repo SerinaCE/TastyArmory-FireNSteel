@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- ==================== Bag ==================== -->
-  <ThingDef ParentName="TA_ApparelCarryGearBase">
+  <ThingDef ParentName="TA_ApparelCarryGear_Base">
     <defName>TA_Bag</defName>
     <label>bag</label>
     <description>Shoulder sling pouch.</description>
@@ -15,10 +15,6 @@
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
-      <recipeUsers>
-        <li>HandTailoringBench</li>
-        <li>ElectricTailoringBench</li>
-      </recipeUsers>
     </recipeMaker>
     <statBases>
       <MaxHitPoints>120</MaxHitPoints>
