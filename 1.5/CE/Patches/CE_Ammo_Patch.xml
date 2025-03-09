@@ -1,25 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+	<!-- ========== Musket Ball Recipe ========== -->
+	
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/RecipeDef[defName="MakeAmmo_MusketBall"]</xpath>
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_MusketBall"]/label</xpath>
 		<value>
-			<RecipeDef ParentName="AmmoRecipeBase">
-				<defName>MakeAmmo_MusketBall</defName>
-				<label>make musket ball x50</label>
-				<description>Craft 50 musket balls.</description>
-				<jobString>Making musket balls.</jobString>
-				<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
-				<workAmount>1200</workAmount>
-				<ingredients>
-					<li>
-						<filter>
-							<thingDefs>
-								<li>Steel</li>
-							</thingDefs>
-						</filter>
-						<count>10</count>
-					</li>
+			<label>make musket ball x50</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_MusketBall"]/label</xpath>
+		<value>
+			<description>Craft 50 musket balls.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_MusketBall"]/workAmount</xpath>
+		<value>
+			<workAmount>1200</workAmount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_MusketBall"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>10</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Cloth</li>
+						</thingDefs>
+					</filter>
+					<count>4</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_MusketBall"]/fixedIngredientFilter</xpath>
+		<value>
+			<fixedIngredientFilter>
+				<thingDefs>
+					<li>Steel</li>
+					<li>Cloth</li>
+				</thingDefs>
+			</fixedIngredientFilter>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_MusketBall"]/products/Ammo_MusketBall</xpath>
+		<value>
+			<Ammo_MusketBall>50</Ammo_MusketBall>
+		</value>
+	</Operation>
+
+	<!-- ========== Blunderbuss Shot Recipe ========== -->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_BlunderbussShot"]/label</xpath>
+		<value>
+			<label>make blunderbuss shot x30</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_BlunderbussShot"]/label</xpath>
+		<value>
+			<description>Craft 30 blunderbuss shots.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_BlunderbussShot"]/workAmount</xpath>
+		<value>
+			<workAmount>1000</workAmount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_BlunderbussShot"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>8</count>
 					<li>
 						<filter>
 							<thingDefs>
@@ -28,58 +109,27 @@
 						</filter>
 						<count>4</count>
 					</li>
-				</ingredients>
-				<fixedIngredientFilter>
-					<thingDefs>
-						<li>Steel</li>
-						<li>Cloth</li>
-					</thingDefs>
-				</fixedIngredientFilter>
-				<products>
-					<Ammo_MusketBall>50</Ammo_MusketBall>
-				</products>
-			</RecipeDef>
+				</li>
+			</ingredients>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="MakeAmmo_BlunderbussShot"]</xpath>
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_BlunderbussShot"]/fixedIngredientFilter</xpath>
 		<value>
-			<RecipeDef ParentName="AmmoRecipeBase">
-				<defName>MakeAmmo_BlunderbussShot</defName>
-				<label>make blunderbuss shot x30</label>
-				<description>Craft 30 blunderbuss shots.</description>
-				<jobString>Making blunderbuss shots.</jobString>
-				<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
-				<workAmount>1000</workAmount>
-				<ingredients>
-					<li>
-						<filter>
-							<thingDefs>
-								<li>Steel</li>
-							</thingDefs>
-						</filter>
-						<count>8</count>
-						<li>
-							<filter>
-								<thingDefs>
-									<li>Cloth</li>
-								</thingDefs>
-							</filter>
-							<count>4</count>
-						</li>
-					</li>
-				</ingredients>
-				<fixedIngredientFilter>
-					<thingDefs>
-						<li>Steel</li>
-						<li>Cloth</li>
-					</thingDefs>
-				</fixedIngredientFilter>
-				<products>
-					<Ammo_BlunderbussShot>30</Ammo_BlunderbussShot>
-				</products>
-			</RecipeDef>
+			<fixedIngredientFilter>
+				<thingDefs>
+					<li>Steel</li>
+					<li>Cloth</li>
+				</thingDefs>
+			</fixedIngredientFilter>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_BlunderbussShot"]/products/Ammo_BlunderbussShot</xpath>
+		<value>
+			<Ammo_BlunderbussShot>30</Ammo_BlunderbussShot>
 		</value>
 	</Operation>
 
