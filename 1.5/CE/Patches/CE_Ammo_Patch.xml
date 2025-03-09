@@ -101,14 +101,14 @@
 						</thingDefs>
 					</filter>
 					<count>8</count>
-					<li>
-						<filter>
-							<thingDefs>
-								<li>Cloth</li>
-							</thingDefs>
-						</filter>
-						<count>4</count>
-					</li>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Cloth</li>
+						</thingDefs>
+					</filter>
+					<count>4</count>
 				</li>
 			</ingredients>
 		</value>
