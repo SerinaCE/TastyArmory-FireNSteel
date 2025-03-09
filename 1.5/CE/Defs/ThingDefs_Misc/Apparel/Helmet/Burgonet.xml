@@ -32,6 +32,7 @@
 			<parentTagDef>ApparelHead</parentTagDef>
 			<bodyPartGroups>
 				<li>FullHead</li>
+				<li>Neck</li>
 			</bodyPartGroups>
 			<layers>
 				<li>Overhead</li>
@@ -101,6 +102,18 @@
 						<ArmorRating_Blunt>0</ArmorRating_Blunt>
 						<parts>
 							<li>Nose</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
 						</parts>
 					</li>
 				</stats>
