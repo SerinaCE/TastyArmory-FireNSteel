@@ -54,15 +54,15 @@
 	</ThingDef>
 
 	<ThingDef ParentName="TA_Burgonet_Base">
-		<defName>TA_Burgonet</defName>
+		<defName>TA_BurgonetOpen</defName>
 		<label>burgonet</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet_ico</texPath>
+			<texPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetOpen_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet</wornGraphicPath>
+			<wornGraphicPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetOpen</wornGraphicPath>
 		</apparel>
 		<modExtensions>
 			<li Class="CombatExtended.PartialArmorExt">
