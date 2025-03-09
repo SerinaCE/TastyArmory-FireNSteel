@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>TA_Saber</defName>
+		<defName>TA_HussarSaber</defName>
 		<label>saber</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Weapons/TA_Saber</texPath>
+			<texPath>Weapons/TA_HussarSaber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
