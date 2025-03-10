@@ -2,32 +2,27 @@
 <Defs>
 
 	<ThingDef Name="TA_BurgonetVisored_Base" ParentName="ArmorSmithableBase" Abstract="True">
-		<defName>TA_Burgonet</defName>
-		<label>burgonet</label>
+		<label>visored burgonet</label>
 		<description>.</description>
-		<graphicData>
-			<texPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet_ico</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<skillRequirements>
-				<Crafting>4</Crafting>
+				<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<techLevel>Medieval</techLevel>
-		<costStuffCount>46</costStuffCount>
+		<costStuffCount>58</costStuffCount>
 		<stuffCategories>
 			<li>Steeled</li>
 		</stuffCategories>
 		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
-			<WorkToMake>8000</WorkToMake>
-			<Mass>1.8</Mass>
+			<MaxHitPoints>175</MaxHitPoints>
+			<WorkToMake>10500</WorkToMake>
+			<Mass>2.6</Mass>
 			<Bulk>5</Bulk>
 			<WornBulk>1</WornBulk>
-			<StuffEffectMultiplierArmor>2.75</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>2.7</StuffEffectMultiplierArmor>
 			<Insulation_Cold>4</Insulation_Cold>			
 			<EquipDelay>1</EquipDelay>
 		</statBases>
@@ -36,7 +31,6 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<apparel>
-			<wornGraphicPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet</wornGraphicPath>
 			<parentTagDef>ApparelHead</parentTagDef>
 			<bodyPartGroups>
 				<li>FullHead</li>
@@ -56,6 +50,29 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_BurgonetVisored_Base">
+		<defName>TA_BurgonetVisored_off</defName>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_BurgonetVisored/TA_BurgonetVisored_off_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit="False" />
+		<apparel>
+			<wornGraphicPath>Apparel/Helmets/TA_BurgonetVisored/TA_BurgonetVisored_off</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>TA_BurgonetVisored_on</SwitchTo>
+				<graphicPath>Apparel/Helmets/TA_BurgonetVisored/TA_BurgonetVisored_button_on</graphicPath>
+				<Label>close visor</Label>
+			</li>
+		</comps>
 		<modExtensions>
 			<li Class="CombatExtended.PartialArmorExt">
 				<stats>
@@ -110,35 +127,63 @@
 				</stats>
 			</li>
 		</modExtensions>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />
-		<tradeTags>
-			<li>Armor</li>
-		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="TA_Burgonet_Base">
-		<defName>TA_BurgonetClosed</defName>
-		<label>burgonet (closed)</label>
-		<description>.</description>
+	<ThingDef ParentName="TA_Burgonet_Base" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+		<defName>TA_BurgonetVisored_on</defName>
 		<graphicData>
-			<texPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetClosed_ico</texPath>
+			<texPath>Apparel/Helmets/TA_BurgonetVisored/TA_BurgonetVisored_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<costStuffCount>60</costStuffCount>
-		<statBases>
-			<MaxHitPoints>180</MaxHitPoints>
-			<WorkToMake>10000</WorkToMake>
-			<Mass>3</Mass>
-			<StuffEffectMultiplierArmor>3.5</StuffEffectMultiplierArmor>
-		</statBases>
 		<equippedStatOffsets>
 			<AimingAccuracy>-0.4</AimingAccuracy>
 			<MeleeHitChance>-2</MeleeHitChance>
 			<Suppressability>-0.2</Suppressability>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetClosed</wornGraphicPath>
+			<wornGraphicPath>Apparel/Helmets/TA_BurgonetVisored/TA_BurgonetVisored</wornGraphicPath>
 		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>TA_BurgonetVisored_off</SwitchTo>
+				<graphicPath>Apparel/Helmets/TA_BurgonetVisored/TA_BurgonetVisored_button_off</graphicPath>
+				<Label>open visor</Label>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+							<li>Jaw</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+							<li>Jaw</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 </Defs>

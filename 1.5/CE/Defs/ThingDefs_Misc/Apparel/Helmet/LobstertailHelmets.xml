@@ -10,17 +10,17 @@
 			</skillRequirements>
 		</recipeMaker>
 		<techLevel>Medieval</techLevel>
-		<costStuffCount>55</costStuffCount>
+		<costStuffCount>50</costStuffCount>
 		<stuffCategories>
 			<li>Steeled</li>
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
-			<WorkToMake>9000</WorkToMake>
-			<Mass>2.2</Mass>
+			<WorkToMake>9500</WorkToMake>
+			<Mass>2.3</Mass>
 			<Bulk>5</Bulk>
 			<WornBulk>0</WornBulk>
-			<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>2.8</StuffEffectMultiplierArmor>
 			<Insulation_Cold>4</Insulation_Cold>			
 			<EquipDelay>1</EquipDelay>
 		</statBases>
@@ -32,6 +32,7 @@
 			<parentTagDef>ApparelHead</parentTagDef>
 			<bodyPartGroups>
 				<li>FullHead</li>
+				<li>Neck</li>
 			</bodyPartGroups>
 			<layers>
 				<li>OnHead</li>
@@ -58,19 +59,32 @@
 						</parts>
 					</li>
 					<li>
-						<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+						<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
 						<parts>
 							<li>Jaw</li>
 							<li>Nose</li>
 						</parts>
 					</li>
 					<li>
-						<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+						<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
 						<parts>
 							<li>Jaw</li>
 							<li>Nose</li>
 						</parts>
 					</li>
+					<li>
+						<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+				</stats>
 				</stats>
 			</li>
 		</modExtensions>
