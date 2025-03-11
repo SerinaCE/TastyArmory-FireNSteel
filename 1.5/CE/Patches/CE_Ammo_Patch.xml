@@ -11,7 +11,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/RecipeDef[defName="MakeAmmo_MusketBall"]/label</xpath>
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_MusketBall"]/description</xpath>
 		<value>
 			<description>Craft 50 musket balls.</description>
 		</value>
@@ -77,7 +77,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/RecipeDef[defName="MakeAmmo_BlunderbussShot"]/label</xpath>
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_BlunderbussShot"]/description</xpath>
 		<value>
 			<description>Craft 30 blunderbuss shots.</description>
 		</value>

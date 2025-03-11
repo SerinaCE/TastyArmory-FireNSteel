@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<ThingDef Name="TA_BurgonetVisored_Base" ParentName="ArmorSmithableBase" Abstract="True">
+	<ThingDef ParentName="ArmorSmithableBase" Abstract="True">
 		<defName>TA_Burgonet</defName>
 		<label>burgonet</label>
 		<description>.</description>
@@ -114,31 +114,6 @@
 		<tradeTags>
 			<li>Armor</li>
 		</tradeTags>
-	</ThingDef>
-
-	<ThingDef ParentName="TA_Burgonet_Base">
-		<defName>TA_BurgonetClosed</defName>
-		<label>burgonet (closed)</label>
-		<description>.</description>
-		<graphicData>
-			<texPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetClosed_ico</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<costStuffCount>60</costStuffCount>
-		<statBases>
-			<MaxHitPoints>180</MaxHitPoints>
-			<WorkToMake>10000</WorkToMake>
-			<Mass>3</Mass>
-			<StuffEffectMultiplierArmor>3.5</StuffEffectMultiplierArmor>
-		</statBases>
-		<equippedStatOffsets>
-			<AimingAccuracy>-0.4</AimingAccuracy>
-			<MeleeHitChance>-2</MeleeHitChance>
-			<Suppressability>-0.2</Suppressability>
-		</equippedStatOffsets>
-		<apparel>
-			<wornGraphicPath>Apparel/Helmets/TA_Burgonet/TA_BurgonetClosed</wornGraphicPath>
-		</apparel>
 	</ThingDef>
 
 </Defs>

@@ -2,7 +2,6 @@
 <Defs>
 
 	<ThingDef Name="TA_BurgonetVisored_Base" ParentName="ArmorSmithableBase" Abstract="True">
-		<label>visored burgonet</label>
 		<description>.</description>
 		<recipeMaker>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
@@ -58,6 +57,7 @@
 
 	<ThingDef ParentName="TA_BurgonetVisored_Base">
 		<defName>TA_BurgonetVisored_off</defName>
+		<label>visored burgonet</label>
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_BurgonetVisored/TA_BurgonetVisored_off_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -129,8 +129,9 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="TA_Burgonet_Base" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+	<ThingDef ParentName="TA_BurgonetVisored_Base" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 		<defName>TA_BurgonetVisored_on</defName>
+		<label>visored burgonet</label>
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_BurgonetVisored/TA_BurgonetVisored_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
