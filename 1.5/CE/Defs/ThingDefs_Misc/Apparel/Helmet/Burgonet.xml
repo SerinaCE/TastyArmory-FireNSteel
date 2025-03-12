@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<ThingDef ParentName="ArmorSmithableBase" Abstract="True">
+	<ThingDef ParentName="ArmorSmithableBase">
 		<defName>TA_Burgonet</defName>
 		<label>burgonet</label>
 		<description>.</description>

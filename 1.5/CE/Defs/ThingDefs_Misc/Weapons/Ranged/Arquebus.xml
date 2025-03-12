@@ -56,7 +56,7 @@
 				<ammoSet>AmmoSet_55CalBall450mps</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
-				<aiAimMode>Snapshot</aiAimMode>
+				<aiAimMode>AimedShot</aiAimMode>
 			</li>
 		</comps>
 		<recipeMaker>

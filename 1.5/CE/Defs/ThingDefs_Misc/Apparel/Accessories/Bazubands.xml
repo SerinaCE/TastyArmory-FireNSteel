@@ -60,10 +60,9 @@
 			<li Class="CombatExtended.PartialArmorExt">
 				<stats>
 					<li>
-						<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+						<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
 						<parts>
 							<li>Arm</li>
-							<li>Leg</li>
 						</parts>
 					</li>
 					<li>
