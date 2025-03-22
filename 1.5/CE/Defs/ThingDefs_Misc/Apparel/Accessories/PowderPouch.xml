@@ -23,7 +23,7 @@
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ReloadSpeed>0.9</ReloadSpeed>
+			<ReloadSpeed>0.1</ReloadSpeed>
 			<CarryBulk>20</CarryBulk>
 		</equippedStatOffsets>
 		<costStuffCount>45</costStuffCount>
