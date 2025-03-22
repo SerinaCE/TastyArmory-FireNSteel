@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="TA_ApparelCarryGear_Base">
 		<defName>TA_PowderPouch</defName>
-		<label>powder pouch</label>
+		<label>musketeer's bandolier</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Apparel/Accessories/TA_PowderPouch/TA_PowderPouch_ico</texPath>
@@ -23,8 +23,8 @@
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ReloadSpeed>0.1</ReloadSpeed>
-			<CarryBulk>23</CarryBulk>
+			<ReloadSpeed>0.9</ReloadSpeed>
+			<CarryBulk>20</CarryBulk>
 		</equippedStatOffsets>
 		<costStuffCount>45</costStuffCount>
 		<stuffCategories>

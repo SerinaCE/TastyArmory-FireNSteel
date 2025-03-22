@@ -15,7 +15,7 @@
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<WorkToMake>5000</WorkToMake>
-			<Mass>0.5</Mass>
+			<Mass>0.8</Mass>
 			<Bulk>1</Bulk>
 		</statBases>
 		<equippedStatOffsets>
@@ -31,6 +31,11 @@
 			</recipeUsers>
 		</recipeMaker>
 		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>28</layer>
+				</defaultData>
+			</drawData>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<careIfDamaged>false</careIfDamaged>

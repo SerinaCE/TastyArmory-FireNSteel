@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="ArmorSmithableBase">
 		<defName>TA_PikemanPlate</defName>
-		<label>pikeman plate</label>
+		<label>pikeman's corselet</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Apparel/Armor/TA_PikemanPlate/TA_PikemanPlate_ico</texPath>
@@ -24,7 +24,7 @@
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
 			<WorkToMake>20000</WorkToMake>
-			<Mass>9</Mass>
+			<Mass>8</Mass>
 			<Bulk>35</Bulk>
 			<WornBulk>2</WornBulk>
 			<StuffEffectMultiplierArmor>2.75</StuffEffectMultiplierArmor>

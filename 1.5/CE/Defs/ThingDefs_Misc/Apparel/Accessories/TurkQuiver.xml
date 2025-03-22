@@ -28,7 +28,6 @@
 		</statBases>
 		<equippedStatOffsets>
 			<CarryBulk>15</CarryBulk>
-			<ReloadSpeed>0.1</ReloadSpeed>
 		</equippedStatOffsets>
 		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
