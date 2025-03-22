@@ -2,8 +2,8 @@
 <Defs>
 
 	<ThingDef ParentName="TA_ApparelCarryGear_Base">
-		<defName>TA_PowderPouch</defName>
-		<label>musketeer's bandolier</label>
+		<defName>TA_MusketeerBandolier</defName>
+		<label>musketeer bandolier</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Apparel/Accessories/TA_PowderPouch/TA_PowderPouch_ico</texPath>
@@ -24,7 +24,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<ReloadSpeed>0.1</ReloadSpeed>
-			<CarryBulk>20</CarryBulk>
+			<CarryBulk>17</CarryBulk>
 		</equippedStatOffsets>
 		<costStuffCount>45</costStuffCount>
 		<stuffCategories>

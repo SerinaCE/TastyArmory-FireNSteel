@@ -64,6 +64,12 @@
 				<armorPenetrationBlunt>0.65</armorPenetrationBlunt>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.1,1.1</DrawSize>
+				<DrawOffset>0,0</DrawOffset>
+			</li>
+		</modExtensions>
 		<recipeMaker>
 			<recipeUsers>
 				<li>CraftingSpot</li>

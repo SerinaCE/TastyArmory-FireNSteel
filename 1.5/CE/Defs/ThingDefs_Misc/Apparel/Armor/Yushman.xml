@@ -2,8 +2,8 @@
 <Defs>
 
 	<ThingDef ParentName="ArmorSmithableBase">
-		<defName>TA_MailleAndPlate</defName>
-		<label>maille and plate</label>
+		<defName>TA_Yushman</defName>
+		<label>yushman</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Apparel/Armor/TA_MailleAndPlate/TA_MailleAndPlate_ico</texPath>
