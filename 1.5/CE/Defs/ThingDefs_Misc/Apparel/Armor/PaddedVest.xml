@@ -51,7 +51,6 @@
 				<li>Neck</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Armor/TA_PaddedVest/TA_PaddedVest</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
 				<li>TA_UnderArmor</li>
