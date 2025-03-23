@@ -53,7 +53,6 @@
 			<wornGraphicPath>Apparel/Armor/TA_PaddedVest/TA_PaddedVest</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
-				<li>TA_UnderArmor</li>
 			</layers>
 			<tags>
 				<li>MedievalMilitary</li>

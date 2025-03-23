@@ -55,7 +55,6 @@
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
-				<li>TA_UnderArmor</li>
 			</layers>
 			<tags>
 				<li>Medieval</li>

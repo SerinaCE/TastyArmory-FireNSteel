@@ -68,7 +68,7 @@
 		<apparel>
 			<drawData>
 				<defaultData>
-					<layer>26</layer>
+					<layer>27</layer>
 				</defaultData>
 			</drawData>
 			<wornGraphicPath>Apparel/Clothes/TA_Cassock/TA_Cassock</wornGraphicPath>
@@ -99,7 +99,7 @@
 		<apparel>
 			<drawData>
 				<defaultData>
-					<layer>26</layer>
+					<layer>27</layer>
 				</defaultData>
 			</drawData>
 			<wornGraphicPath>Apparel/Clothes/TA_CassockShoulder/TA_CassockShoulder</wornGraphicPath>
