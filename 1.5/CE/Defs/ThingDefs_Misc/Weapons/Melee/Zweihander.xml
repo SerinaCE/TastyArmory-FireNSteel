@@ -11,7 +11,7 @@
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.2</drawSize>
 		</graphicData>
-		<equippedAngleOffset>-45</equippedAngleOffset>
+		<!-- <equippedAngleOffset>-45</equippedAngleOffset> -->
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="False">
 			<li>MedievalMeleeDecent</li>
@@ -92,20 +92,20 @@
 			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<weaponDraftedDrawOffsets>
 					<north>
-						<drawOffset>(0.34,0,0.15)</drawOffset>
-						<angleOffset>0</angleOffset>
+						<drawOffset>(-0.20,0.0,0.20)</drawOffset>
+						<angleOffset>115</angleOffset>
 					</north>
 					<east>
-						<drawOffset>(0.35,0,0.15)</drawOffset>
-						<angleOffset>0</angleOffset>
+						<drawOffset>(0.30,0.00,0.20)</drawOffset>
+						<angleOffset>-45</angleOffset>
 					</east>
 					<south>
-						<drawOffset>(0.35,0,0.15)</drawOffset>
-						<angleOffset>0</angleOffset>
+						<drawOffset>(0.30,0.00,0.20)</drawOffset>
+						<angleOffset>-45</angleOffset>
 					</south>
 					<west>
-						<drawOffset>(-0.35,0,0.15)</drawOffset>
-						<angleOffset>0</angleOffset>
+						<drawOffset>(-0.30,0.0,0.20)</drawOffset>
+						<angleOffset>45</angleOffset>
 					</west>
 				</weaponDraftedDrawOffsets>
 			</li>
