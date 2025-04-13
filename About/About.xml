@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Tastier Armory - Fire and Steel</name>
+	<name>Tasty Armory - Fire and Steel</name>
 	<author>al9000, Airo</author>
 	<supportedVersions>
 	  <li>1.5</li>
 	</supportedVersions>
 		<packageId>al9000.fireandsteel</packageId>
 	<description>stuff</description>
+	<modDependencies>
+		<li>
+			<packageId>al9000.tastycore</packageId>
+			<displayName>Tasty Armory - Core</displayName>
+		</li>
+	</modDependencies>
 	<loadAfter>
-		<li>brrainz.harmony</li>
-		<li>Ludeon.RimWorld.Royalty</li>
-		<li>Ludeon.RimWorld.Ideology</li>
-		<li>Ludeon.RimWorld.Biotech</li>
-		<li>Ludeon.RimWorld.Anomaly</li>
-		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-		<li>CETeam.CombatExtended</li>
+		<li>al9000.tastycore</li>
 	</loadAfter>
 </ModMetaData>
