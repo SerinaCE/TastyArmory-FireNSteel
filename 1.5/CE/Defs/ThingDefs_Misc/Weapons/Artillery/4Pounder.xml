@@ -4,10 +4,10 @@
 	<!-- ==================== 12 Pounder Cannon ==================== -->
 
 	<ThingDef ParentName="BaseTurretGun">
-		<defName>TA_FourPounder_Gun</defName>
+		<defName>TA_FourPounderCannon_Gun</defName>
 		<label>4-pounder cannon</label>
 		<graphicData>
-			<texPath>Things/Weapons/Building/TA_LightCannon_gun</texPath>
+			<texPath>Building/TA_LightCannon_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>4-pounder cannon mounted on a carriage.</description>
@@ -23,7 +23,7 @@
 				<recoilAmount>5.34</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_4lbsCannon_Ball</defaultProjectile>
+				<defaultProjectile>Bullet_4lbsCannonBall_Round</defaultProjectile>
 				<warmupTime>3.5</warmupTime>
 				<range>75</range>
 				<minRange>7.9</minRange>
@@ -49,18 +49,18 @@
 	</ThingDef>
 
 	<ThingDef ParentName="TurretMannedBuildableBase">
-		<defName>TA_FourPounder_Turret</defName>
+		<defName>TA_FourPounderCannon_Turret</defName>
 		<label>4 pounder cannon</label>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<graphicData>
-			<texPath>Things/Weapons/Building/TA_Cannon_Base</texPath>
+			<texPath>Building/TA_Cannon_base</texPath>
 			<drawSize>(2.7,2.7)</drawSize>
 			<shadowData>
 				<volume>(0.27,0.3,0.8)</volume>
 				<offset>(0,0,0)</offset>
 			</shadowData>
 		</graphicData>
-		<uiIconPath>Things/Weapons/Building/TA_LightCannon_ico</uiIconPath>
+		<uiIconPath>Building/TA_LightCannon_ico</uiIconPath>
 		<statBases>
 			<WorkToBuild>3000</WorkToBuild>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -73,7 +73,7 @@
 			<WoodLog>150</WoodLog>
 		</costList>
 		<building>
-			<turretGunDef>TA_FourPounder_Gun</turretGunDef>
+			<turretGunDef>TA_FourPounderCannon_Gun</turretGunDef>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretBurstCooldownTime>2.5</turretBurstCooldownTime>
 		</building>

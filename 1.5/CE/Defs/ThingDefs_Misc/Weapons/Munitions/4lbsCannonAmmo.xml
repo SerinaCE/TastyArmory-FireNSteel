@@ -15,6 +15,10 @@
 	<!-- ==================== Ammo ========================== -->
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="Ammo_4lbsCannonBall_Base" ParentName="HeavyAmmoBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.7</drawSize>
+		</graphicData>
 		<thingCategories>
 			<li>CannonBall</li>
 		</thingCategories>
@@ -30,6 +34,22 @@
 			<Bulk>1.81</Bulk>
 		</statBases>
 		<techLevel>Medieval</techLevel>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<damageAmountBase>25</damageAmountBase>
+				<explosiveRadius>1.0</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveExpandPerStackcount>1.0</explosiveExpandPerStackcount>
+				<startWickOnDamageTaken>
+					<li>Bomb</li>
+					<li>Flame</li>
+				</startWickOnDamageTaken>
+				<startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<explodeOnKilled>True</explodeOnKilled>
+				<wickTicks>90~120</wickTicks>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo_4lbsCannonBall_Base">
@@ -38,7 +58,6 @@
 		<description>A solid ball of metal fired, capable of delivering significant damage on a direct hit.</description>
 		<graphicData>
 			<texPath>Things/Ammo/Cannon/BlackPowder/Roundshot</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>CannonBall</ammoClass>
 	</ThingDef>
@@ -49,25 +68,8 @@
 		<description>A bundle of medium sized metal balls, fired in a wide spread to deal horrific damage against enemy infantry.</description>
 		<graphicData>
 			<texPath>Things/Ammo/Cannon/BlackPowder/Grapeshot</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>Grapeshot</ammoClass>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<damageAmountBase>25</damageAmountBase>
-				<explosiveRadius>1.0</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-				<explosiveExpandPerStackcount>1.0</explosiveExpandPerStackcount>
-				<startWickOnDamageTaken>
-					<li>Bomb</li>
-					<li>Flame</li>
-				</startWickOnDamageTaken>
-				<startWickHitPointsPercent>0.5</startWickHitPointsPercent>
-				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-				<explodeOnKilled>True</explodeOnKilled>
-				<wickTicks>90~120</wickTicks>
-			</li>
-		</comps>
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo_4lbsCannonBall_Base">
@@ -76,25 +78,8 @@
 		<description>A large bundle of musket balls, fired in a wide spread to deal horrific damage against enemy infantry.</description>
 		<graphicData>
 			<texPath>Things/Ammo/Cannon/BlackPowder/Canister</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>BuckShot</ammoClass>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<damageAmountBase>25</damageAmountBase>
-				<explosiveRadius>1.0</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-				<explosiveExpandPerStackcount>1.0</explosiveExpandPerStackcount>
-				<startWickOnDamageTaken>
-					<li>Bomb</li>
-					<li>Flame</li>
-				</startWickOnDamageTaken>
-				<startWickHitPointsPercent>0.5</startWickHitPointsPercent>
-				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-				<explodeOnKilled>True</explodeOnKilled>
-				<wickTicks>90~120</wickTicks>
-			</li>
-		</comps>
 	</ThingDef>
 
 	<!-- ================== Projectiles ================== -->
