@@ -75,7 +75,7 @@
 		<label>buck shot shell</label>
 		<description>A large bundle of musket balls, fired in a wide spread to deal horrific damage against enemy infantry.</description>
 		<graphicData>
-			<texPath>Things/Ammo/Cannon/BlackPowder/Grapeshot</texPath>
+			<texPath>Things/Ammo/Cannon/BlackPowder/Canister</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>BuckShot</ammoClass>
