@@ -54,7 +54,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<graphicData>
 			<texPath>Building/TA_Cannon_base</texPath>
-			<drawSize>(2.7,2.7)</drawSize>
+			<drawSize>(3,3)</drawSize>
 			<shadowData>
 				<volume>(0.27,0.3,0.8)</volume>
 				<offset>(0,0,0)</offset>
@@ -66,6 +66,7 @@
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>180</Mass>
 			<Bulk>110</Bulk>
+			<Beauty>20</Beauty>
 		</statBases>
 		<description>12-pounder cannon mounted on a carriage.</description>
 		<costList>

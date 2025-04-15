@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+	<!--ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>TA_Lance</defName>
 		<label>lance</label>
 		<description>.</description>
@@ -114,6 +114,6 @@
 				</weaponDraftedDrawOffsets>
 			</li>
 		</modExtensions>
-	</ThingDef>
+	</ThingDef-->
 
 </Defs>

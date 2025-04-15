@@ -37,10 +37,10 @@
 		<apparel>
 			<drawData>
 				<defaultData>
-					<layer>22</layer>
+					<layer>23</layer>
 				</defaultData>
 			</drawData>
-			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			<!--shellRenderedBehindHead>true</shellRenderedBehindHead-->
 			<developmentalStageFilter>Adult</developmentalStageFilter>
 			<bodyPartGroups>
 				<li>Neck</li>

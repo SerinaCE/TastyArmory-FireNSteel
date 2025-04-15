@@ -4,11 +4,11 @@
 
 	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_4lbsCannon</defName>
-		<label>Cannon Ball (4lbs)</label>
+		<label>Cannon Ball (4 lbs)</label>
 		<ammoTypes>
 			<Ammo_4lbsCannonBall_Round>Bullet_4lbsCannonBall_Round</Ammo_4lbsCannonBall_Round>
 			<Ammo_4lbsCannonBall_Grape>Bullet_4lbsCannonBall_Grape</Ammo_4lbsCannonBall_Grape>
-			<Ammo_4lbsCannonBall_Grape>Bullet_4lbsCannonBall_Buck</Ammo_4lbsCannonBall_Grape>
+			<Ammo_4lbsCannonBall_Buck>Bullet_4lbsCannonBall_Buck</Ammo_4lbsCannonBall_Buck>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 
@@ -135,13 +135,13 @@
 			<pelletCount>9</pelletCount>
 			<armorPenetrationSharp>8.5</armorPenetrationSharp>
 			<armorPenetrationBlunt>362</armorPenetrationBlunt>
-			<spreadMult>18</spreadMult>
+			<spreadMult>26</spreadMult>
 		</projectile>
 	</ThingDef>
 	
 	<ThingDef ParentName="BaseBulletCE">
 		<defName>Bullet_4lbsCannonBall_Buck</defName>
-		<label>grape shot</label>
+		<label>buck shot</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Big</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -154,7 +154,7 @@
 			<pelletCount>40</pelletCount>
 			<armorPenetrationSharp>5</armorPenetrationSharp>
 			<armorPenetrationBlunt>65</armorPenetrationBlunt>
-			<spreadMult>36</spreadMult>
+			<spreadMult>50</spreadMult>
 		</projectile>
 	</ThingDef>
 
