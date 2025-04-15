@@ -17,7 +17,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<statBases>
-			<MaxHitPoints>120</MaxHitPoints>
+			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>5000</WorkToMake>
 			<Mass>0.45</Mass>
 			<Bulk>1</Bulk>
