@@ -43,7 +43,7 @@
 		</thingSetMakerTags>
 		<statBases>
 			<WorkToMake>10000</WorkToMake>
-			<Mass>1.75</Mass>
+			<Mass>2</Mass>
 			<Bulk>10</Bulk>
 			<MeleeCounterParryBonus>1.08</MeleeCounterParryBonus>
 			<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2.84</VEF_MeleeWeaponRange>

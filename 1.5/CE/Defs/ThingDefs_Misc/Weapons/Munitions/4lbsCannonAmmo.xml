@@ -8,7 +8,7 @@
 		<ammoTypes>
 			<Ammo_4lbsCannonBall_Round>Bullet_4lbsCannonBall_Round</Ammo_4lbsCannonBall_Round>
 			<Ammo_4lbsCannonBall_Grape>Bullet_4lbsCannonBall_Grape</Ammo_4lbsCannonBall_Grape>
-			<Ammo_4lbsCannonBall_Buck>Bullet_4lbsCannonBall_Buck</Ammo_4lbsCannonBall_Buck>
+			<Ammo_4lbsCannonBall_Canister>Bullet_4lbsCannonBall_Canister</Ammo_4lbsCannonBall_Canister>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 
@@ -57,7 +57,7 @@
 		<label>round shot</label>
 		<description>A solid ball of metal fired, capable of delivering significant damage on a direct hit.</description>
 		<graphicData>
-			<texPath>Things/Ammo/Cannon/BlackPowder/Roundshot</texPath>
+			<texPath>Weapons/Munitions/Cannon/Roundshot</texPath>
 		</graphicData>
 		<ammoClass>CannonBall</ammoClass>
 	</ThingDef>
@@ -67,17 +67,17 @@
 		<label>grape shot shell</label>
 		<description>A bundle of medium sized metal balls, fired in a wide spread to deal horrific damage against enemy infantry.</description>
 		<graphicData>
-			<texPath>Things/Ammo/Cannon/BlackPowder/Grapeshot</texPath>
+			<texPath>Weapons/Munitions/Cannon/Grapeshot</texPath>
 		</graphicData>
 		<ammoClass>Grapeshot</ammoClass>
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo_4lbsCannonBall_Base">
-		<defName>Ammo_4lbsCannonBall_Buck</defName>
+		<defName>Ammo_4lbsCannonBall_Canister</defName>
 		<label>buck shot shell</label>
-		<description>A large bundle of musket balls, fired in a wide spread to deal horrific damage against enemy infantry.</description>
+		<description>A canister of musket balls, fired in a wide spread to deal horrific damage against enemy infantry.</description>
 		<graphicData>
-			<texPath>Things/Ammo/Cannon/BlackPowder/Canister</texPath>
+			<texPath>Weapons/Munitions/Cannon/Canister</texPath>
 		</graphicData>
 		<ammoClass>BuckShot</ammoClass>
 	</ThingDef>
@@ -140,8 +140,8 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="BaseBulletCE">
-		<defName>Bullet_4lbsCannonBall_Buck</defName>
-		<label>buck shot</label>
+		<defName>Bullet_4lbsCannonBall_Canister</defName>
+		<label>canister shot</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Big</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -215,7 +215,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_4lbsCannonBall_Buck</defName>
+		<defName>MakeAmmo_4lbsCannonBall_Canister</defName>
 		<label>Make buck shot cannon shells x5</label>
 		<description>Craft 5 buck shot cannon shells.</description>
 		<jobString>Making buck shot cannon shells.</jobString>

@@ -30,6 +30,9 @@
 		</thingCategories>
 		<apparel>
 			<parentTagDef>ApparelHead</parentTagDef>
+			<renderSkipFlags>
+				<li>Hair</li>
+			</renderSkipFlags>
 			<bodyPartGroups>
 				<li>FullHead</li>
 				<li>Neck</li>

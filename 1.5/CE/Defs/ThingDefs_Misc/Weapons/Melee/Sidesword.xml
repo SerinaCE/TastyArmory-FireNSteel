@@ -99,7 +99,7 @@
 					</north>
 					<east>
 						<drawOffset>(0.1,0,-0.35)</drawOffset>
-						<angleOffset>0</angleOffset>
+						<angleOffset>-20</angleOffset>
 					</east>
 					<south>
 						<drawOffset>(0.1,0,-0.35)</drawOffset>

@@ -38,6 +38,9 @@
 		<apparel>
 			<wornGraphicPath>Apparel/Helmets/TA_Burgonet/TA_Burgonet</wornGraphicPath>
 			<parentTagDef>ApparelHead</parentTagDef>
+			<renderSkipFlags>
+				<li>Hair</li>
+			</renderSkipFlags>
 			<bodyPartGroups>
 				<li>FullHead</li>
 				<li>Neck</li>

@@ -51,13 +51,13 @@
 			<wornGraphicPath>Apparel/Accessories/TA_HussarWing/TA_HussarWing</wornGraphicPath>
 			<wornGraphicData>
 				<east>
-					<offset>(0,0.0)</offset>
+					<offset>(0,0)</offset>
 				</east>
 				<west>
-					<offset>(0,0.0)</offset>
+					<offset>(0,0)</offset>
 				</west>
 				<north>
-					<offset>(0,0.0)</offset>
+					<offset>(0,0)</offset>
 				</north>
 				<south>
 					<offset>(0,0)</offset>

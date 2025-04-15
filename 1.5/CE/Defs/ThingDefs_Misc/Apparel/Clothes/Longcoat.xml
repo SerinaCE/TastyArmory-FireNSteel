@@ -31,6 +31,7 @@
 				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
+				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Clothes/TA_Longcoat/TA_Longcoat</wornGraphicPath>
 			<layers>
@@ -63,7 +64,7 @@
 		</graphicData>
 		<statBases>
 			<StuffEffectMultiplierInsulation_Cold>1.6</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>-0.5</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Heat>-0.2</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<apparel>
 			<wornGraphicPath>Apparel/Clothes/TA_Longcoat/TA_Longcoat</wornGraphicPath>
@@ -86,7 +87,7 @@
 		<recipeMaker Inherit="False" />
 		<statBases>
 			<StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<apparel>
 			<drawData>
