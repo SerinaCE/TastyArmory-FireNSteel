@@ -1,14 +1,15 @@
 TODO:  
 
 defs for:   
--clothes: shields  
+-shields (3side display and all)
 -banners  
--ranged: wheellock grenade launcher, grenades  
--structures: gabions, artillery  
--melee weapons:  
-    -
-assets and defs for:  
--civilian clothes  
--more buildings if needed i guess  
+-melee weapons:
+    -bardiche
+    -boarding axe (1hand smaller sapper axe)
+    -battle axe
+    -warpick
+    -hanger/cutlass
+    -yatagan
 
-vanilla defs...
+
+debug: 4lbs cannon ammo texture paths
