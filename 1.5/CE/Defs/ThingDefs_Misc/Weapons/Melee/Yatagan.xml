@@ -12,6 +12,7 @@
 		<equippedAngleOffset>-25</equippedAngleOffset>
 		<possessionCount>1</possessionCount>
 		<weaponClasses>
+			<li>Melee</li>
 			<li>MeleePiercer</li>
 		</weaponClasses>
 		<weaponTags>

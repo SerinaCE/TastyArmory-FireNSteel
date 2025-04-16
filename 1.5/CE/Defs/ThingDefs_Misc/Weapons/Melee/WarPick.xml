@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>TA_Hanger</defName>
-		<label>hanger</label>
+		<defName>TA_WarPick</defName>
+		<label>war pick</label>
 		<description>or cutlass</description>
 		<graphicData>
-			<texPath>Weapons/TA_Hanger</texPath>
+			<texPath>Weapons/TA_WarPick</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -13,7 +13,7 @@
 		<possessionCount>1</possessionCount>
 		<weaponClasses>
 			<li>Melee</li>
-			<li>MeleePiercer</li>
+			<li>MeleeBlunt</li>
 		</weaponClasses>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
@@ -22,46 +22,50 @@
 		<stuffCategories>
 			<li>Metallic_Weapon</li>
 		</stuffCategories>
-		<costStuffCount>55</costStuffCount>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<WoodLog>35</WoodLog>
+		</costList>
 		<statBases>
-			<WorkToMake>10000</WorkToMake>
-			<Mass>0.85</Mass>
-			<Bulk>4</Bulk>
-			<MeleeCounterParryBonus>0.5</MeleeCounterParryBonus>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>1.2</Mass>
+			<Bulk>5.5</Bulk>
+			<MeleeCounterParryBonus>0.33</MeleeCounterParryBonus>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
-				<label>handle</label>
+				<label>shaft</label>
 				<capacities>
 					<li>Poke</li>
 				</capacities>
 				<power>2</power>
-				<chanceFactor>0.33</chanceFactor>
-				<cooldownTime>1.44</cooldownTime>
-				<armorPenetrationBlunt>0.425</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				<cooldownTime>1.59</cooldownTime>
+				<chanceFactor>0.05</chanceFactor>
+				<armorPenetrationBlunt>0.625</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
 			</li>
 			<li Class="CombatExtended.ToolCE">
-				<label>point</label>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.35</cooldownTime>
+				<chanceFactor>0.95</chanceFactor>
+				<armorPenetrationBlunt>9.625</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>19</power>
-				<cooldownTime>1.44</cooldownTime>
-				<armorPenetrationBlunt>0.425</armorPenetrationBlunt>
-				<armorPenetrationSharp>0.5</armorPenetrationSharp>
+				<power>15</power>
+				<cooldownTime>1.80</cooldownTime>
+				<chanceFactor>0.7</chanceFactor>
+				<armorPenetrationBlunt>6.5</armorPenetrationBlunt>
+				<armorPenetrationSharp>2.8</armorPenetrationSharp>
 				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>edge</label>
-				<capacities>
-					<li>Cut</li>
-				</capacities>
-				<power>20</power>
-				<cooldownTime>1.34</cooldownTime>
-				<armorPenetrationBlunt>0.956</armorPenetrationBlunt>
-				<armorPenetrationSharp>0.43</armorPenetrationSharp>
-				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 			</li>
 		</tools>
 		<recipeMaker>
@@ -71,9 +75,9 @@
 			</skillRequirements>
 		</recipeMaker>
 		<equippedStatOffsets>
-			<MeleeCritChance>0.28</MeleeCritChance>
-			<MeleeParryChance>0.34</MeleeParryChance>
-			<MeleeDodgeChance>0.25</MeleeDodgeChance>
+			<MeleeCritChance>0.4</MeleeCritChance>
+			<MeleeParryChance>0.19</MeleeParryChance>
+			<MeleeDodgeChance>0.2</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
