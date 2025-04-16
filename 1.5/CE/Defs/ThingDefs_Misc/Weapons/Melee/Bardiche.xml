@@ -2,16 +2,16 @@
 <Defs>
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>TA_Halberd</defName>
-		<label>halberd</label>
+		<defName>TA_Bardiche</defName>
+		<label>bardiche</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Weapons/TA_Halberd</texPath>
+			<texPath>Weapons/TA_Bardiche</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>1.2</drawSize>
+			<drawSize>1.05</drawSize>
 		</graphicData>
-		<equippedAngleOffset>45</equippedAngleOffset>
+		<equippedAngleOffset>0</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="False">
 			<li>MedievalMeleeDecent</li>
@@ -32,9 +32,9 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<WoodLog>60</WoodLog>
+			<WoodLog>50</WoodLog>
 		</costList>
-		<costStuffCount>80</costStuffCount>
+		<costStuffCount>60</costStuffCount>
 		<stuffCategories>
 			<li>Metallic_Weapon</li>
 		</stuffCategories>
@@ -45,13 +45,13 @@
 			<WorkToMake>10000</WorkToMake>
 			<Mass>2</Mass>
 			<Bulk>10</Bulk>
-			<MeleeCounterParryBonus>1.08</MeleeCounterParryBonus>
+			<MeleeCounterParryBonus>1.3</MeleeCounterParryBonus>
 			<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2.84</VEF_MeleeWeaponRange>
 		</statBases>
 		<equippedStatOffsets>
-			<MeleeCritChance>0.22</MeleeCritChance>
-			<MeleeParryChance>1.53</MeleeParryChance>
-			<MeleeDodgeChance>0.67</MeleeDodgeChance>
+			<MeleeCritChance>0.25</MeleeCritChance>
+			<MeleeParryChance>0.5</MeleeParryChance>
+			<MeleeDodgeChance>0.5</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<tradeTags>
 			<li>WeaponMelee</li>
@@ -64,6 +64,7 @@
 				</capacities>
 				<power>6</power>
 				<cooldownTime>1.31</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
 				<armorPenetrationBlunt>2.025</armorPenetrationBlunt>
 				<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
 			</li>
@@ -72,9 +73,9 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>30</power>
-				<cooldownTime>2.5</cooldownTime>
-				<chanceFactor>1.165</chanceFactor>
+				<power>35</power>
+				<cooldownTime>2.6</cooldownTime>
+				<chanceFactor>1</chanceFactor>
 				<armorPenetrationBlunt>8.1</armorPenetrationBlunt>
 				<armorPenetrationSharp>1.62</armorPenetrationSharp>
 				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
@@ -84,9 +85,9 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>30</power>
+				<power>25</power>
 				<cooldownTime>1.16</cooldownTime>
-				<chanceFactor>1.165</chanceFactor>
+				<chanceFactor>0.35</chanceFactor>
 				<armorPenetrationBlunt>2.025</armorPenetrationBlunt>
 				<armorPenetrationSharp>2.03</armorPenetrationSharp>
 				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
@@ -96,22 +97,22 @@
 			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<weaponDraftedDrawOffsets>
 					<north>
-						<drawOffset>(0.34,0,0.60)</drawOffset>
-						<angleOffset>-143</angleOffset>
+						<drawOffset>(-0.34,0,0.30)</drawOffset>
+						<angleOffset>-98</angleOffset>
 					</north>
 					<east>
-						<drawOffset>(0.15,0,0.60)</drawOffset>
-						<angleOffset>-122</angleOffset>
+						<drawOffset>(0.1,0,0.30)</drawOffset>
+						<angleOffset>-77</angleOffset>
 					</east>
 					<south>
-						<drawOffset>(-0.34,0,0.60)</drawOffset>
-						<angleOffset>-143</angleOffset>
+						<drawOffset>(0.34,0,0.30)</drawOffset>
+						<angleOffset>-98</angleOffset>
 					</south>
 					<west>
-						<drawOffset>(-0.15,0,0.60)</drawOffset>
-						<angleOffset>122</angleOffset>
+						<drawOffset>(-0.1,0,0.30)</drawOffset>
+						<angleOffset>77</angleOffset>
 					</west>
-				</weaponDraftedDrawOffsets>
+				</weaponDraftedDrawOffsets>		
 			</li>
 		</modExtensions>
 	</ThingDef>

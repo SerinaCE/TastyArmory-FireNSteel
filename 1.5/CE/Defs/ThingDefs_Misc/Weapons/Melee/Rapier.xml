@@ -74,7 +74,7 @@
 				<cooldownTime>1.25</cooldownTime>
 				<chanceFactor>0.85</chanceFactor>
 				<armorPenetrationBlunt>2.25</armorPenetrationBlunt>
-				<armorPenetrationSharp>2.4</armorPenetrationSharp>
+				<armorPenetrationSharp>1.5</armorPenetrationSharp>
 				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
 			</li>
 			<li Class="CombatExtended.ToolCE">
@@ -86,7 +86,7 @@
 				<cooldownTime>1.46</cooldownTime>
 				<chanceFactor>0.10</chanceFactor>
 				<armorPenetrationBlunt>1.3</armorPenetrationBlunt>
-				<armorPenetrationSharp>0.58</armorPenetrationSharp>
+				<armorPenetrationSharp>0.2</armorPenetrationSharp>
 				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 			</li>
 		</tools>

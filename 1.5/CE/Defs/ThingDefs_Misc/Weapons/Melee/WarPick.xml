@@ -3,11 +3,12 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>TA_WarPick</defName>
 		<label>war pick</label>
-		<description>or cutlass</description>
+		<description>.</description>
 		<graphicData>
 			<texPath>Weapons/TA_WarPick</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.95</drawSize>
 		</graphicData>
 		<equippedAngleOffset>-25</equippedAngleOffset>
 		<possessionCount>1</possessionCount>
@@ -64,7 +65,7 @@
 				<cooldownTime>1.80</cooldownTime>
 				<chanceFactor>0.7</chanceFactor>
 				<armorPenetrationBlunt>6.5</armorPenetrationBlunt>
-				<armorPenetrationSharp>2.8</armorPenetrationSharp>
+				<armorPenetrationSharp>2.7</armorPenetrationSharp>
 				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
 			</li>
 		</tools>
@@ -75,7 +76,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<equippedStatOffsets>
-			<MeleeCritChance>0.4</MeleeCritChance>
+			<MeleeCritChance>0.45</MeleeCritChance>
 			<MeleeParryChance>0.19</MeleeParryChance>
 			<MeleeDodgeChance>0.2</MeleeDodgeChance>
 		</equippedStatOffsets>
