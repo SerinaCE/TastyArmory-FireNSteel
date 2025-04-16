@@ -105,8 +105,9 @@
 		<statBases>
 			<WorkToMake>2500</WorkToMake>
 		</statBases>
-		<apparel>
+		<apparel>			
 			<wornGraphicPath>Apparel/Hats/TA_MusketeerHat/TA_MusketeerHat</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
