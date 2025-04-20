@@ -1,33 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== Flintlock Musket ==================== -->
-	
-	<ThingDef ParentName="BaseBullet">
-		<defName>Vanilla_Bullet_Musket</defName>
-		<label>musket bullet</label>
-		<graphicData>
-			<texPath>Things/Projectile/Bullet_Small</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<flyOverhead>false</flyOverhead>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>20</damageAmountBase>
-			<armorPenetrationBase>0.4</armorPenetrationBase>
-			<speed>50</speed>
-		</projectile>
-	</ThingDef>
 
   <ThingDef ParentName="BaseMakeableGun">
-    <defName>TC_MatchlockMusket</defName>
-    <label>matchlock musket</label>
+    <defName>TA_OttomanMiquelet</defName>
+    <label>Ottoman miquelet arquebus</label>
     <description>.</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
-      <texPath>Weapons/Ranged/tm_MatchlockMusket</texPath>
+      <texPath>Weapons/TA_JanissaryMiquelet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.25</drawSize>
+	  <drawSize>1.05</drawSize>
     </graphicData>
 		<equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -35,8 +18,8 @@
       <li>LongShots</li>
     </weaponClasses>
     <costList>
-      <Steel>70</Steel>
-      <WoodLog>10</WoodLog>
+		<Steel>60</Steel>
+		<WoodLog>12</WoodLog>
     </costList>
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
@@ -46,7 +29,6 @@
       <li>SimpleGun</li>
       <li>NeolithicRangedHeavy</li>
       <li>NeolithicRangedChief</li>
-      <li>CE_AI_AR</li>
     </weaponTags>
     <recipeMaker>
       <recipeUsers>
@@ -55,21 +37,21 @@
       </recipeUsers>
       <researchPrerequisite>Vanilla_GunpowderWeaponry</researchPrerequisite>
     </recipeMaker><statBases>
-				<WorkToMake>8000</WorkToMake>
+				<WorkToMake>13000</WorkToMake>
 				<Mass>4</Mass>
-				<AccuracyTouch>0.30</AccuracyTouch>
-				<AccuracyShort>0.35</AccuracyShort>
-				<AccuracyMedium>0.70</AccuracyMedium>
-				<AccuracyLong>0.50</AccuracyLong>
-				<RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
+				<AccuracyTouch>0.75</AccuracyTouch>
+				<AccuracyShort>0.7</AccuracyShort>
+				<AccuracyMedium>0.55</AccuracyMedium>
+				<AccuracyLong>0.4</AccuracyLong>
+				<RangedWeapon_Cooldown>3.8</RangedWeapon_Cooldown>
 			</statBases>
 			<verbs>
 				<li>
 					<verbClass>Verb_Shoot</verbClass>
 					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Vanilla_Bullet_Musket</defaultProjectile>
-					<warmupTime>0.6</warmupTime>
-					<range>24.9</range>
+					<defaultProjectile>TA_Bullet_Arquebus</defaultProjectile>
+					<warmupTime>1.5</warmupTime>
+					<range>34.9</range>
 					<soundCast>Shot_Revolver</soundCast>
 					<soundCastTail>GunTail_Medium</soundCastTail>
 					<muzzleFlashScale>9</muzzleFlashScale>
@@ -77,11 +59,11 @@
 			</verbs>
 			<tools>
 				<li>
-					<label>grip</label>
+					<label>stock</label>
 					<capacities>
 						<li>Blunt</li>
 					</capacities>
-					<power>8</power>
+					<power>9</power>
 					<cooldownTime>2</cooldownTime>
 				</li>
 				<li>
@@ -91,14 +73,6 @@
 						<li>Poke</li>
 					</capacities>
 					<power>8</power>
-					<cooldownTime>2</cooldownTime>
-				</li>
-				<li>
-					<label>bayonet</label>
-					<capacities>
-						<li>Stab</li>
-					</capacities>
-					<power>14</power>
 					<cooldownTime>2</cooldownTime>
 				</li>
 			</tools>

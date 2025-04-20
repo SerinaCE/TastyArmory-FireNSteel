@@ -4,35 +4,36 @@
   <!-- ==================== Flintlock Blunderbuss ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>Vanilla_Bullet_Blunderbuss</defName>
+		<defName>TA_Bullet_WheellockCarbine</defName>
 		<label>blundershot</label>
 		<graphicData>
 		<texPath>Things/Projectile/Bullet_Shotgun</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<projectile>
-		<damageDef>Bullet</damageDef>
-		<damageAmountBase>18</damageAmountBase>
-		<speed>60</speed>
+			<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<stoppingPower>2.5</stoppingPower>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<speed>55</speed>
 		</projectile>
 	</ThingDef>
 			
   <ThingDef ParentName="BaseMakeableGun">
-    <defName>TC_MatchlockCarbine</defName>
-    <label>matchlock carbine</label>
+    <defName>TA_WheellockCarbine</defName>
+    <label>wheellock carbine</label>
     <description>.</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
-      <texPath>Weapons/Ranged/tm_MatchlockCarbine</texPath>
+      <texPath>Weapons/TA_WheellockCarbine</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.95</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
     <costList>
-      <Steel>40</Steel>
+      <Steel>50</Steel>
       <WoodLog>10</WoodLog>
     </costList>
     <thingSetMakerTags>
@@ -43,7 +44,6 @@
       <li>SimpleGun</li>
       <li>NeolithicRangedHeavy</li>
       <li>NeolithicRangedChief</li>
-      <li>CE_AI_BROOM</li>
     </weaponTags>
     <recipeMaker>
       <recipeUsers>
@@ -53,21 +53,21 @@
       <researchPrerequisite>Vanilla_GunpowderWeaponry</researchPrerequisite>
     </recipeMaker>
 			<statBases>
-				<WorkToMake>6000</WorkToMake>
-				<Mass>1.6</Mass>
-				<AccuracyTouch>0.60</AccuracyTouch>
-				<AccuracyShort>0.75</AccuracyShort>
-				<AccuracyMedium>0.45</AccuracyMedium>
-				<AccuracyLong>0.35</AccuracyLong>
+				<WorkToMake>12000</WorkToMake>
+				<Mass>2.5</Mass>
+				<AccuracyTouch>0.70</AccuracyTouch>
+				<AccuracyShort>0.90</AccuracyShort>
+				<AccuracyMedium>0.55</AccuracyMedium>
+				<AccuracyLong>0.30</AccuracyLong>
 				<RangedWeapon_Cooldown>3.6</RangedWeapon_Cooldown>
 			</statBases>
 			<verbs>
 				<li>
 					<verbClass>Verb_Shoot</verbClass>
 					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Vanilla_Bullet_Blunderbuss</defaultProjectile>
-					<warmupTime>0.6</warmupTime>
-					<range>14.9</range>
+					<defaultProjectile>TA_Bullet_WheellockCarbine</defaultProjectile>
+					<warmupTime>1.1</warmupTime>
+					<range>24</range>
 					<soundCast>Shot_Shotgun</soundCast>
 					<soundCastTail>GunTail_Light</soundCastTail>
 					<muzzleFlashScale>9</muzzleFlashScale>
@@ -75,11 +75,11 @@
 			</verbs>
 			<tools>
 				<li>
-					<label>grip</label>
+					<label>stock</label>
 					<capacities>
 						<li>Blunt</li>
 					</capacities>
-					<power>8</power>
+					<power>9</power>
 					<cooldownTime>2</cooldownTime>
 				</li>
 				<li>

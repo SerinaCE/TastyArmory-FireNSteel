@@ -19,7 +19,7 @@
 		<techLevel>Medieval</techLevel>
 		<costStuffCount>160</costStuffCount>
 		<stuffCategories>
-			<li>Steeled</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<equippedStatOffsets>
 			<MeleeDodgeChance>-0.05</MeleeDodgeChance>

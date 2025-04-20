@@ -12,7 +12,7 @@
 		<techLevel>Medieval</techLevel>
 		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
-			<li>Steeled</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>125</MaxHitPoints>
@@ -32,7 +32,6 @@
 				<li>UpperHead</li>
 			</bodyPartGroups>
 			<layers>
-				<li>OnHead</li>
 				<li>Overhead</li>
 			</layers>
 			<defaultOutfitTags>

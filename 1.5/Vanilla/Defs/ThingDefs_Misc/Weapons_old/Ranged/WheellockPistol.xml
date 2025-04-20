@@ -2,30 +2,29 @@
 <Defs>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>Vanilla_Bullet_WheellockPistol</defName>
-		<label>musket bullet</label>
+		<defName>TA_Bullet_WheellockPistol</defName>
+		<label>pistol bullet</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>15</damageAmountBase>
+			<damageAmountBase>17</damageAmountBase>
+			<stoppingPower>2</stoppingPower>
 			<armorPenetrationBase>0.3</armorPenetrationBase>
 			<speed>50</speed>
 		</projectile>
 	</ThingDef>
 			
   <ThingDef ParentName="BaseMakeableGun">
-    <defName>TC_WheellockPistol</defName>
+    <defName>TA_WheellockPistol</defName>
     <label>wheellock pistol</label>
     <description>.</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
-      <texPath>Weapons/Ranged/tm_WheellockPistol</texPath>
+      <texPath>Weapons/TA_WheellockPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.85</drawSize>
     </graphicData>
     <soundInteract>Interact_Revolver</soundInteract>
     <weaponClasses>
@@ -41,8 +40,6 @@
       <li>SimpleGun</li>
       <li>NeolithicRangedHeavy</li>
       <li>NeolithicRangedChief</li>
-      <li>CE_AI_BROOM</li>
-      <li>CE_OneHandedWeapon</li>
     </weaponTags>
     <recipeMaker>
       <recipeUsers>
@@ -52,20 +49,20 @@
       <researchPrerequisite>Vanilla_GunpowderWeaponry</researchPrerequisite>
     </recipeMaker>
 		<statBases>
-			<WorkToMake>8000</WorkToMake>
+			<WorkToMake>11000</WorkToMake>
 			<Mass>1.2</Mass>
-			<AccuracyTouch>0.30</AccuracyTouch>
-			<AccuracyShort>0.35</AccuracyShort>
-			<AccuracyMedium>0.70</AccuracyMedium>
-			<AccuracyLong>0.50</AccuracyLong>
-			<RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.8</AccuracyTouch>
+			<AccuracyShort>0.7</AccuracyShort>
+			<AccuracyMedium>0.4</AccuracyMedium>
+			<AccuracyLong>0.2</AccuracyLong>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Vanilla_Bullet_WheellockPistol</defaultProjectile>
-				<warmupTime>0.6</warmupTime>
+				<defaultProjectile>TA_Bullet_WheellockPistol</defaultProjectile>
+				<warmupTime>0.9</warmupTime>
 				<range>18.9</range>
 				<soundCast>Shot_Revolver</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
@@ -92,6 +89,5 @@
 			</li>
 		</tools>
   </ThingDef>
-
-
+  
 </Defs>

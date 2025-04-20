@@ -2,16 +2,16 @@
 <Defs>
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>TC_SapperAxe</defName>
-		<label>sapper axe</label>
-		<description>...</description>
+		<defName>TA_BoardingAxe</defName>
+		<label>borading axe</label>
+		<description>.</description>
 		<graphicData>
-			<texPath>Weapons/TA_SapperAxe</texPath>
+			<texPath>Weapons/TA_BoardingAxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.00</drawSize>
+			<drawSize>0.95</drawSize>
 		</graphicData>
-    <equippedAngleOffset>-25</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="False">
 			<li>MedievalMeleeBasic</li>
@@ -73,28 +73,6 @@
 				<cooldownTime>1</cooldownTime>
 			  </li>
 		</tools>
-		<modExtensions>
-			<li Class="VFECore.ThingDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-				<weaponDraftedDrawOffsets>
-					<north>
-						<drawOffset>(0.34,0,0.70)</drawOffset>
-						<angleOffset>-143</angleOffset>
-					</north>
-					<east>
-						<drawOffset>(0.1,0,0.70)</drawOffset>
-						<angleOffset>-122</angleOffset>
-					</east>
-					<south>
-						<drawOffset>(-0.34,0,0.70)</drawOffset>
-						<angleOffset>-143</angleOffset>
-					</south>
-					<west>
-						<drawOffset>(-0.1,0,0.70)</drawOffset>
-						<angleOffset>122</angleOffset>
-					</west>
-				</weaponDraftedDrawOffsets>		
-			</li>
-		</modExtensions>
   </ThingDef>
 	
 </Defs>

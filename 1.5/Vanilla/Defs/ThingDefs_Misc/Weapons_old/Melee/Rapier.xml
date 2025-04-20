@@ -6,10 +6,10 @@
     <label>rapier</label>
     <description>.</description>
     <graphicData>
-			<texPath>Weapons/TA_Rapier</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>1.00</drawSize>
+		<texPath>Weapons/TA_Rapier</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>1.00</drawSize>
     </graphicData>
 		<equippedAngleOffset>30</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>

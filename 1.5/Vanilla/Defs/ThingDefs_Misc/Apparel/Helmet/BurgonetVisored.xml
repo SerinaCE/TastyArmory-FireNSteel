@@ -13,7 +13,7 @@
 		<techLevel>Medieval</techLevel>
 		<costStuffCount>58</costStuffCount>
 		<stuffCategories>
-			<li>Steeled</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>175</MaxHitPoints>
@@ -36,8 +36,6 @@
 			</bodyPartGroups>
 			<layers>
 				<li>Overhead</li>
-				<li>OnHead</li>
-				<li>StrappedHead</li>
 			</layers>
 			<tags>
 				<li>MedievalMilitary</li>
@@ -82,9 +80,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<equippedStatOffsets>
-			<AimingAccuracy>-0.4</AimingAccuracy>
 			<MeleeHitChance>-2</MeleeHitChance>
-			<Suppressability>-0.2</Suppressability>
 		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Apparel/Helmets/TA_BurgonetVisored/TA_BurgonetVisored</wornGraphicPath>

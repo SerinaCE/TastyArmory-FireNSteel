@@ -7,9 +7,9 @@
     <description>.</description>
     <graphicData>
       <texPath>Weapons/TA_Pike</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>1.7</drawSize>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>1.7</drawSize>
     </graphicData>
     <equippedAngleOffset>35</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>

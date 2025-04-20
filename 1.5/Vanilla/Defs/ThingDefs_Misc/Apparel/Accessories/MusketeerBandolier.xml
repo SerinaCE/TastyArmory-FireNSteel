@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="TA_ApparelCarryGear_Base">
+	<ThingDef ParentName="TA_ApparelCarryGearBase">
 		<defName>TA_MusketeerBandolier</defName>
 		<label>musketeer bandolier</label>
 		<description>.</description>
@@ -43,7 +43,7 @@
 				<li>Torso</li>
 			</bodyPartGroups>
 			<layers>
-				<li>Webbing</li>
+				<li>TA_Webbing</li>
 			</layers>
 			<tags>
 				<li>Medieval</li>

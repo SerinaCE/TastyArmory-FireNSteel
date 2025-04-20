@@ -12,7 +12,7 @@
 		<techLevel>Medieval</techLevel>
 		<costStuffCount>50</costStuffCount>
 		<stuffCategories>
-			<li>Steeled</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -37,9 +37,7 @@
 				<li>Eyes</li>
 			</bodyPartGroups>
 			<layers>
-				<li>OnHead</li>
 				<li>Overhead</li>
-				<li>StrappedHead</li>
 			</layers>
 			<defaultOutfitTags>
 				<li>Soldier</li>

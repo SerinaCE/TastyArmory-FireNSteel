@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="TA_ApparelCarryGear_Base">
+	<ThingDef ParentName="TA_ApparelCarryGearBase">
 		<defName>TA_HussarWings</defName>
 		<label>hussar wings</label>
 		<description>.</description>
@@ -16,7 +16,6 @@
 			<Mass>1</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<Suppressability>-0.5</Suppressability>
 			<PainShockThreshold>0.1</PainShockThreshold>
 		</equippedStatOffsets>
 		<costList>
@@ -37,7 +36,7 @@
 				<li>Shoulders</li>
 			</bodyPartGroups>
 			<layers>
-				<li>Backpack</li>
+				<li>Belt</li>
 			</layers>
 			<tags>
 				<li>Neolithic</li>

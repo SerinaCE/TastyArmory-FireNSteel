@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="TA_ApparelCarryGear_Base">
+	<ThingDef ParentName="TA_ApparelCarryGearBase">
 		<defName>TM_SashBelt</defName>
 		<label>sash belt</label>
 		<description>.</description>
@@ -42,7 +42,7 @@
 				<li>Waist</li>
 			</bodyPartGroups>
 			<layers>
-				<li>Webbing</li>
+				<li>TA_Webbing</li>
 			</layers>
 			<tags>
 				<li>MedievalArmorDecent</li>
