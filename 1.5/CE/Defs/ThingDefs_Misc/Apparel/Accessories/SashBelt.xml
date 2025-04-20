@@ -37,7 +37,7 @@
 					<layer>24</layer>
 				</defaultData>
 			</drawData>
-			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
 				<li>Waist</li>

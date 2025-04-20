@@ -17,19 +17,22 @@
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
-			<WorkToMake>6000</WorkToMake>
+			<WorkToMake>7000</WorkToMake>
 			<Mass>1</Mass>
 			<Bulk>1</Bulk>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<ReloadSpeed>0.1</ReloadSpeed>
-			<CarryBulk>17</CarryBulk>
+			<CarryBulk>20</CarryBulk>
 		</equippedStatOffsets>
-		<costStuffCount>45</costStuffCount>
+		<costStuffCount>35</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
 		<apparel>
 			<drawData>
 				<defaultData>
@@ -38,7 +41,6 @@
 			</drawData>
 			<wornGraphicPath>Apparel/Accessories/TA_PowderPouch/TA_PowderPouch</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
 				<li>Shoulders</li>

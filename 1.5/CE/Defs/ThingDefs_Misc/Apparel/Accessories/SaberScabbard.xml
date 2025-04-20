@@ -41,7 +41,6 @@
 					<layer>28</layer>
 				</defaultData>
 			</drawData>
-			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
 				<li>Legs</li>

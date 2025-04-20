@@ -29,7 +29,6 @@
 		</recipeMaker>
 		<apparel>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
-			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<careIfDamaged>false</careIfDamaged>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>

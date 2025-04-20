@@ -18,16 +18,19 @@
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToMake>6000</WorkToMake>
-			<Mass>1</Mass>
+			<Mass>1.3</Mass>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryingCapacity>30</CarryingCapacity>
+			<CarryingCapacity>24</CarryingCapacity>
 		</equippedStatOffsets>
-		<costStuffCount>45</costStuffCount>
+		<costStuffCount>35</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
 		<apparel>
 			<drawData>
 				<defaultData>
@@ -36,7 +39,6 @@
 			</drawData>
 			<wornGraphicPath>Apparel/Accessories/TA_PowderPouch/TA_PowderPouch</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
 				<li>Shoulders</li>
