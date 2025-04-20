@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<!-- ==================== PlateCuirass plate ==================== -->
 	<ThingDef ParentName="ArmorSmithableBase">
-		<defName>TA_Bazubands</defName>
-		<label>bazubands</label>
+		<defName>TC_Gorget</defName>
+		<label>gorget</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Accessories/TA_Bazubands/TA_Bazubands</texPath>
+			<texPath>Apparel/Armor/TA_Gorget/TA_Gorget_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
@@ -17,31 +18,35 @@
 			</skillRequirements>
 		</recipeMaker>
 		<techLevel>Medieval</techLevel>
+		<costStuffCount>15</costStuffCount>
 		<stuffCategories>
 			<li>Steeled</li>
 		</stuffCategories>
-		<costStuffCount>30</costStuffCount>
-		<equippedStatOffsets></equippedStatOffsets>
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>7000</WorkToMake>
-			<Bulk>3</Bulk>
-			<WornBulk>0.5</WornBulk>
-			<Mass>1.2</Mass>
-			<StuffEffectMultiplierArmor>1.5</StuffEffectMultiplierArmor>
-			<EquipDelay>1</EquipDelay>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<thingCategories>
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<apparel>
-			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<drawData>
+				<defaultData>
+					<layer>23</layer>
+				</defaultData>
+			</drawData>
+			<!--shellRenderedBehindHead>true</shellRenderedBehindHead-->
+			<developmentalStageFilter>Adult</developmentalStageFilter>
 			<bodyPartGroups>
-				<li>Hands</li>
-				<li>Arms</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
 			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Armor/TA_Gorget/TA_Gorget</wornGraphicPath>
 			<layers>
-				<li>TA_BootGlove</li>
+				<li>Middle</li>
 			</layers>
 			<tags>
 				<li>MedievalMilitary</li>
@@ -56,28 +61,11 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<modExtensions>
-			<li Class="CombatExtended.PartialArmorExt">
-				<stats>
-					<li>
-						<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
-						<parts>
-							<li>Arm</li>
-						</parts>
-					</li>
-					<li>
-						<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
-						<parts>
-							<li>Arm</li>
-						</parts>
-					</li>
-				</stats>
-			</li>
-		</modExtensions>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
 		<tradeTags>
 			<li>Clothing</li>
 			<li>Armor</li>
 		</tradeTags>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
+
 </Defs>

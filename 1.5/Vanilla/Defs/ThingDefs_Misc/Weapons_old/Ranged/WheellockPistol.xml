@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== Flintlock Pistol ==================== -->
 	<ThingDef ParentName="BaseBullet">
-		<defName>Vanilla_Bullet_MusketPistol</defName>
+		<defName>Vanilla_Bullet_WheellockPistol</defName>
 		<label>musket bullet</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
@@ -12,7 +11,7 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>20</damageAmountBase>
+			<damageAmountBase>15</damageAmountBase>
 			<armorPenetrationBase>0.3</armorPenetrationBase>
 			<speed>50</speed>
 		</projectile>
@@ -65,7 +64,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Vanilla_Bullet_MusketPistol</defaultProjectile>
+				<defaultProjectile>Vanilla_Bullet_WheellockPistol</defaultProjectile>
 				<warmupTime>0.6</warmupTime>
 				<range>18.9</range>
 				<soundCast>Shot_Revolver</soundCast>

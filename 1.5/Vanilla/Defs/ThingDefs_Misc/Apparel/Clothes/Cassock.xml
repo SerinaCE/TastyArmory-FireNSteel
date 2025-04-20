@@ -16,7 +16,7 @@
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>9000</WorkToMake>
 			<Mass>2</Mass>
-			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.1</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1</EquipDelay>
@@ -111,24 +111,6 @@
 				<Label>button up</Label>
 			</li>
 		</comps>
-		<modExtensions>
-			<li Class="CombatExtended.PartialArmorExt">
-				<stats>
-					<li>
-						<ArmorRating_Sharp>0</ArmorRating_Sharp>
-						<parts>
-							<li>Torso</li>
-						</parts>
-					</li>
-					<li>
-						<ArmorRating_Blunt>0</ArmorRating_Blunt>
-						<parts>
-							<li>Torso</li>
-						</parts>
-					</li>
-				</stats>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 </Defs>

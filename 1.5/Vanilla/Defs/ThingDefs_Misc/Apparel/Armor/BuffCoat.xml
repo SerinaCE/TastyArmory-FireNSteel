@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== Buffcoat ====================-->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>TA_BuffCoat</defName>
+		<label>buffcoat</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Armor/TA_BuffCoat/TA_BuffCoat_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>120</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<equippedStatOffsets></equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToMake>17500</WorkToMake>
+			<Mass>3.8</Mass>
+			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<!--drawData>
+				<defaultData>
+					<layer>20</layer>  ????????
+				</defaultData>
+			</drawData-->
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Armor/TA_BuffCoat/TA_BuffCoat</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Shell</li>
+				<li>TA_UnderArmor</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Clothing</li>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

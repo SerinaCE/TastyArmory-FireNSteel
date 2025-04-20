@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef Name="TA_Hat_Base" ParentName="HatMakeableBase" Abstract="True">
+		<possessionCount>1</possessionCount>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.25</Mass>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.35</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Medieval</li>
+			</tags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_Hat_Base">
+		<defName>TA_FeltHat</defName>
+		<label>felt hat</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Hats/TA_FeltHat/TA_FeltHat_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<apparel>
+			<wornGraphicPath>Apparel/Hats/TA_FeltHat/TA_FeltHat</wornGraphicPath>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Hat_Base">
+		<defName>TA_HatCavalier</defName>
+		<label>cavalier hat</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Hats/TA_CavalierHat/TA_CavalierHat_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<Leather_Bird>5</Leather_Bird>
+		</costList>
+		<equippedStatOffsets>
+			<SocialImpact>0.2</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<statBases>
+			<WorkToMake>3500</WorkToMake>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Apparel/Hats/TA_CavalierHat/TA_CavalierHat</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>	
+	
+	<ThingDef ParentName="TA_Hat_Base">
+		<defName>TA_MusketeerHat</defName>
+		<label>musketeer hat</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Hats/TA_MusketeerHat/TA_MusketeerHat_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>25</costStuffCount>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+		</statBases>
+		<apparel>			
+			<wornGraphicPath>Apparel/Hats/TA_MusketeerHat/TA_MusketeerHat</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Hat_Base">
+		<defName>TA_LandsknechtHat</defName>
+		<label>landskecht hat</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Hats/TA_LandsknechtHat/TA_LandsknechtHat_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<Leather_Bird>5</Leather_Bird>
+		</costList>
+		<equippedStatOffsets>
+			<SocialImpact>0.3</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.4</Mass>
+			<StuffEffectMultiplierArmor>0.30</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Apparel/Hats/TA_LandsknechtHat/TA_LandsknechtHat</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>	
+	
+	<ThingDef ParentName="TA_Hat_Base">
+		<defName>TA_Bonnet</defName>
+		<label>bonnet</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Hats/TA_Bonnet/TA_Bonnet_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Apparel/Hats/TA_Bonnet/TA_Bonnet</wornGraphicPath>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Hat_Base" Name="TA_Turban_Base">
+		<defName>TA_Turban</defName>
+		<label>turban</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Hats/TA_Turban/TA_Turban_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>32</costStuffCount>
+		<equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>0.4</Mass>
+			<ArmorRating_Sharp>0.12</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Apparel/Hats/TA_Turban/TA_Turban</wornGraphicPath>
+			<tags>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>	
+	
+	<ThingDef ParentName="TA_Turban_Base">
+		<defName>TA_TurbanWhite</defName>
+		<label>turban (white)</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Hats/TA_Turban/TA_Turban_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Apparel/Hats/TA_Turban/TA_Turban</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+	</ThingDef>	
+	
+	<ThingDef ParentName="TA_Hat_Base">
+		<defName>TA_JanissaryHat</defName>
+		<label>janissary hat</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Hats/TA_SpoonHat/TA_SpoonHat_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<Leather_Bird>5</Leather_Bird>
+		</costList>
+		<equippedStatOffsets>
+			<SocialImpact>0.2</SocialImpact>
+		</equippedStatOffsets>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.4</Mass>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Apparel/Hats/TA_SpoonHat/TA_SpoonHat</wornGraphicPath>
+			<tags>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+		
+	<ThingDef ParentName="TA_Hat_Base">
+		<defName>TA_FurCap</defName>
+		<label>fur hat</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Hats/TA_FurCap/TA_FurCap_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="False">
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Apparel/Hats/TA_FurCap/TA_FurCap</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+		
+	<ThingDef ParentName="TA_Hat_Base">
+		<defName>TA_NobleFurCap</defName>
+		<label>fancy fur hat</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Hats/TA_NobleFurCap/TA_NobleFurCap_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="False">
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<Leather_Bird>5</Leather_Bird>
+		</costList>
+		<equippedStatOffsets>
+			<SocialImpact>0.3</SocialImpact>
+		</equippedStatOffsets>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>			
+			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Apparel/Hats/TA_NobleFurCap/TA_NobleFurCap</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

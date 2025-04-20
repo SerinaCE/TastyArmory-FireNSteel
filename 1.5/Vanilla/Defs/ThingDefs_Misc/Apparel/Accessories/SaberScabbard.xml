@@ -2,45 +2,48 @@
 <Defs>
 
 	<ThingDef ParentName="TA_ApparelCarryGear_Base">
-		<defName>TM_SashBelt</defName>
-		<label>sash belt</label>
+		<defName>TA_SaberScabbard</defName>
+		<label>saber scabbard</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Accessories/TA_SashBelt/TA_SashBelt_ico</texPath>
+			<texPath>Apparel/Accessories/TA_ScabbardSaber/TA_ScabbardSaber_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<statBases>
-			<MaxHitPoints>120</MaxHitPoints>
+			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>5000</WorkToMake>
-			<Mass>0.2</Mass>
-			<Bulk>1</Bulk>
+			<Mass>0.45</Mass>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<SocialImpact>0.15</SocialImpact>
+			<SocialImpact>0.10</SocialImpact>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
-			<CarryBulk>8</CarryBulk>
+			<CarryingCapacity>8</CarryingCapacity>
 		</equippedStatOffsets>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>15</costStuffCount>
 		<stuffCategories>
-			<li>Fabric</li>
+			<li>Leathery</li>
 		</stuffCategories>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
 		<apparel>
 			<drawData>
 				<defaultData>
-					<layer>24</layer>
+					<layer>28</layer>
 				</defaultData>
 			</drawData>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
-				<li>Waist</li>
+				<li>Legs</li>
 			</bodyPartGroups>
 			<layers>
 				<li>Webbing</li>
@@ -56,7 +59,8 @@
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
-			<wornGraphicPath>Apparel/Accessories/TA_SashBelt/TA_SashBelt</wornGraphicPath>
+			<wornGraphicPath>Apparel/Accessories/TA_ScabbardSaber/TA_ScabbardSaber</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>

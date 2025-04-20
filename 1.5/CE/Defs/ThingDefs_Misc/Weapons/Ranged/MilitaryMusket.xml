@@ -20,10 +20,10 @@
 		<statBases>
 			<WorkToMake>13000</WorkToMake>
 			<Mass>6.50</Mass>
-			<Bulk>14</Bulk>
-			<ShotSpread>0.05</ShotSpread>
-			<SwayFactor>2.18</SwayFactor>
-			<SightsEfficiency>0.8</SightsEfficiency>
+			<Bulk>14.50</Bulk>
+			<ShotSpread>0.04</ShotSpread>
+			<SwayFactor>2.10</SwayFactor>
+			<SightsEfficiency>0.95</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>

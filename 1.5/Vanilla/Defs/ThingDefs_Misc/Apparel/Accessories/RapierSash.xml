@@ -2,15 +2,15 @@
 <Defs>
 
 	<ThingDef ParentName="TA_ApparelCarryGear_Base">
-		<defName>TM_SashBelt</defName>
-		<label>sash belt</label>
+		<defName>TA_RapierSash</defName>
+		<label>rapier Sash</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Accessories/TA_SashBelt/TA_SashBelt_ico</texPath>
+			<texPath>Apparel/Accessories/TA_RapierSash/TA_RapierSash_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -18,29 +18,31 @@
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToMake>5000</WorkToMake>
-			<Mass>0.2</Mass>
-			<Bulk>1</Bulk>
+			<Mass>0.7</Mass>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.15</SocialImpact>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
-			<CarryBulk>8</CarryBulk>
+			<CarryingCapacity>10</CarryingCapacity>
 		</equippedStatOffsets>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>35</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
 		<apparel>
 			<drawData>
 				<defaultData>
-					<layer>24</layer>
+					<layer>26</layer>
 				</defaultData>
 			</drawData>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
-				<li>Waist</li>
+				<li>Legs</li>
 			</bodyPartGroups>
 			<layers>
 				<li>Webbing</li>
@@ -56,7 +58,8 @@
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
-			<wornGraphicPath>Apparel/Accessories/TA_SashBelt/TA_SashBelt</wornGraphicPath>
+			<wornGraphicPath>Apparel/Accessories/TA_RapierSash/TA_RapierSash</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>

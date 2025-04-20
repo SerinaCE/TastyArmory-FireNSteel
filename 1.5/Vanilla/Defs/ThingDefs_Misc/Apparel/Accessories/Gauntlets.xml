@@ -2,33 +2,31 @@
 <Defs>
 
 	<ThingDef ParentName="ArmorSmithableBase">
-		<defName>TA_Bazubands</defName>
-		<label>bazubands</label>
+		<defName>TA_Gauntlets</defName>
+		<label>gauntlets</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Accessories/TA_Bazubands/TA_Bazubands</texPath>
+			<texPath>Apparel/Accessories/TA_Gauntlets/TA_Gauntlets</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<skillRequirements>
-				<Crafting>5</Crafting>
+				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<techLevel>Medieval</techLevel>
 		<stuffCategories>
 			<li>Steeled</li>
 		</stuffCategories>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<equippedStatOffsets></equippedStatOffsets>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>7000</WorkToMake>
-			<Bulk>3</Bulk>
-			<WornBulk>0.5</WornBulk>
-			<Mass>1.2</Mass>
-			<StuffEffectMultiplierArmor>1.5</StuffEffectMultiplierArmor>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.8</Mass>
+			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<thingCategories>
@@ -38,7 +36,6 @@
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
 				<li>Hands</li>
-				<li>Arms</li>
 			</bodyPartGroups>
 			<layers>
 				<li>TA_BootGlove</li>
@@ -56,24 +53,6 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<modExtensions>
-			<li Class="CombatExtended.PartialArmorExt">
-				<stats>
-					<li>
-						<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
-						<parts>
-							<li>Arm</li>
-						</parts>
-					</li>
-					<li>
-						<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
-						<parts>
-							<li>Arm</li>
-						</parts>
-					</li>
-				</stats>
-			</li>
-		</modExtensions>
 		<tradeTags>
 			<li>Clothing</li>
 			<li>Armor</li>
