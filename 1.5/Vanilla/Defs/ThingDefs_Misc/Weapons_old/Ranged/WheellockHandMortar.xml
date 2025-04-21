@@ -2,23 +2,23 @@
 <Defs>
 
   <ThingDef ParentName="BaseMakeableGun">
-    <defName>TA_SnaphaunceRifle</defName>
-    <label>Snaphaunce rifle</label>
+    <defName>TA_WheellockHandMortar</defName>
+    <label>wheellock hand mortar</label>
     <description>.</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
-      <texPath>Weapons/TA_SnaphaunceRifle</texPath>
+      <texPath>Weapons/TA_WheellockHandMortar</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>1.05</drawSize>
+	  <drawSize>1</drawSize>
     </graphicData>
-		<equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
     <weaponClasses>
       <li>LongShots</li>
     </weaponClasses>
     <costList>
-		<Steel>70</Steel>
+		<Steel>80</Steel>
 		<WoodLog>15</WoodLog>
+		<Chemfuel>80</Chemfuel>
     </costList>
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
@@ -36,27 +36,32 @@
       </recipeUsers>
       <researchPrerequisite>Vanilla_GunpowderWeaponry</researchPrerequisite>
     </recipeMaker>
-	<generateCommonality>0.3</generateCommonality>
+	<generateCommonality>0.15</generateCommonality>
 	<statBases>
-		<WorkToMake>14000</WorkToMake>
-		<Mass>4.5</Mass>
-		<AccuracyTouch>0.30</AccuracyTouch>
-		<AccuracyShort>0.35</AccuracyShort>
-		<AccuracyMedium>0.75</AccuracyMedium>
-		<AccuracyLong>0.60</AccuracyLong>
-		<RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
-	</statBases>
+		<WorkToMake>22000</WorkToMake>
+		<Mass>5.8</Mass>
+		<AccuracyTouch>0.5</AccuracyTouch>
+		<AccuracyShort>0.3</AccuracyShort>
+		<AccuracyMedium>0.2</AccuracyMedium>
+		<AccuracyLong>0.1</AccuracyLong>
+		<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+</statBases>
 	<verbs>
 		<li>
 			<verbClass>Verb_Shoot</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>TA_Bullet_MilitaryMusket</defaultProjectile>
-			<warmupTime>1.5</warmupTime>
-			<range>36.9</range>
-			<soundCast>Shot_Revolver</soundCast>
-			<soundCastTail>GunTail_Medium</soundCastTail>
-			<muzzleFlashScale>9</muzzleFlashScale>
-		</li>
+			<defaultProjectile>Proj_GrenadeFrag</defaultProjectile>
+			<warmupTime>5</warmupTime>
+			<range>30.9</range>
+			<forcedMissRadius>1.9</forcedMissRadius>
+			<burstShotCount>1</burstShotCount>
+			<soundCast>Shot_IncendiaryLauncher</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>16</muzzleFlashScale>
+			<targetParams>
+			  <canTargetLocations>true</canTargetLocations>
+			</targetParams>
+	  </li>
 	</verbs>
 	<tools>
 		<li>

@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<ThingDef Name="TA_ShirtSashBelt" ParentName="ApparelMakeableBase">
-		<defName>TA_ShirtSashBelt</defName>
-		<label>shirt with sash belt</label>
+	<ThingDef Name="TA_ShirtSashBelt_Base" ParentName="ApparelMakeableBase" Abstract="True">
 		<description>.</description>
-		<graphicData>
-			<texPath>Apparel/Clothes/TA_ShirtSashBelt/TA_ShirtSashBelt_ico</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
@@ -59,9 +53,9 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="TA_ShirtSashBelt">
-		<defName>TA_ShirtSashBeltWhite</defName>
-		<label>shirt with sash belt (white)</label>
+	<ThingDef ParentName="TA_ShirtSashBelt_Base">
+		<defName>TA_ShirtSashBelt</defName>
+		<label>shirt with sash belt</label>
 		<graphicData>
 			<texPath>Apparel/Clothes/TA_ShirtSashBelt/TA_ShirtSashBelt_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -69,8 +63,36 @@
 		</graphicData>
 		<apparel>
 			<wornGraphicPath>Apparel/Clothes/TA_ShirtSashBelt/TA_ShirtSashBelt</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>TA_ShirtSashBeltWhite</SwitchTo>
+				<graphicPath>Apparel/Clothes/TA_ShirtSashBelt/TA_ShirtSashBelt_ico</graphicPath>
+				<Label>shirt color</Label>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_ShirtSashBelt_Base">
+		<defName>TA_ShirtSashBeltWhite</defName>
+		<label>shirt with sash belt (white)</label>
+		<graphicData>
+			<texPath>Apparel/Clothes/TA_ShirtSashBelt/TA_ShirtSashBelt_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker Inherit="False" />
+		<apparel>
+			<wornGraphicPath>Apparel/Clothes/TA_ShirtSashBelt/TA_ShirtSashBelt</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>TA_ShirtSashBelt</SwitchTo>
+				<graphicPath>Apparel/Clothes/TA_ShirtSashBelt/TA_ShirtSashBelt_color</graphicPath>
+				<Label>shirt color</Label>
+			</li>
+		</comps>
 	</ThingDef>
 
 </Defs>

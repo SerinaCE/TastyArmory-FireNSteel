@@ -11,6 +11,7 @@
     <graphicData>
       <texPath>Weapons/TA_JanissaryMiquelet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.05</drawSize>
     </graphicData>
 		<equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Revolver</soundInteract>
@@ -99,7 +100,6 @@
       </li>
     </tools>    <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.05,1.05</DrawSize>
 				<DrawOffset>0.15,0.15</DrawOffset>
       </li>
     </modExtensions>

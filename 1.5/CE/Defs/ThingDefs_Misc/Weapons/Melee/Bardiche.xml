@@ -9,9 +9,9 @@
 			<texPath>Weapons/TA_Bardiche</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>1.05</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
-		<equippedAngleOffset>0</equippedAngleOffset>
+		<equippedAngleOffset>5</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="False">
 			<li>MedievalMeleeDecent</li>
@@ -46,7 +46,7 @@
 			<Mass>2</Mass>
 			<Bulk>10</Bulk>
 			<MeleeCounterParryBonus>1.3</MeleeCounterParryBonus>
-			<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2.84</VEF_MeleeWeaponRange>
+			<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.5</VEF_MeleeWeaponRange>
 		</statBases>
 		<equippedStatOffsets>
 			<MeleeCritChance>0.25</MeleeCritChance>
@@ -97,19 +97,19 @@
 			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<weaponDraftedDrawOffsets>
 					<north>
-						<drawOffset>(-0.34,0,0.30)</drawOffset>
+						<drawOffset>(-0.34,0,0.23)</drawOffset>
 						<angleOffset>-98</angleOffset>
 					</north>
 					<east>
-						<drawOffset>(0.1,0,0.30)</drawOffset>
+						<drawOffset>(0.1,0,0.23)</drawOffset>
 						<angleOffset>-77</angleOffset>
 					</east>
 					<south>
-						<drawOffset>(0.34,0,0.30)</drawOffset>
+						<drawOffset>(0.34,0,0.23)</drawOffset>
 						<angleOffset>-98</angleOffset>
 					</south>
 					<west>
-						<drawOffset>(-0.1,0,0.30)</drawOffset>
+						<drawOffset>(-0.1,0,0.23)</drawOffset>
 						<angleOffset>77</angleOffset>
 					</west>
 				</weaponDraftedDrawOffsets>		

@@ -52,6 +52,7 @@
       </recipeUsers>
       <researchPrerequisite>Vanilla_GunpowderWeaponry</researchPrerequisite>
     </recipeMaker>
+	<generateCommonality>0.4</generateCommonality>
 			<statBases>
 				<WorkToMake>12000</WorkToMake>
 				<Mass>2.5</Mass>

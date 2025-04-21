@@ -53,7 +53,9 @@
         <li>ElectricSmithy</li>
       </recipeUsers>
       <researchPrerequisite>Vanilla_GunpowderWeaponry</researchPrerequisite>
-    </recipeMaker><statBases>
+    </recipeMaker>
+	<generateCommonality>1.3</generateCommonality>
+	<statBases>
 		<WorkToMake>13000</WorkToMake>
 		<Mass>6.5</Mass>
 		<AccuracyTouch>0.30</AccuracyTouch>

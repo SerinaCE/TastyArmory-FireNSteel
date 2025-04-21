@@ -9,7 +9,7 @@
 			<texPath>Weapons/TA_Lance</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>1.9</drawSize>
+			<drawSize>2.1</drawSize>
 		</graphicData>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>
@@ -96,22 +96,25 @@
 			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<weaponDraftedDrawOffsets>
 					<north>
-						<drawOffset>(0.34,0,0.60)</drawOffset>
+						<drawOffset>(0.34,0,0.20)</drawOffset>
 						<angleOffset>-143</angleOffset>
 					</north>
 					<east>
-						<drawOffset>(0.15,0,0.60)</drawOffset>
+						<drawOffset>(0.15,0,0.20)</drawOffset>
 						<angleOffset>-122</angleOffset>
 					</east>
 					<south>
-						<drawOffset>(-0.34,0,0.60)</drawOffset>
+						<drawOffset>(-0.34,0,0.20)</drawOffset>
 						<angleOffset>-143</angleOffset>
 					</south>
 					<west>
-						<drawOffset>(-0.15,0,0.60)</drawOffset>
+						<drawOffset>(-0.15,0,0.20)</drawOffset>
 						<angleOffset>122</angleOffset>
 					</west>
 				</weaponDraftedDrawOffsets>
+			</li>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.45,0.45</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef-->

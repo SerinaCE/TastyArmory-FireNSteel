@@ -2,7 +2,7 @@
 <Defs>
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>TA_Yatagan</defName>
-		<label>hanger</label>
+		<label>yatagan</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Weapons/TA_Yatagan</texPath>

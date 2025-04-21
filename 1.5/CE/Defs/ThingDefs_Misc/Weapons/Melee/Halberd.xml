@@ -9,7 +9,7 @@
 			<texPath>Weapons/TA_Halberd</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>1.2</drawSize>
+			<drawSize>1.3</drawSize>
 		</graphicData>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>
@@ -46,7 +46,7 @@
 			<Mass>2</Mass>
 			<Bulk>10</Bulk>
 			<MeleeCounterParryBonus>1.08</MeleeCounterParryBonus>
-			<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2.84</VEF_MeleeWeaponRange>
+			<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2.3</VEF_MeleeWeaponRange>
 		</statBases>
 		<equippedStatOffsets>
 			<MeleeCritChance>0.22</MeleeCritChance>
@@ -96,22 +96,25 @@
 			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<weaponDraftedDrawOffsets>
 					<north>
-						<drawOffset>(0.34,0,0.60)</drawOffset>
+						<drawOffset>(0.34,0,0.10)</drawOffset>
 						<angleOffset>-143</angleOffset>
 					</north>
 					<east>
-						<drawOffset>(0.15,0,0.60)</drawOffset>
+						<drawOffset>(0.15,0,0.10)</drawOffset>
 						<angleOffset>-122</angleOffset>
 					</east>
 					<south>
-						<drawOffset>(-0.34,0,0.60)</drawOffset>
+						<drawOffset>(-0.34,0,0.10)</drawOffset>
 						<angleOffset>-143</angleOffset>
 					</south>
 					<west>
-						<drawOffset>(-0.15,0,0.60)</drawOffset>
+						<drawOffset>(-0.15,0,0.10)</drawOffset>
 						<angleOffset>122</angleOffset>
 					</west>
 				</weaponDraftedDrawOffsets>
+			</li>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.25,0.25</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>

@@ -95,7 +95,7 @@
 	
 	<ThingDef ParentName="TA_Hat_Base">
 		<defName>TA_MusketeerHat</defName>
-		<label>musketeer hat</label>
+		<label>musketeer's slouch hat</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Apparel/Hats/TA_MusketeerHat/TA_MusketeerHat_ico</texPath>
@@ -135,9 +135,9 @@
 			<Mass>0.4</Mass>
 			<Bulk>1.5</Bulk>
 			<WornBulk>0.5</WornBulk>
-			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
-			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 		</statBases>
 		<apparel>
 			<wornGraphicPath>Apparel/Hats/TA_LandsknechtHat/TA_LandsknechtHat</wornGraphicPath>

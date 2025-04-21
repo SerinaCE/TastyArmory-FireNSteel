@@ -11,6 +11,7 @@
 		<graphicData>
 			<texPath>Weapons/TA_Arquebus</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.97</drawSize>
 		</graphicData>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<soundInteract>Interact_Revolver</soundInteract>
@@ -101,7 +102,6 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>0.97,0.97</DrawSize>
 				<DrawOffset>0.13,0.13</DrawOffset>
 			</li>
 		</modExtensions>

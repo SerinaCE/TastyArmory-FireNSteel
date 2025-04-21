@@ -8,6 +8,7 @@
 		<graphicData>
 			<texPath>Apparel/Accessories/TA_Bazubands/TA_Bazubands</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.70</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
