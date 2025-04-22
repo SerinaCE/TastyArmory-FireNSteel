@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseMakeableGun">
+		<defName>TA_WheellockHandMortar</defName>
+		<label>wheellock hand mortar</label>
+		<description>.</description>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<texPath>Weapons/TA_WheellockHandMortar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>LongShots</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>5.80</Mass>
+			<Bulk>6.50</Bulk>
+			<ShotSpread>0.20</ShotSpread>
+			<SwayFactor>1.23</SwayFactor>
+			<SightsEfficiency>0.90</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>85</Steel>
+			<WoodLog>10</WoodLog>
+		</costList>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>4.3</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MortarGrenade_indirect</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<range>31</range>
+				<soundCast>Shot_CE_Musket</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<circularError>3</circularError>
+				<indirectFirePenalty>0.5</indirectFirePenalty>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags Inherit="False">
+			<li>NeolithicRangedHeavy</li>
+			<li>NeolithicRangedChief</li>
+			<li>CE_AI_AOE</li>
+			<li>CE_FlareLauncher</li>
+		</weaponTags>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Charges">
+				<!--chargeSpeeds>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+				</chargeSpeeds-->
+				<chargeSpeeds>
+					<li>10</li>
+					<li>20</li>
+					<li>30</li>
+					<li>40</li>
+				</chargeSpeeds>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<AmmoGenPerMagOverride>2</AmmoGenPerMagOverride>
+				<reloadTime>7.5</reloadTime>
+				<ammoSet>AmmoSet_TA_HandMortar</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="CombatExtended.CompProperties_UnderBarrel">
+				<propsUnderBarrel>
+					<magazineSize>1</magazineSize>
+					<reloadTime>7.5</reloadTime>
+					<ammoSet>AmmoSet_Flare</ammoSet>
+				</propsUnderBarrel>
+				<verbPropsUnderBarrel>
+					<recoilAmount>3.10</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootFlareCE</verbClass>
+					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_Flare</defaultProjectile>
+					<warmupTime>1.1</warmupTime>
+					<range>45</range>
+					<soundCast>InfernoCannon_Fire</soundCast>
+					<muzzleFlashScale>16</muzzleFlashScale>
+					<circularError>3</circularError>
+					<indirectFirePenalty>0.5</indirectFirePenalty>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+				</verbPropsUnderBarrel>
+				<propsFireModesUnderBarrel>
+					<aiUseBurstMode>FALSE</aiUseBurstMode>
+					<aiAimMode>Snapshot</aiAimMode>
+					<aimedBurstShotCount>1</aimedBurstShotCount>
+				</propsFireModesUnderBarrel>
+			</li>
+		</comps>
+		<recipeMaker>
+			<recipeUsers>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
+		</recipeMaker>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.05,0.0</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>
