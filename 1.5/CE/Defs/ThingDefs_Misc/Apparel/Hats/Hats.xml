@@ -52,6 +52,9 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<apparel>
+			<renderSkipFlags Inherit="False">
+				<li>Hair</li>
+			</renderSkipFlags>
 			<wornGraphicPath>Apparel/Hats/TA_FeltHat/TA_FeltHat</wornGraphicPath>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -78,6 +81,9 @@
 			<WorkToMake>3500</WorkToMake>
 		</statBases>
 		<apparel>
+			<renderSkipFlags Inherit="False">
+				<li>Hair</li>
+			</renderSkipFlags>
 			<wornGraphicPath>Apparel/Hats/TA_CavalierHat/TA_CavalierHat</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
@@ -105,7 +111,10 @@
 		<statBases>
 			<WorkToMake>2500</WorkToMake>
 		</statBases>
-		<apparel>			
+		<apparel>	
+			<renderSkipFlags Inherit="False">
+				<li>Hair</li>
+			</renderSkipFlags>		
 			<wornGraphicPath>Apparel/Hats/TA_MusketeerHat/TA_MusketeerHat</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<defaultOutfitTags>
@@ -140,6 +149,9 @@
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 		</statBases>
 		<apparel>
+			<renderSkipFlags Inherit="False">
+				<li>Hair</li>
+			</renderSkipFlags>
 			<wornGraphicPath>Apparel/Hats/TA_LandsknechtHat/TA_LandsknechtHat</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
@@ -269,6 +281,9 @@
 			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<apparel>
+			<renderSkipFlags Inherit="False">
+				<li>Hair</li>
+			</renderSkipFlags>
 			<wornGraphicPath>Apparel/Hats/TA_FurCap/TA_FurCap</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
@@ -306,6 +321,9 @@
 			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<apparel>
+			<renderSkipFlags Inherit="False">
+				<li>Hair</li>
+			</renderSkipFlags>
 			<wornGraphicPath>Apparel/Hats/TA_NobleFurCap/TA_NobleFurCap</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
