@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-<!--	
+
 	<ThingDef ParentName="ShieldBase">
 		<defName>TA_HussarShield</defName>
 		<label>hussar shield</label>
@@ -53,7 +53,6 @@
 			<tags>
 				<li>MedievalShield</li>
 			</tags>		
--->			
 			<!--wornGraphicPath>Apparel/Shields/TA_HussarShield/TA_HussarShield_Plain</wornGraphicPath>
 			<wornGraphicData>
 				<east>
@@ -96,7 +95,6 @@
 					<layer>-5</layer>
 				</dataNorth>
 			</drawData-->
-<!--
 			<renderNodeProperties>
 				<li>
 					<nodeClass>CombatExtended.PawnRenderNode_Apparel</nodeClass>
@@ -136,5 +134,5 @@
 			<li>Armor</li>
 		</tradeTags>
 	</ThingDef>
--->	
+
 </Defs>

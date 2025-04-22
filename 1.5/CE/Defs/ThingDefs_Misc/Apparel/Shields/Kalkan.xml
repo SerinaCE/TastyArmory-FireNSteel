@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-<!--
+
 	<ThingDef ParentName="ShieldBase">
 		<defName>TA_Kalkan</defName>
 		<label>kalkan</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Shields/TA_Kalkan/TA_Kalkan_Circle_ico</texPath>
+			<texPath>Apparel/Shields/TA_Kalkan/TA_Kalkan_Plain_ico</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -54,7 +54,6 @@
 			<tags>
 				<li>MedievalShield</li>
 			</tags>	
--->		
 			<!--wornGraphicPath>Apparel/Shields/TA_HussarShield/TA_HussarShield_Plain</wornGraphicPath>
 			<wornGraphicData>
 				<east>
@@ -97,12 +96,11 @@
 					<layer>-5</layer>
 				</dataNorth>
 			</drawData-->
-<!--			
 			<renderNodeProperties>
 				<li>
 					<nodeClass>CombatExtended.PawnRenderNode_Apparel</nodeClass>
 					<workerClass>CombatExtended.PawnRenderNodeWorker_Drafted</workerClass>
-					<texPath>Apparel/Shields/TA_Kalkan/TA_Kalkan_Circle</texPath>
+					<texPath>Apparel/Shields/TA_Kalkan/TA_Kalkan_Plain</texPath>
 					<shaderTypeDef>CutoutComplex</shaderTypeDef>
 					<parentTagDef>ApparelBody</parentTagDef>
 					<drawData>
@@ -136,5 +134,4 @@
 			<li>Armor</li>
 		</tradeTags>
 	</ThingDef>
-	-->
 </Defs>

@@ -12,7 +12,7 @@
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="HandMortarBombBase">
 		<defName>Ammo_MortarGrenade</defName>
-		<label>bursting grenade</label>
+		<label>bursting grenades</label>
 		<description>cast iron shell filled with gunpowder, fitted with fuse.</description>
 		<graphicData>
 			<texPath>Weapons/Munitions/TA_IronGrenade</texPath>
@@ -70,7 +70,7 @@
 	<ThingDef ParentName="BaseExplosiveBullet">
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<defName>Bullet_TA_SmokeGrenade_thrown</defName>
-		<label>smoke grenade</label>
+		<label>smoke grenades</label>
 		<graphicData>
 			<texPath>Weapons/Munitions/TA_SmokeGrenade_projectile</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -145,7 +145,26 @@
 		<detonateProjectile>Bullet_TA_SmokeGrenade_thrown</detonateProjectile>
 	</ThingDef>
 
-	<!--glass grenade-->	
+	<!--glass grenade-->
+	
+	<ThingDef ParentName="BaseFragment"><!-- Flies from around 4 to 35 cells away from the explosion if the angle range is unchanged. -->
+		<defName>Fragment_GlassShard</defName>
+		<label>glass shards</label>
+		<graphicData>
+			<texPath>Things/Projectile/Fragments/Fragment_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Fragment</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<speed>40</speed>
+			<armorPenetrationSharp>0.8</armorPenetrationSharp>
+			<armorPenetrationBlunt>6</armorPenetrationBlunt>
+			<gravityFactor>8</gravityFactor>
+			<tickToTruePos>0</tickToTruePos>
+		</projectile>
+	</ThingDef>
 
 	<ThingDef ParentName="BaseGrenadeProjectile">
 		<defName>Bullet_TA_GlassGrenade</defName>
@@ -153,6 +172,7 @@
 		<graphicData>
 			<texPath>Weapons/Munitions/TA_GlassGrenade_projectile</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.78</drawSize>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<explosionRadius>1.5</explosionRadius>
@@ -168,7 +188,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_Small>40</Fragment_Small>
+					<Fragment_GlassShard>100</Fragment_GlassShard>
 				</fragments>
 			</li>
 		</comps>
@@ -177,17 +197,18 @@
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
 		<defName>Weapon_TA_GlassGrenade</defName>
 		<equipmentType>Primary</equipmentType>
-		<label>glass grenade</label>
+		<label>glass grenades</label>
 		<description>Doctors hate this small spherical-ish glass bottle filled with gunpowder, fitted with a fuse.</description>
 		<graphicData>
 			<texPath>Weapons/Munitions/TA_GlassGrenade</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.75</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Grenade</soundInteract>
 		<techLevel>Medieval</techLevel>
 		<stackLimit>50</stackLimit>
 		<statBases>
-			<Mass>0.600</Mass>
+			<Mass>0.550</Mass>
 			<Bulk>1</Bulk>
 			<SightsEfficiency>1.0</SightsEfficiency>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>

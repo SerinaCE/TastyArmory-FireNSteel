@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-<!--	
 	<ThingDef ParentName="ShieldBase">
 		<defName>TA_Rodela</defName>
 		<label>rodela</label>
@@ -46,8 +45,7 @@
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<tags>
 				<li>MedievalShield</li>
-			</tags>			
--->			
+			</tags>
 			<!--wornGraphicPath>Apparel/Shields/TA_HussarShield/TA_HussarShield_Plain</wornGraphicPath>
 			<wornGraphicData>
 				<east>
@@ -90,7 +88,6 @@
 					<layer>-5</layer>
 				</dataNorth>
 			</drawData-->
-<!--
 			<renderNodeProperties>
 				<li>
 					<nodeClass>CombatExtended.PawnRenderNode_Apparel</nodeClass>
@@ -129,5 +126,4 @@
 			<li>Armor</li>
 		</tradeTags>
 	</ThingDef>
--->	
 </Defs>

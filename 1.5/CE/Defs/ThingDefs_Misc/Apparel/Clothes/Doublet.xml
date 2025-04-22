@@ -69,7 +69,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Apparel/Clothes/TA_DoubletVest/TA_DoubletVest</wornGraphicPath>
+			<wornGraphicPath>Apparel/Clothes/TA_Doublet/TA_Doublet</wornGraphicPath>
 		</apparel>
 		<comps>
 			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">

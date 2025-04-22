@@ -53,7 +53,7 @@
 		</stuffCategories>
 		<apparel>
 			<renderSkipFlags Inherit="False">
-				<li>Hair</li>
+				<li>None</li>
 			</renderSkipFlags>
 			<wornGraphicPath>Apparel/Hats/TA_FeltHat/TA_FeltHat</wornGraphicPath>
 			<defaultOutfitTags>
@@ -82,7 +82,7 @@
 		</statBases>
 		<apparel>
 			<renderSkipFlags Inherit="False">
-				<li>Hair</li>
+				<li>None</li>
 			</renderSkipFlags>
 			<wornGraphicPath>Apparel/Hats/TA_CavalierHat/TA_CavalierHat</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -113,7 +113,7 @@
 		</statBases>
 		<apparel>	
 			<renderSkipFlags Inherit="False">
-				<li>Hair</li>
+				<li>None</li>
 			</renderSkipFlags>		
 			<wornGraphicPath>Apparel/Hats/TA_MusketeerHat/TA_MusketeerHat</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -150,7 +150,7 @@
 		</statBases>
 		<apparel>
 			<renderSkipFlags Inherit="False">
-				<li>Hair</li>
+				<li>None</li>
 			</renderSkipFlags>
 			<wornGraphicPath>Apparel/Hats/TA_LandsknechtHat/TA_LandsknechtHat</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -282,7 +282,7 @@
 		</statBases>
 		<apparel>
 			<renderSkipFlags Inherit="False">
-				<li>Hair</li>
+				<li>None</li>
 			</renderSkipFlags>
 			<wornGraphicPath>Apparel/Hats/TA_FurCap/TA_FurCap</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -322,7 +322,7 @@
 		</statBases>
 		<apparel>
 			<renderSkipFlags Inherit="False">
-				<li>Hair</li>
+				<li>None</li>
 			</renderSkipFlags>
 			<wornGraphicPath>Apparel/Hats/TA_NobleFurCap/TA_NobleFurCap</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>

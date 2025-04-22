@@ -11,6 +11,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
+		<equippedAngleOffset>-45</equippedAngleOffset>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
 			<li>LongShots</li>
@@ -21,7 +22,7 @@
 			<Bulk>6.50</Bulk>
 			<ShotSpread>0.20</ShotSpread>
 			<SwayFactor>1.23</SwayFactor>
-			<SightsEfficiency>0.90</SightsEfficiency>
+			<SightsEfficiency>0.80</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
@@ -35,12 +36,12 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_MortarGrenade_indirect</defaultProjectile>
 				<warmupTime>1.4</warmupTime>
-				<range>31</range>
+				<range>35</range>
 				<soundCast>Shot_CE_Musket</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>16</muzzleFlashScale>
-				<circularError>3</circularError>
-				<indirectFirePenalty>0.5</indirectFirePenalty>
+				<circularError>2</circularError>
+				<indirectFirePenalty>0.3</indirectFirePenalty>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -57,12 +58,6 @@
 		</weaponTags>
 		<comps>
 			<li Class="CombatExtended.CompProperties_Charges">
-				<!--chargeSpeeds>
-					<li>30</li>
-					<li>50</li>
-					<li>70</li>
-					<li>90</li>
-				</chargeSpeeds-->
 				<chargeSpeeds>
 					<li>10</li>
 					<li>20</li>
@@ -83,7 +78,7 @@
 				<propsUnderBarrel>
 					<magazineSize>1</magazineSize>
 					<reloadTime>7.5</reloadTime>
-					<ammoSet>AmmoSet_Flare</ammoSet>
+					<ammoSet>AmmoSet_TA_HandMortar_Flare</ammoSet>
 				</propsUnderBarrel>
 				<verbPropsUnderBarrel>
 					<recoilAmount>3.10</recoilAmount>
@@ -92,10 +87,10 @@
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Bullet_Flare</defaultProjectile>
 					<warmupTime>1.1</warmupTime>
-					<range>45</range>
+					<range>50</range>
 					<soundCast>InfernoCannon_Fire</soundCast>
 					<muzzleFlashScale>16</muzzleFlashScale>
-					<circularError>3</circularError>
+					<circularError>2</circularError>
 					<indirectFirePenalty>0.5</indirectFirePenalty>
 					<targetParams>
 						<canTargetLocations>true</canTargetLocations>
