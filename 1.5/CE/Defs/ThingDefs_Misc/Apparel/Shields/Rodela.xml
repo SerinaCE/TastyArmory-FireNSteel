@@ -14,19 +14,20 @@
 		<stuffCategories>
 			<li>Steeled</li>
 		</stuffCategories>
-		<costStuffCount>60</costStuffCount>
+		<costStuffCount>75</costStuffCount>
 		<possessionCount>1</possessionCount>
 		<recipeMaker>
-			<researchPrerequisite>Smithing</researchPrerequisite>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
 			<recipeUsers>
 				<li>FueledSmithy</li>
 				<li>ElectricSmithy</li>
 			</recipeUsers>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>7000</WorkToMake>
+			<WorkToMake>9000</WorkToMake>
 			<MaxHitPoints>250</MaxHitPoints>
 			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+            <ArmorRating_Heat>0.40</ArmorRating_Heat>
 			<Mass>3.7</Mass>
 			<Bulk>7</Bulk>
 			<WornBulk>1</WornBulk>

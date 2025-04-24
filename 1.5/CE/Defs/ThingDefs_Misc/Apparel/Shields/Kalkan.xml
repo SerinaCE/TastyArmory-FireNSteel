@@ -23,18 +23,19 @@
 		<costStuffCount>15</costStuffCount>
 		<possessionCount>1</possessionCount>
 		<recipeMaker>
-			<researchPrerequisite>Smithing</researchPrerequisite>
+			<!--researchPrerequisite>Smithing</researchPrerequisite-->
 			<recipeUsers>
 				<li>FueledSmithy</li>
 				<li>ElectricSmithy</li>
 			</recipeUsers>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>4000</WorkToMake>
+			<WorkToMake>5000</WorkToMake>
 			<MaxHitPoints>90</MaxHitPoints>
 			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>1.65</ArmorRating_Sharp>
 			<ArmorRating_Blunt>3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.20</ArmorRating_Heat>
 			<Mass>1.8</Mass>
 			<Bulk>8</Bulk>
 			<WornBulk>1</WornBulk>
