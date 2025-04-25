@@ -21,7 +21,7 @@
 		<stuffCategories>
 			<li>Metallic_Weapon</li>
 		</stuffCategories>
-		<costStuffCount>65</costStuffCount>
+		<costStuffCount>75</costStuffCount>
 		<statBases>
 			<WorkToMake>14000</WorkToMake>
 			<Mass>1.0</Mass>

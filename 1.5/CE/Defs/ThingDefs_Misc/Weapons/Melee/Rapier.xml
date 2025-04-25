@@ -35,7 +35,7 @@
 		<stuffCategories>
 			<li>Metallic_Weapon</li>
 		</stuffCategories>
-		<relicChance>1.5</relicChance>
+		<relicChance>1</relicChance>
 		<statBases>
 			<WorkToMake>20000</WorkToMake>
 			<Mass>1</Mass>

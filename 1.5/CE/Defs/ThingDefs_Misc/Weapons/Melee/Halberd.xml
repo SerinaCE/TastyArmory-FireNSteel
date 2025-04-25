@@ -28,7 +28,7 @@
 				<li>ElectricSmithy</li>
 			</recipeUsers>
 			<skillRequirements>
-				<Crafting>4</Crafting>
+				<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
@@ -42,7 +42,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<statBases>
-			<WorkToMake>10000</WorkToMake>
+			<WorkToMake>16000</WorkToMake>
 			<Mass>2</Mass>
 			<Bulk>10</Bulk>
 			<MeleeCounterParryBonus>1.08</MeleeCounterParryBonus>

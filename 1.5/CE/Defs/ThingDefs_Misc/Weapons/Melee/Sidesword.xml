@@ -31,7 +31,7 @@
 				<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<costStuffCount>80</costStuffCount>
+		<costStuffCount>75</costStuffCount>
 		<stuffCategories>
 			<li>Metallic_Weapon</li>
 		</stuffCategories>

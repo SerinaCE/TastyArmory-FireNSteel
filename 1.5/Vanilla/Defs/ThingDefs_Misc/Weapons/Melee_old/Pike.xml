@@ -2,16 +2,16 @@
 <Defs>
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>TC_Pike</defName>
-    <label>pike</label>
-    <description>.</description>
-    <graphicData>
-      <texPath>Weapons/TA_Pike</texPath>
+	<defName>TA_Pike</defName>
+	<label>pike</label>
+	<description>.</description>
+	<graphicData>
+		<texPath>Weapons/TA_Pike</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
-		<drawSize>1.7</drawSize>
-    </graphicData>
-    <equippedAngleOffset>35</equippedAngleOffset>
+		<drawSize>2</drawSize>
+	</graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="False">
 			<li>MedievalMeleeBasic</li>
@@ -32,7 +32,7 @@
       </skillRequirements>
     </recipeMaker>
 		<costList>
-			<WoodLog>80</WoodLog>
+			<WoodLog>90</WoodLog>
 		</costList>
 		<costStuffCount>50</costStuffCount>
 		<stuffCategories>

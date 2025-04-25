@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>TC_Rapier</defName>
+    <defName>TA_Rapier</defName>
     <label>rapier</label>
     <description>.</description>
     <graphicData>
@@ -35,7 +35,7 @@
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<relicChance>1.5</relicChance>
+		<relicChance>1</relicChance>
 		<statBases>
 			<WorkToMake>20000</WorkToMake>
 			<Mass>1</Mass>
@@ -71,25 +71,25 @@
 			  </li>
 		</tools>
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<weaponDraftedDrawOffsets>
 					<north>
-						<drawOffset>(0,0,-0.25)</drawOffset>
+						<drawOffset>(-0.1,0,-0.35)</drawOffset>
 						<angleOffset>0</angleOffset>
 					</north>
 					<east>
-						<drawOffset>(0,0,-0.25)</drawOffset>
+						<drawOffset>(0.1,0,-0.35)</drawOffset>
 						<angleOffset>0</angleOffset>
 					</east>
 					<south>
-						<drawOffset>(0,0,-0.25)</drawOffset>
+						<drawOffset>(0.1,0,-0.35)</drawOffset>
 						<angleOffset>0</angleOffset>
 					</south>
 					<west>
-						<drawOffset>(0,0,-0.25)</drawOffset>
+						<drawOffset>(-0.1,0,-0.35)</drawOffset>
 						<angleOffset>0</angleOffset>
 					</west>
-				</weaponDraftedDrawOffsets>		
+				</weaponDraftedDrawOffsets>
 			</li>
 		</modExtensions>
   </ThingDef>

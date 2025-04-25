@@ -31,7 +31,10 @@
 				<Crafting>7</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<costStuffCount>150</costStuffCount>
+		<costStuffCount>140</costStuffCount>
+		<costList>
+			<WoodLog>10</WoodLog>
+		</costList>
 		<stuffCategories>
 			<li>Metallic_Weapon</li>
 		</stuffCategories>
@@ -39,8 +42,8 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<statBases>
-			<WorkToMake>25000</WorkToMake>
-			<Mass>3.2</Mass>
+			<WorkToMake>21000</WorkToMake>
+			<Mass>2.5</Mass>
 			<Bulk>12</Bulk>
 			<MeleeCounterParryBonus>0.67</MeleeCounterParryBonus>
 			<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2.3</VEF_MeleeWeaponRange>
