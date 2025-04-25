@@ -1,19 +1,11 @@
-TODO:  
-defs for:   
+TODO:     
+-finish vanilla weapon defs  
 -banners  
--melee weapons:
-    ---bardiche  
-    ---boarding axe (1hand smaller sapper axe)  
-    ---battle axe  
-    ---warpick  
-    ---hanger/cutlass  
-    ---yatagan  
-debug: 4lbs cannon ammo texture paths  
-
+-figure out a sensible internal use weapon price equatio, try also refering to irl sources for a good picture
 
 
 TODO later:  
--do shields whenever new CE shield render drops  
+-redo shields whenever new CE shield render drops  
 
 TODO content updates:  
 -little more civilian clothes  
