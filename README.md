@@ -1,5 +1,4 @@
 TODO:     
--finish vanilla weapon defs  
 -banners  
 -figure out a sensible internal use weapon price equatio, try also refering to irl sources for a good picture
 

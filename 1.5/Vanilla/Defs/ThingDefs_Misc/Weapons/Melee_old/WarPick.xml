@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+	<defName>TA_WarPick</defName>
+	<label>war pick</label>
+	<description>.</description>
+	<graphicData>
+		<texPath>Weapons/TA_WarPick</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>0.95</drawSize>
+	</graphicData>
+	<equippedAngleOffset>-25</equippedAngleOffset>
+		<techLevel>Medieval</techLevel>
+		<weaponTags Inherit="False">
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<recipeMaker>
+			<recipeUsers>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>55</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<relicChance>1.5</relicChance>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponMelee</li>
+		</tradeTags>
+		<tools>
+		  <li>
+			<label>handle</label>
+			<capacities>
+			  <li>Poke</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		  <li>
+			<label>head</label>
+			<labelUsedInLogging>false</labelUsedInLogging>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>18.7</power>
+			<armorPenetration>0.20</armorPenetration>
+			<cooldownTime>2.5</cooldownTime>
+		  </li>
+		</tools>
+  </ThingDef>
+	
+</Defs>
