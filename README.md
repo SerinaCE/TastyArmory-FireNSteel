@@ -4,7 +4,9 @@ TODO:
 
 
 TODO later:  
--redo shields whenever new CE shield render drops  
+-redo shields whenever new CE shield render drops
+-dolmány(mid-thigh) skin layer clothing
+https://collections.imm.hu/files/targyak/medium/4f/fb/20550.jpg?v=340785
 
 TODO content updates:  
 -little more civilian clothes  
