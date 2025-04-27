@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="ArmorSmithableBase">
 		<defName>TA_PikemanPlate</defName>
-		<label>pikeman's corselet</label>
+		<label>pikeman's corslet</label>
 		<description>.</description>
 		<graphicData>
 			<texPath>Apparel/Armor/TA_PikemanPlate/TA_PikemanPlate_ico</texPath>
