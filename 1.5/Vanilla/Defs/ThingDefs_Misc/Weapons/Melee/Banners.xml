@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality" Name="TA_Banner_Base" Abstract="True">
+		<description>.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>2.5</drawSize>
+		</graphicData>
+		<equippedAngleOffset>90</equippedAngleOffset>
+		<techLevel>Medieval</techLevel>
+		<weaponTags Inherit="False">
+			<li>MedievalMeleeBasic</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<recipeMaker>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<WoodLog>75</WoodLog>
+			<Steel>40</Steel>
+			<Cloth>70</Cloth>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>3.5</Mass>
+			<MeleeCounterParryBonus>0.25</MeleeCounterParryBonus>
+			<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">3</VEF_MeleeWeaponRange>
+		</statBases>
+		<equippedStatOffsets />
+		<tradeTags>
+			<li>WeaponMelee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.7</cooldownTime>
+			</li>
+			  <li>
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.7</cooldownTime>
+			  </li>
+		</tools>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(-0.75,0,0.40)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(-0.3,0,0.40)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.75,0,0.40)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.5,0,0.40)</drawOffset>
+						<angleOffset>143</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.40,0.40</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_Banner_Base">
+		<defName>TA_BannerSpear_BurgundyCross</defName>
+		<label>banner (Burgundy cross)</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Banners/TA_BannerSpear_BurgundyCross</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_Banner_Base">
+		<defName>TA_BannerSpear_Dutch</defName>
+		<label>banner (Dutch Republic)</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Banners/TA_BannerSpear_Dutch</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_Banner_Base">
+		<defName>TA_BannerSpear_FleurDeLis</defName>
+		<label>banner (fleur-de-lis)</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Banners/TA_BannerSpear_FleurDeLis</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Banner_Base">
+		<defName>TA_BannerSpear_HRE</defName>
+		<label>banner (Holy Roman Empire)</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Banners/TA_BannerSpear_HRE</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Banner_Base">
+		<defName>TA_BannerSpear_Muscovite</defName>
+		<label>banner (Muscovite)</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Banners/TA_BannerSpear_Muscovite</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Banner_Base">
+		<defName>TA_BannerSpear_Ottoman</defName>
+		<label>banner (Ottoman)</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Banners/TA_BannerSpear_Ottoman</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Banner_Base">
+		<defName>TA_BannerSpear_PLCommonwealth</defName>
+		<label>banner (Polish-Lithuanian Commonwealth)</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Banners/TA_BannerSpear_PLCommonwealth</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Banner_Base">
+		<defName>TA_BannerSpear_StAndrewCross</defName>
+		<label>banner (Saint Andrew's Cross)</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Banners/TA_BannerSpear_StAndrewCross</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Banner_Base">
+		<defName>TA_BannerSpear_StGeorgeCross</defName>
+		<label>banner (Saint George's Cross)</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Banners/TA_BannerSpear_StGeorgeCross</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Banner_Base">
+		<defName>TA_BannerSpear_Swede</defName>
+		<label>banner (Sweden)</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Banners/TA_BannerSpear_Swede</texPath>
+		</graphicData>
+	</ThingDef>
+
+</Defs>
