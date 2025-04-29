@@ -39,7 +39,6 @@
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
 			<Mass>3.5</Mass>
-			<MeleeCounterParryBonus>0.25</MeleeCounterParryBonus>
 			<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">3</VEF_MeleeWeaponRange>
 		</statBases>
 		<equippedStatOffsets />
