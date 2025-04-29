@@ -8,7 +8,7 @@
 		<label>steppe  warbow</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Weapons/TA_TurkBow</texPath>
+			<texPath>Weapons/Ranged/TA_TurkBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.1</drawSize>
 		</graphicData>

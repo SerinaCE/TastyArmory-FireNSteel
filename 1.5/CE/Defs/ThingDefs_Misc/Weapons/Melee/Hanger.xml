@@ -5,7 +5,7 @@
 		<label>hanger</label>
 		<description>or cutlass</description>
 		<graphicData>
-			<texPath>Weapons/TA_Hanger</texPath>
+			<texPath>Weapons/Melee/TA_Hanger</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>0.93</drawSize>

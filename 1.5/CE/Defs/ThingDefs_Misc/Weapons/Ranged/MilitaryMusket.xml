@@ -9,7 +9,7 @@
 		<description>.</description>
 		<techLevel>Medieval</techLevel>
 		<graphicData>
-			<texPath>Weapons/TA_MilitaryMusket</texPath>
+			<texPath>Weapons/Ranged/TA_MilitaryMusket</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.15</drawSize>
 		</graphicData>

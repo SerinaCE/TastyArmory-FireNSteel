@@ -9,7 +9,7 @@
 		<description>.</description>
 		<techLevel>Medieval</techLevel>
 		<graphicData>
-			<texPath>Weapons/TA_Arquebus</texPath>
+			<texPath>Weapons/Ranged/TA_Arquebus</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.97</drawSize>
 		</graphicData>

@@ -2,16 +2,15 @@
 <Defs>
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>TA_Rapier</defName>
-    <label>rapier</label>
-    <description>.</description>
-    <graphicData>
-		<texPath>Weapons/TA_Rapier</texPath>
+	<defName>TA_Sidesword</defName>
+	<label>sidesword</label>
+	<description>.</description>
+	<graphicData>
+		<texPath>Weapons/Melee/TA_Sidesword</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
-		<drawSize>1.00</drawSize>
-    </graphicData>
-		<equippedAngleOffset>30</equippedAngleOffset>
+		<drawSize>0.90</drawSize>
+	</graphicData>
+	<equippedAngleOffset>40</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="False">
 			<li>MedievalMeleeDecent</li>
@@ -35,7 +34,7 @@
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<relicChance>1</relicChance>
+		<relicChance>1.5</relicChance>
 		<statBases>
 			<WorkToMake>20000</WorkToMake>
 			<Mass>1</Mass>
@@ -66,8 +65,8 @@
 				<capacities>
 				  <li>Cut</li>
 				</capacities>
-				<power>12</power>
-				<cooldownTime>1.8</cooldownTime>
+				<power>16</power>
+				<cooldownTime>2.1</cooldownTime>
 			  </li>
 		</tools>
 		<modExtensions>
@@ -79,7 +78,7 @@
 					</north>
 					<east>
 						<drawOffset>(0.1,0,-0.35)</drawOffset>
-						<angleOffset>0</angleOffset>
+						<angleOffset>-20</angleOffset>
 					</east>
 					<south>
 						<drawOffset>(0.1,0,-0.35)</drawOffset>

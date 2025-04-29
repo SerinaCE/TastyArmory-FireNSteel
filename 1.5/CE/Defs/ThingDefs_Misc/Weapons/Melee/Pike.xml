@@ -6,7 +6,7 @@
 		<label>pike</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Weapons/TA_Pike</texPath>
+			<texPath>Weapons/Melee/TA_Pike</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>2</drawSize>

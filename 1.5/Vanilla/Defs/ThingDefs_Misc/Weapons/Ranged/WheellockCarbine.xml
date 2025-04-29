@@ -25,7 +25,7 @@
     <description>.</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
-      <texPath>Weapons/TA_WheellockCarbine</texPath>
+      <texPath>Weapons/Ranged/TA_WheellockCarbine</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>

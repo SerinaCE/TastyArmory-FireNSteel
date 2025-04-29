@@ -2,14 +2,14 @@
 <Defs>
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-	<defName>TA_WarPick</defName>
-	<label>war pick</label>
-	<description>.</description>
+	<defName>TA_Hanger</defName>
+	<label>hanger</label>
+	<description>or cutlass</description>
 	<graphicData>
-		<texPath>Weapons/TA_WarPick</texPath>
+		<texPath>Weapons/Melee/TA_Hanger</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
-		<drawSize>0.95</drawSize>
+		<drawSize>0.93</drawSize>
 	</graphicData>
 	<equippedAngleOffset>-25</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>
@@ -48,20 +48,26 @@
 		  <li>
 			<label>handle</label>
 			<capacities>
-			  <li>Poke</li>
+			  <li>Blunt</li>
 			</capacities>
 			<power>9</power>
 			<cooldownTime>2</cooldownTime>
 		  </li>
 		  <li>
-			<label>head</label>
-			<labelUsedInLogging>false</labelUsedInLogging>
+			<label>point</label>
 			<capacities>
-			  <li>Blunt</li>
+			  <li>Stab</li>
 			</capacities>
-			<power>18.7</power>
-			<armorPenetration>0.20</armorPenetration>
-			<cooldownTime>2.5</cooldownTime>
+			<power>16</power>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		  <li>
+			<label>edge</label>
+			<capacities>
+			  <li>Cut</li>
+			</capacities>
+			<power>16</power>
+			<cooldownTime>2</cooldownTime>
 		  </li>
 		</tools>
   </ThingDef>

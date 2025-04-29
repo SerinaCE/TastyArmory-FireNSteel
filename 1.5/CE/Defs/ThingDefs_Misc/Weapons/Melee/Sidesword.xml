@@ -6,7 +6,7 @@
 		<label>sidesword</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Weapons/TA_Sidesword</texPath>
+			<texPath>Weapons/Melee/TA_Sidesword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>

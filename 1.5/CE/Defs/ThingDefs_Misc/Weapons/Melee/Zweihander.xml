@@ -6,7 +6,7 @@
 		<label>zweihander</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Weapons/TA_Zweihander</texPath>
+			<texPath>Weapons/Melee/TA_Zweihander</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.25</drawSize>

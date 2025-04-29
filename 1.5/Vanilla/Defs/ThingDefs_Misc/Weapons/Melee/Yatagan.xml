@@ -2,14 +2,14 @@
 <Defs>
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-	<defName>TA_Hanger</defName>
-	<label>hanger</label>
-	<description>or cutlass</description>
+	<defName>TA_Yatagan</defName>
+	<label>yatagan</label>
+	<description>.</description>
 	<graphicData>
-		<texPath>Weapons/TA_Hanger</texPath>
+		<texPath>Weapons/Melee/TA_Yatagan</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
-		<drawSize>0.93</drawSize>
+		<drawSize>0.95</drawSize>
 	</graphicData>
 	<equippedAngleOffset>-25</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>

@@ -2,16 +2,16 @@
 <Defs>
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>TC_Halberd</defName>
+    <defName>TA_Bardiche</defName>
     <label>halberd</label>
     <description>.</description>
-    <graphicData>
-		<texPath>Weapons/TA_Halberd</texPath>
+	<graphicData>
+		<texPath>Weapons/Melee/TA_Bardiche</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
-		<drawSize>1.3</drawSize>
-    </graphicData>
-	<equippedAngleOffset>45</equippedAngleOffset>
+		<drawSize>1</drawSize>
+	</graphicData>
+	<equippedAngleOffset>5</equippedAngleOffset>
 	<techLevel>Medieval</techLevel>
 	<weaponTags Inherit="False">
 		<li>MedievalMeleeDecent</li>

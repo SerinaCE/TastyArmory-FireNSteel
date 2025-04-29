@@ -6,7 +6,7 @@
 		<label>rapier</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Weapons/TA_Rapier</texPath>
+			<texPath>Weapons/Melee/TA_Rapier</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>

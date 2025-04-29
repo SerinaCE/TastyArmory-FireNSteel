@@ -5,7 +5,7 @@
 		<label>yatagan</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Weapons/TA_Yatagan</texPath>
+			<texPath>Weapons/Melee/TA_Yatagan</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>0.95</drawSize>

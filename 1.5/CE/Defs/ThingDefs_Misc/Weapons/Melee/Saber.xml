@@ -5,7 +5,7 @@
 		<label>hussar saber</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Weapons/TA_HussarSaber</texPath>
+			<texPath>Weapons/Melee/TA_HussarSaber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>

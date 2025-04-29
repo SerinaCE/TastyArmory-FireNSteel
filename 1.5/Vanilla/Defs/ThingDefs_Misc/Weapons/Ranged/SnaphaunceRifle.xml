@@ -7,7 +7,7 @@
     <description>.</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
-      <texPath>Weapons/TA_SnaphaunceRifle</texPath>
+      <texPath>Weapons/Ranged/TA_SnaphaunceRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.05</drawSize>
     </graphicData>

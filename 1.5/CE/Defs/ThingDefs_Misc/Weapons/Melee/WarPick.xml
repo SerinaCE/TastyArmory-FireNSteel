@@ -5,7 +5,7 @@
 		<label>war pick</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Weapons/TA_WarPick</texPath>
+			<texPath>Weapons/Melee/TA_WarPick</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>0.95</drawSize>

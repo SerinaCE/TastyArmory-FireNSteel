@@ -2,11 +2,11 @@
 <Defs>
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-	<defName>TA_Yatagan</defName>
-	<label>yatagan</label>
+	<defName>TA_WarPick</defName>
+	<label>war pick</label>
 	<description>.</description>
 	<graphicData>
-		<texPath>Weapons/TA_Yatagan</texPath>
+		<texPath>Weapons/Melee/TA_WarPick</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
 		<drawSize>0.95</drawSize>
@@ -48,26 +48,20 @@
 		  <li>
 			<label>handle</label>
 			<capacities>
-			  <li>Blunt</li>
+			  <li>Poke</li>
 			</capacities>
 			<power>9</power>
 			<cooldownTime>2</cooldownTime>
 		  </li>
 		  <li>
-			<label>point</label>
+			<label>head</label>
+			<labelUsedInLogging>false</labelUsedInLogging>
 			<capacities>
-			  <li>Stab</li>
+			  <li>Blunt</li>
 			</capacities>
-			<power>16</power>
-			<cooldownTime>2</cooldownTime>
-		  </li>
-		  <li>
-			<label>edge</label>
-			<capacities>
-			  <li>Cut</li>
-			</capacities>
-			<power>16</power>
-			<cooldownTime>2</cooldownTime>
+			<power>18.7</power>
+			<armorPenetration>0.20</armorPenetration>
+			<cooldownTime>2.5</cooldownTime>
 		  </li>
 		</tools>
   </ThingDef>

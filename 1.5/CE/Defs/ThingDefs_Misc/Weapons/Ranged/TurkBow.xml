@@ -7,7 +7,7 @@
 		<label>turkish warbow</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Weapons/TA_TurkBow</texPath>
+			<texPath>Weapons/Ranged/TA_TurkBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Bow_Large</soundInteract>

@@ -6,7 +6,7 @@
 		<label>lance</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Weapons/TA_Lance</texPath>
+			<texPath>Weapons/Melee/TA_Lance</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>2.1</drawSize>
