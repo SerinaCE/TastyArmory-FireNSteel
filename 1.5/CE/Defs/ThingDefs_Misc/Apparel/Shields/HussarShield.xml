@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+	<ThingStyleDef>
+		<defName>TA_HussarShield_BlackWing</defName>
+		<graphicData>
+			<texPath>Apparel/Shields/TA_HussarShield_BlackWing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+  
+	<ThingStyleDef>
+		<defName>TA_HussarShield_WhiteWing</defName>
+		<graphicData>
+			<texPath>Apparel/Shields/TA_HussarShield_WhiteWing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
 
 	<ThingDef ParentName="ShieldBase">
 		<defName>TA_HussarShield</defName>
 		<label>hussar shield</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Shields/TA_HussarShield/TA_HussarShield_Wing_ico</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Apparel/Shields/TA_HussarShield_Plain</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1</drawSize>
 		</graphicData>
+		<randomStyleChance>0.6</randomStyleChance>
+		<randomStyle>
+			<li>
+				<styleDef>TA_HussarShield_WhiteWing</styleDef>
+			</li>
+			<li>
+				<styleDef>TA_HussarShield_BlackWing</styleDef>
+			</li>
+		</randomStyle>
 		<techLevel>Medieval</techLevel>
 		<costList>
 			<WoodLog>50</WoodLog>
@@ -48,14 +76,19 @@
 			<MeleeCritChance>-0.05</MeleeCritChance>
 			<MeleeParryChance>1.0</MeleeParryChance>
 		</equippedStatOffsets>
-		<randomStyleChance>0.3</randomStyleChance>
 		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>91</layer>
+				</defaultData>
+			</drawData>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<tags>
 				<li>MedievalShield</li>
 			</tags>		
-			<!--wornGraphicPath>Apparel/Shields/TA_HussarShield/TA_HussarShield_Plain</wornGraphicPath>
+			<!--wornGraphicPath>Apparel/Shields/TA_HussarShield/TA_HussarShield_Wing</wornGraphicPath>
 			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<east>
 					<offset>(0,0)</offset>
 				</east>
@@ -78,10 +111,10 @@
 					<scale>(0.8,1)</scale>
 				</thin>
 				<hulk>
-					<scale>(1.5,1.5)</scale>
+					<scale>(1.25,1.25)</scale>
 				</hulk>
 				<fat>
-					<scale>(1.3,1.3)</scale>
+					<scale>(1.13,1.13)</scale>
 				</fat>
 			</wornGraphicData>
 			<drawData>
@@ -96,7 +129,7 @@
 					<layer>-5</layer>
 				</dataNorth>
 			</drawData-->
-			<renderNodeProperties>
+			<!--renderNodeProperties>
 				<li>
 					<nodeClass>CombatExtended.PawnRenderNode_Apparel</nodeClass>
 					<workerClass>CombatExtended.PawnRenderNodeWorker_Drafted</workerClass>
@@ -117,7 +150,7 @@
 						</dataNorth>
 					</drawData>
 				</li>
-			</renderNodeProperties>
+			</renderNodeProperties-->
 		</apparel>
 		<modExtensions>
 			<li Class="CombatExtended.ShieldDefExtension">

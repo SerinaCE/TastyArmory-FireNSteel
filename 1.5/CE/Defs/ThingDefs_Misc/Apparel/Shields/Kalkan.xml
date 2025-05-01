@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+	<ThingStyleDef>
+		<defName>TA_Kalkan_Flower</defName>
+		<graphicData>
+			<texPath>Apparel/Shields/TA_Kalkan_Flower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+  
+	<ThingStyleDef>
+		<defName>TA_Kalkan_Circle</defName>
+		<graphicData>
+			<texPath>Apparel/Shields/TA_Kalkan_Circle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
 
 	<ThingDef ParentName="ShieldBase">
 		<defName>TA_Kalkan</defName>
 		<label>kalkan</label>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/Shields/TA_Kalkan/TA_Kalkan_Plain_ico</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Apparel/Shields/TA_Kalkan_Plain</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1</drawSize>
 		</graphicData>
+		<randomStyleChance>0.5</randomStyleChance>
+		<randomStyle>
+			<li>
+				<styleDef>TA_Kalkan_Flower</styleDef>
+			</li>
+			<li>
+				<styleDef>TA_Kalkan_Circle</styleDef>
+			</li>
+		</randomStyle>
 		<techLevel>Medieval</techLevel>
 		<costList>
 			<WoodLog>25</WoodLog>
@@ -49,76 +77,11 @@
 			<MeleeCritChance>0.05</MeleeCritChance>
 			<MeleeParryChance>0.75</MeleeParryChance>
 		</equippedStatOffsets>
-		<randomStyleChance>0.3</randomStyleChance>
 		<apparel>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<tags>
 				<li>MedievalShield</li>
-			</tags>	
-			<!--wornGraphicPath>Apparel/Shields/TA_HussarShield/TA_HussarShield_Plain</wornGraphicPath>
-			<wornGraphicData>
-				<east>
-					<offset>(0,0)</offset>
-				</east>
-				<west>
-					<offset>(0,0)</offset>
-				</west>
-				<north>
-					<offset>(0,0)</offset>
-				</north>
-				<south>
-					<offset>(0,0)</offset>
-				</south>
-				<male>
-					<scale>(1,1)</scale>
-				</male>
-				<female>
-					<scale>(1,1)</scale>
-				</female>
-				<thin>
-					<scale>(0.8,1)</scale>
-				</thin>
-				<hulk>
-					<scale>(1.5,1.5)</scale>
-				</hulk>
-				<fat>
-					<scale>(1.3,1.3)</scale>
-				</fat>
-			</wornGraphicData>
-			<drawData>
-				<defaultData>
-					<layer>91</layer>
-					<offset>(0,0,0)</offset>
-				</defaultData>
-				<dataEast>
-					<layer>-5</layer>
-				</dataEast>
-				<dataNorth>
-					<layer>-5</layer>
-				</dataNorth>
-			</drawData-->
-			<renderNodeProperties>
-				<li>
-					<nodeClass>CombatExtended.PawnRenderNode_Apparel</nodeClass>
-					<workerClass>CombatExtended.PawnRenderNodeWorker_Drafted</workerClass>
-					<texPath>Apparel/Shields/TA_Kalkan/TA_Kalkan_Plain</texPath>
-					<shaderTypeDef>CutoutComplex</shaderTypeDef>
-					<parentTagDef>ApparelBody</parentTagDef>
-					<drawData>
-						<scale>1</scale>
-						<defaultData>
-							<layer>80</layer>
-							<offset>(0, 0, 0)</offset>
-						</defaultData>
-						<dataEast>
-							<layer>-5</layer>
-						</dataEast>
-						<dataNorth>
-							<layer>-5</layer>
-						</dataNorth>
-					</drawData>
-				</li>
-			</renderNodeProperties>
+			</tags>
 		</apparel>
 		<modExtensions>
 			<li Class="CombatExtended.ShieldDefExtension">
