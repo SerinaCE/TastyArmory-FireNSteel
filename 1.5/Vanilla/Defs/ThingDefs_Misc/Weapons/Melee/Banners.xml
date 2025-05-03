@@ -85,9 +85,6 @@
 					</west>
 				</weaponDraftedDrawOffsets>
 			</li>
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>0.40,0.40</DrawOffset>
-			</li>
 		</modExtensions>
 	</ThingDef>
 
