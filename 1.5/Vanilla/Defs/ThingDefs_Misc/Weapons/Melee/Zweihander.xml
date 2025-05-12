@@ -2,8 +2,8 @@
 <Defs>
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>TA_Halberd</defName>
-    <label>halberd</label>
+    <defName>TA_Zweihander</defName>
+    <label>Zweihander</label>
     <description>.</description>
     <graphicData>
 		<texPath>Weapons/Melee/TA_Zweihander</texPath>

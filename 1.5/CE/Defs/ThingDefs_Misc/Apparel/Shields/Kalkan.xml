@@ -55,6 +55,7 @@
 			<recipeUsers>
 				<li>FueledSmithy</li>
 				<li>ElectricSmithy</li>
+				<li>CraftingSpot</li>
 			</recipeUsers>
 		</recipeMaker>
 		<statBases>

@@ -19,7 +19,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<statBases>
-			<WorkToMake>15000</WorkToMake>
+			<WorkToMake>10000</WorkToMake>
 			<Mass>1</Mass>
 			<SightsEfficiency>0.8</SightsEfficiency>
 			<ShotSpread>1</ShotSpread>

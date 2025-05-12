@@ -33,7 +33,7 @@
 			<Mass>2.2</Mass>
 			<Bulk>1.81</Bulk>
 		</statBases>
-		<techLevel>Medieval</techLevel>
+		<techLevel Inherit="False">Medieval</techLevel>
 		<comps>
 			<li Class="CompProperties_Explosive">
 				<damageAmountBase>25</damageAmountBase>

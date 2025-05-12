@@ -3,7 +3,7 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>TA_Bardiche</defName>
-    <label>halberd</label>
+    <label>bardicheb</label>
     <description>.</description>
 	<graphicData>
 		<texPath>Weapons/Melee/TA_Bardiche</texPath>

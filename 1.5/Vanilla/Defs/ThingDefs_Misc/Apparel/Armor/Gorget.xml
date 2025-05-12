@@ -3,7 +3,7 @@
 
 	<!-- ==================== PlateCuirass plate ==================== -->
 	<ThingDef ParentName="ArmorSmithableBase">
-		<defName>TC_Gorget</defName>
+		<defName>TA_Gorget</defName>
 		<label>gorget</label>
 		<description>.</description>
 		<graphicData>

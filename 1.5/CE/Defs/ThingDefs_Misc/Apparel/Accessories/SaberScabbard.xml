@@ -38,7 +38,7 @@
 		<apparel>
 			<drawData>
 				<defaultData>
-					<layer>28</layer>
+					<layer>26</layer>
 				</defaultData>
 			</drawData>
 			<careIfWornByCorpse>false</careIfWornByCorpse>

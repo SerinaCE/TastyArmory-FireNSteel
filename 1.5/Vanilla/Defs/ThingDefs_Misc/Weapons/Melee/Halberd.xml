@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>TC_Halberd</defName>
+    <defName>TA_Halberd</defName>
     <label>halberd</label>
     <description>.</description>
     <graphicData>

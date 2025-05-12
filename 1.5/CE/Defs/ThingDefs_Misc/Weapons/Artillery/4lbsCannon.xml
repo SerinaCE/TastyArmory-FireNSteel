@@ -67,11 +67,12 @@
 			<Bulk>110</Bulk>
 			<Beauty>20</Beauty>
 		</statBases>
-		<description>12-pounder cannon mounted on a carriage.</description>
+		<description>4-pounder light field cannon mounted on a carriage.</description>
 		<costList>
 			<Steel>200</Steel>
 			<WoodLog>150</WoodLog>
 		</costList>
+		<techLevel>Medieval</techLevel>
 		<building>
 			<turretGunDef>TA_FourPounderCannon_Gun</turretGunDef>
 			<ai_combatDangerous>true</ai_combatDangerous>
