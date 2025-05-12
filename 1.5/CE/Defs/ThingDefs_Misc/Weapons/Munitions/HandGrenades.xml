@@ -251,7 +251,7 @@
 		<defName>MakeAmmo_TA_SmokeGrenades</defName>
 		<label>Make smoke grenades x12</label>
 		<description>Craft 12 Smoke Grenades</description>
-		<jobString>Making Fireworks</jobString>
+		<jobString>Making Smoke Grenades</jobString>
 		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
 		<ingredients>
 			<li>
@@ -287,7 +287,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_TA_Firework>12</Ammo_TA_Firework>
+			<Ammo_TA_SmokeGrenade>12</Ammo_TA_SmokeGrenade>
 		</products>
 		<workAmount>5000</workAmount>
 	</RecipeDef>
