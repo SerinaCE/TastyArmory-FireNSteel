@@ -247,12 +247,16 @@
 
 	<!-- ==================== Recipes ========================== -->
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="GrenadeRecipeBase">
 		<defName>MakeAmmo_TA_SmokeGrenades</defName>
 		<label>Make smoke grenades x12</label>
 		<description>Craft 12 Smoke Grenades</description>
 		<jobString>Making Smoke Grenades</jobString>
 		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
+        <recipeUsers>
+            <li>ElectricSmithy</li>
+            <li>FueledSmithy</li>
+        </recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -292,12 +296,16 @@
 		<workAmount>5000</workAmount>
 	</RecipeDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="GrenadeRecipeBase">
 		<defName>MakeAmmo_MortarGrenade</defName>
 		<label>Make bursting grenade x12</label>
 		<description>Craft 12 Bursting Grenades</description>
 		<jobString>Making Bursting Grenades</jobString>
 		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
+        <recipeUsers>
+            <li>ElectricSmithy</li>
+            <li>FueledSmithy</li>
+        </recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -346,12 +354,16 @@
 		<workAmount>5500</workAmount>
 	</RecipeDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="GrenadeRecipeBase">
 		<defName>MakeWeapon_TA_GlassGrenade</defName>
 		<label>Make glass grenade x12</label>
 		<description>Craft 12 Glass Grenades</description>
 		<jobString>Making Glass Grenades</jobString>
 		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
+        <recipeUsers>
+            <li>ElectricSmithy</li>
+            <li>FueledSmithy</li>
+        </recipeUsers>
 		<ingredients>
 			<li>
 				<filter>

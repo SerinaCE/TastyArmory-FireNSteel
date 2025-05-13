@@ -201,12 +201,16 @@
 
 	<!-- ==================== Recipes ========================== -->
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="GrenadeRecipeBase">
 		<defName>MakeAmmo_TA_Firework</defName>
 		<label>Make fireworks x12</label>
 		<description>Craft 12 Fireworks</description>
 		<jobString>Making Fireworks</jobString>
 		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
+        <recipeUsers>
+            <li>ElectricSmithy</li>
+            <li>FueledSmithy</li>
+        </recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
