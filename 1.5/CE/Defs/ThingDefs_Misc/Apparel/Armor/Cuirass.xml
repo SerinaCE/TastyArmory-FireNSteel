@@ -29,6 +29,7 @@
 			<Bulk>17</Bulk>
 			<WornBulk>3</WornBulk>
 			<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+			<Insulation_Cold>4</Insulation_Cold>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
 		<thingCategories>

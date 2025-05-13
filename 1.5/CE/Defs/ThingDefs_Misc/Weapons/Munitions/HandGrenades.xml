@@ -298,7 +298,7 @@
 
 	<RecipeDef ParentName="GrenadeRecipeBase">
 		<defName>MakeAmmo_MortarGrenade</defName>
-		<label>Make bursting grenade x12</label>
+		<label>Make bursting grenades x12</label>
 		<description>Craft 12 Bursting Grenades</description>
 		<jobString>Making Bursting Grenades</jobString>
 		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
@@ -356,7 +356,7 @@
 
 	<RecipeDef ParentName="GrenadeRecipeBase">
 		<defName>MakeWeapon_TA_GlassGrenade</defName>
-		<label>Make glass grenade x12</label>
+		<label>Make glass grenades x12</label>
 		<description>Craft 12 Glass Grenades</description>
 		<jobString>Making Glass Grenades</jobString>
 		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>

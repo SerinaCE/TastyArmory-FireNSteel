@@ -24,10 +24,11 @@
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
 			<WorkToMake>20000</WorkToMake>
-			<Mass>8</Mass>
+			<Mass>9</Mass>
 			<Bulk>35</Bulk>
 			<WornBulk>2</WornBulk>
 			<StuffEffectMultiplierArmor>2.5</StuffEffectMultiplierArmor>
+			<Insulation_Cold>5</Insulation_Cold>
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<thingCategories>
