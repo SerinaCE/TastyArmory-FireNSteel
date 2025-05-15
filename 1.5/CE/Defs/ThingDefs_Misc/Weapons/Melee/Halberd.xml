@@ -84,7 +84,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>30</power>
+				<power>25</power>
 				<cooldownTime>1.16</cooldownTime>
 				<chanceFactor>1.165</chanceFactor>
 				<armorPenetrationBlunt>2.025</armorPenetrationBlunt>
