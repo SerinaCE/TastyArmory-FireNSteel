@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <!-- Banners -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="TA_Banner_Base"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">DankPyon_MilitaryPolearms</researchPrerequisite>
+            </value>
+    </Operation>
+
+    <!-- Bardiche -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="TA_Bardiche"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">DankPyon_MilitaryPolearms</researchPrerequisite>
+            </value>
+    </Operation>
+
+    <!-- boarding axe -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="TA_BoardingAxe"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">DankPyon_BasicBlades</researchPrerequisite>
+            </value>
+    </Operation>
+
+    <!-- Bardiche -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="TA_Halberd"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">DankPyon_MilitaryBlades</researchPrerequisite>
+            </value>
+    </Operation>
+
+    <!-- Hanger (Cutlass) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="TA_Hanger"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">DankPyon_MilitaryBlades</researchPrerequisite>
+            </value>
+    </Operation>
+
+    <!-- Pike 
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="TA_Pike"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">DankPyon_MilitaryPolearms</researchPrerequisite>
+            </value>
+    </Operation> -->
+
+    <!-- Rapier -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="TA_Rapier"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">DankPyon_MilitaryBlades</researchPrerequisite>
+            </value>
+    </Operation>
+
+    <!-- hussar saber -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="TA_HussarSaber"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">DankPyon_MilitaryBlades</researchPrerequisite>
+            </value>
+    </Operation>
+
+    <!-- sidesword -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="TA_Sidesword"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">DankPyon_MilitaryBlades</researchPrerequisite>
+            </value>
+    </Operation>
+
+    <!-- war pick -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="TA_WarPick"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">DankPyon_BasicBlades</researchPrerequisite>
+            </value>
+    </Operation>
+
+    <!-- yatagan -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="TA_Yatagan"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">DankPyon_MilitaryBlades</researchPrerequisite>
+            </value>
+    </Operation>
+
+    <!-- Zweihander -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="TA_Zweihander"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+                <researchPrerequisite Inherit="False">DankPyon_MilitaryBlades</researchPrerequisite>
+            </value>
+    </Operation>
+
+</Patch>
