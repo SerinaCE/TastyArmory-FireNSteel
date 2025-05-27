@@ -12,21 +12,6 @@
 			<drawSize>1.25</drawSize>
 		</graphicData>
 		<equippedAngleOffset>45</equippedAngleOffset>
-		<randomStyleChance>0.6</randomStyleChance>
-		<randomStyle>
-			<li>
-				<chance>3</chance>
-				<styleDef>TA_Bill_point</styleDef>
-			</li>
-			<li>
-				<chance>2</chance>
-				<styleDef>TA_Bill_hook</styleDef>
-			</li>
-			<li>
-				<chance>1</chance>
-				<styleDef>TA_WarScythe</styleDef>
-			</li>
-		</randomStyle>
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="False">
 			<li>NeolithicMeleeAdvanced</li>
