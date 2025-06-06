@@ -55,6 +55,7 @@
 				<magazineSize>1</magazineSize>
 				<reloadTime>7</reloadTime>
 				<ammoSet>AmmoSet_55CalBall450mps</ammoSet>
+				<AmmoGenPerMagOverride>4</AmmoGenPerMagOverride>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiAimMode>AimedShot</aiAimMode>

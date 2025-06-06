@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingCategoryDef>
-		<defName>MortarGrenade</defName>
-		<label>Mortar Grenade</label>
-		<parent>AmmoGrenades</parent>
-		<iconPath>UI/Icons/ThingCategories/CaliberGrenade</iconPath>
-	</ThingCategoryDef>
-
 	<!-- ==================== AmmoSet ========================== -->
 	
 	<CombatExtended.AmmoSetDef>
@@ -28,21 +21,7 @@
 	</CombatExtended.AmmoSetDef>
 
 	<!-- ==================== Ammo ========================== -->
-
-	<ThingDef Class="CombatExtended.AmmoDef" Name="HandMortarBombBase" ParentName="AmmoBase" Abstract="True">
-		<tradeTags>
-			<li>CE_AutoEnableTrade</li>
-			<li>CE_AutoEnableCrafting_FueledSmithy</li>
-			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
-		</tradeTags>
-		<thingCategories>
-			<li>MortarGrenade</li>
-		</thingCategories>
-		<stackLimit>50</stackLimit>
-		<cookOffFlashScale>20</cookOffFlashScale>
-		<techLevel>Medieval</techLevel>
-	</ThingDef>
-
+	 
 	<!--firework-->
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="HandMortarBombBase">
 		<defName>Ammo_TA_Firework</defName>

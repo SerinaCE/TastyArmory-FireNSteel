@@ -59,10 +59,10 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_Charges">
 				<chargeSpeeds>
-					<li>10</li>
-					<li>20</li>
+					<li>15</li>
 					<li>30</li>
-					<li>40</li>
+					<li>45</li>
+					<li>60</li>
 				</chargeSpeeds>
 			</li>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
@@ -79,6 +79,7 @@
 					<magazineSize>1</magazineSize>
 					<reloadTime>7.5</reloadTime>
 					<ammoSet>AmmoSet_TA_HandMortar_Flare</ammoSet>
+					<AmmoGenPerMagOverride>3</AmmoGenPerMagOverride>
 				</propsUnderBarrel>
 				<verbPropsUnderBarrel>
 					<recoilAmount>3.10</recoilAmount>

@@ -17,7 +17,7 @@
 			<Bulk>8</Bulk>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryBulk>10</CarryBulk>
+			<CarryBulk>5</CarryBulk>
 			<Suppressability>-0.5</Suppressability>
 			<PainShockThreshold>0.1</PainShockThreshold>
 		</equippedStatOffsets>

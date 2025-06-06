@@ -49,6 +49,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<ammoSet>AmmoSet_TurkBow</ammoSet>
+				<AmmoGenPerMagOverride>5</AmmoGenPerMagOverride>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiAimMode>Snapshot</aiAimMode>
