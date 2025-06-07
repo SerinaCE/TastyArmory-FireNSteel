@@ -44,9 +44,6 @@
 				<li>Shoulders</li>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<layers>
-				<li>TA_Webbing</li>
-			</layers>
 			<tags>
 				<li>Medieval</li>
 				<li>MedievalMilitary</li>

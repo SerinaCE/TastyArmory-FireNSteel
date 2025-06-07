@@ -45,9 +45,6 @@
 			<bodyPartGroups>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<layers>
-				<li>Webbing</li>
-			</layers>
 			<tags>
 				<li>MedievalArmorDecent</li>
 				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>

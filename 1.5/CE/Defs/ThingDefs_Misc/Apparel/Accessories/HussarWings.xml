@@ -38,7 +38,8 @@
 				<li>Shoulders</li>
 			</bodyPartGroups>
 			<layers>
-				<li>Backpack</li>
+				<li>Belt</li>
+				<li MayRequire="CETeam.CombatExtended">Backpack</li>
 			</layers>
 			<tags>
 				<li>Neolithic</li>
