@@ -10,10 +10,7 @@
 		</graphicData>
 		<equippedAngleOffset>90</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>
-		<weaponTags Inherit="False">
-			<li>MedievalMeleeBasic</li>
-			<li>MedievalMeleeAdvanced</li>
-		</weaponTags>
+		<weaponTags Inherit="False" />
 		<weaponClasses>
 			<li>Melee</li>
 			<li>MeleePiercer</li>

@@ -37,9 +37,8 @@
 			<layers>
 				<li>Belt</li>
 			</layers>
-			<tags>
-				<li>Neolithic</li>
-				<li>Medieval</li>
+			<tags Inherit="False">
+				<li>Blank</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

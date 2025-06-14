@@ -62,7 +62,6 @@
 			</capacities>
 			<power>24</power>
 			<cooldownTime>2.8</cooldownTime>
-			<armorPenetration>0.3</armorPenetration>
 		  </li>
 		  <li>
 			<label>edge</label>
@@ -71,7 +70,6 @@
 			</capacities>
 			<power>26</power>
 			<cooldownTime>2.8</cooldownTime>
-			<armorPenetration>0.3</armorPenetration>
 			<extraMeleeDamages>
 			  <li>
 				<def>Stun</def>
