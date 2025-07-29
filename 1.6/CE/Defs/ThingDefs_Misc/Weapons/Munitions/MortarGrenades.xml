@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==================== AmmoSet ========================== -->
+	
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_TA_HandMortar</defName>
+		<label>Mortar Grenades</label>
+		<ammoTypes>
+			<Ammo_MortarGrenade>Bullet_MortarGrenade_indirect</Ammo_MortarGrenade>
+			<Ammo_TA_SmokeGrenade>Bullet_TA_SmokeGrenade_indirect</Ammo_TA_SmokeGrenade>
+			<Ammo_TA_Firework>Bullet_TA_Firework_indirect</Ammo_TA_Firework>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_TA_HandMortar_Flare</defName>
+		<label>Mortar Grenades</label>
+		<ammoTypes>
+			<Ammo_TA_Firework>Bullet_Flare</Ammo_TA_Firework>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+	 
+	<!--firework-->
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="HandMortarBombBase">
+		<defName>Ammo_TA_Firework</defName>
+		<label>fireworks</label>
+		<description>paper machet shell filled with a gunpowder mix that burns bright.</description>
+		<graphicData>
+			<texPath>Weapons/Munitions/TA_Firework</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>0.5</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">0.7</Bulk>
+		</statBases>
+		<ammoClass>FireShell</ammoClass>
+		<detonateProjectile>Bullet_TA_Firework_indirect</detonateProjectile>
+	</ThingDef>
+	
+	<!--bursting grenade and smoke grenade at HandGrenades-->	
+
+
+	<!-- ================== Projectiles ================== -->
+	<!--base CE mortar grenade overwrite-->
+	<ThingDef ParentName="BaseExplosiveBullet" Name="Bullet_MortarGrenade">
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<defName>Bullet_MortarGrenade</defName>
+		<label>bursting grenade</label>
+		<graphicData>
+			<texPath>Weapons/Munitions/TA_IronGrenade_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.78</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<explosionRadius>1.5</explosionRadius>
+			<speed>22</speed>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<suppressionFactor>3.0</suppressionFactor>
+			<dangerFactor>2.0</dangerFactor>
+			<airborneSuppressionFactor>0.25</airborneSuppressionFactor>
+			<explosionDelay>35</explosionDelay>
+			<dropsCasings>false</dropsCasings>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Medium>17</Fragment_Medium>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--indirect launch-->
+
+	<ThingDef ParentName="BaseHandMortarIndirect">
+		<defName>Bullet_MortarGrenade_indirect</defName>
+		<label>bursting grenade</label>
+		<graphicData>
+			<texPath>Weapons/Munitions/TA_IronGrenade_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<explosionRadius>1.5</explosionRadius>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<explosionDelay>35</explosionDelay>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Medium>17</Fragment_Medium>
+				</fragments>
+			</li>
+		</comps>
+		<modExtensions>
+            <li Class="ProjectileImpactFX.EffectProjectileExtension">
+				<AutoAssign>false</AutoAssign>
+				<CreateTerrainEffects>false</CreateTerrainEffects>
+				<ImpactSoundDef>CE_HeavyProjectileImpact</ImpactSoundDef>
+				<explosionFleckSize>0.8</explosionFleckSize>
+            </li>
+        </modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHandMortarIndirect">
+		<defName>Bullet_TA_SmokeGrenade_indirect</defName>
+		<label>smoke grenade</label>
+		<graphicData>
+			<texPath>Weapons/Munitions/TA_SmokeGrenade_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>3.5</explosionRadius>
+			<damageDef>Smoke</damageDef>
+			<postExplosionGasType>BlindSmoke</postExplosionGasType>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<explosionDelay>35</explosionDelay>
+			<screenShakeFactor>0</screenShakeFactor>
+		</projectile>
+		<modExtensions>
+            <li Class="ProjectileImpactFX.EffectProjectileExtension">
+				<AutoAssign>false</AutoAssign>
+				<CreateTerrainEffects>false</CreateTerrainEffects>
+				<ImpactSoundDef>CE_HeavyProjectileImpact</ImpactSoundDef>
+            </li>
+        </modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHandMortarIndirect">
+		<defName>Bullet_TA_Firework_indirect</defName>
+		<label>incendiary</label>
+		<graphicData>
+			<texPath>Weapons/Munitions/TA_Firework_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>PrometheumFlame</damageDef>
+			<damageAmountBase>4</damageAmountBase>
+			<explosionRadius>2</explosionRadius>
+			<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.25</preExplosionSpawnChance>
+			<soundExplode>MortarIncendiary_Explode</soundExplode>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="GrenadeRecipeBase">
+		<defName>MakeAmmo_TA_Firework</defName>
+		<label>Make fireworks x12</label>
+		<description>Craft 12 Fireworks</description>
+		<jobString>Making Fireworks</jobString>
+		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
+        <recipeUsers>
+            <li>ElectricSmithy</li>
+            <li>FueledSmithy</li>
+        </recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>FSX</li>
+				<li>Prometheum</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_TA_Firework>12</Ammo_TA_Firework>
+		</products>
+		<workAmount>5000</workAmount>
+	</RecipeDef>
+	
+</Defs>

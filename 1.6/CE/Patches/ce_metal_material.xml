@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+            defName="TA_Bazubands" or
+            defName="TA_Gauntlets" or
+            defName="TA_Cuirass" or
+            defName="TA_Gorget" or
+            defName="TA_Krug" or
+            defName="TA_PikemanPlate" or
+            defName="TA_ThreeQuartersPlate" or
+            defName="TA_Yushman" or
+            defName="TA_Burgonet" or
+            @Name="TA_BurgonetVisored_Base" or
+            @Name="TA_CloseHelmet_Base" or
+            @Name="TA_LobstertailHelmet_Base" or
+            @Name="TA_Morion_Base"
+			]/stuffCategories</xpath>
+		<value>
+            <stuffCategories>
+                <li>Steeled</li>
+            </stuffCategories>
+		</value>
+	</Operation>
+	
+</Patch>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>TA_WarPick</defName>
+		<label>war pick</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/TA_WarPick</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.87</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-25</equippedAngleOffset>
+		<possessionCount>1</possessionCount>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<stuffCategories>
+			<li>Metallic_Weapon</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<WoodLog>35</WoodLog>
+		</costList>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>1.2</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">5.5</Bulk>
+			<MeleeCounterParryBonus>0.33</MeleeCounterParryBonus>
+		</statBases>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>shaft</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>1.59</cooldownTime>
+				<chanceFactor>0.05</chanceFactor>
+				<armorPenetrationBlunt>0.625</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.35</cooldownTime>
+				<chanceFactor>0.95</chanceFactor>
+				<armorPenetrationBlunt>9.625</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.80</cooldownTime>
+				<chanceFactor>0.7</chanceFactor>
+				<armorPenetrationBlunt>6.5</armorPenetrationBlunt>
+				<armorPenetrationSharp>2.7</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.45</MeleeCritChance>
+			<MeleeParryChance>0.19</MeleeParryChance>
+			<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.1,-0.1</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

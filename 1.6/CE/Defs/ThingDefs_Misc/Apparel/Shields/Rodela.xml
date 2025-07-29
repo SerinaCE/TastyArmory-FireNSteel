@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="ShieldBase">
+		<defName>TA_Rodela</defName>
+		<label>rodela</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Shields/TA_Rodela</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<stuffCategories>
+			<li>Steeled</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<possessionCount>1</possessionCount>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<recipeUsers>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+            <ArmorRating_Heat>0.40</ArmorRating_Heat>
+			<Mass>3.7</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">7</Bulk>
+			<WornBulk MayRequire="CETeam.CombatExtended">1</WornBulk>
+		</statBases>
+		<equippedStatOffsets>
+			<ReloadSpeed>-0.2</ReloadSpeed>
+			<MeleeHitChance>-1</MeleeHitChance>
+			<ShootingAccuracyPawn>-0.15</ShootingAccuracyPawn>
+			<AimingAccuracy>-0.08</AimingAccuracy>
+			<Suppressability MayRequire="CETeam.CombatExtended">-0.25</Suppressability>
+			<MeleeCritChance>-0.05</MeleeCritChance>
+			<MeleeParryChance>1.0</MeleeParryChance>
+		</equippedStatOffsets>
+		<randomStyleChance>0.3</randomStyleChance>
+		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<tags>
+				<li>MedievalShield</li>
+			</tags>
+			<drawData>
+				<defaultData>
+					<layer>91</layer>
+					<offset>(0,0,0)</offset>
+				</defaultData>
+				<dataEast>
+					<layer>-5</layer>
+				</dataEast>
+				<dataNorth>
+					<layer>-5</layer>
+				</dataNorth>
+			</drawData>
+		</apparel>
+		<modExtensions>
+			<li Class="CombatExtended.ShieldDefExtension">
+				<shieldCoverage>
+					<li>Teeth</li>
+					<li>Neck</li>
+					<li>Hands</li>
+					<li>Arms</li>
+					<li>Shoulders</li>
+					<li>Torso</li>
+				</shieldCoverage>
+			</li>
+		</modExtensions>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

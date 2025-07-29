@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingStyleDef>
+		<defName>TA_HussarShield_BlackWing</defName>
+		<graphicData>
+			<texPath>Apparel/Shields/TA_HussarShield_BlackWing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+  
+	<ThingStyleDef>
+		<defName>TA_HussarShield_WhiteWing</defName>
+		<graphicData>
+			<texPath>Apparel/Shields/TA_HussarShield_WhiteWing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+
+	<ThingDef ParentName="ShieldBase">
+		<defName>TA_HussarShield</defName>
+		<label>hussar shield</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Shields/TA_HussarShield_Plain</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<randomStyleChance>0.6</randomStyleChance>
+		<randomStyle>
+			<li>
+				<styleDef>TA_HussarShield_WhiteWing</styleDef>
+			</li>
+			<li>
+				<styleDef>TA_HussarShield_BlackWing</styleDef>
+			</li>
+		</randomStyle>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<WoodLog>50</WoodLog>
+			<Steel>10</Steel>
+		</costList>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<possessionCount>1</possessionCount>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<recipeUsers>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>6500</WorkToMake>
+			<MaxHitPoints>130</MaxHitPoints>
+			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.50</ArmorRating_Heat>
+			<Mass>4.5</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">8</Bulk>
+			<WornBulk MayRequire="CETeam.CombatExtended">1</WornBulk>
+		</statBases>
+		<equippedStatOffsets>
+			<ReloadSpeed>-0.2</ReloadSpeed>
+			<MeleeHitChance>-1</MeleeHitChance>
+			<ShootingAccuracyPawn>-0.15</ShootingAccuracyPawn>
+			<AimingAccuracy>-0.08</AimingAccuracy>
+			<Suppressability MayRequire="CETeam.CombatExtended">-0.25</Suppressability>
+			<MeleeCritChance>-0.05</MeleeCritChance>
+			<MeleeParryChance>1.0</MeleeParryChance>
+		</equippedStatOffsets>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>91</layer>
+				</defaultData>
+			</drawData>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<tags>
+				<li>MedievalShield</li>
+			</tags>		
+			<!--wornGraphicPath>Apparel/Shields/TA_HussarShield/TA_HussarShield_Wing</wornGraphicPath>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<east>
+					<offset>(0,0)</offset>
+				</east>
+				<west>
+					<offset>(0,0)</offset>
+				</west>
+				<north>
+					<offset>(0,0)</offset>
+				</north>
+				<south>
+					<offset>(0,0)</offset>
+				</south>
+				<male>
+					<scale>(1,1)</scale>
+				</male>
+				<female>
+					<scale>(1,1)</scale>
+				</female>
+				<thin>
+					<scale>(0.8,1)</scale>
+				</thin>
+				<hulk>
+					<scale>(1.25,1.25)</scale>
+				</hulk>
+				<fat>
+					<scale>(1.13,1.13)</scale>
+				</fat>
+			</wornGraphicData>
+			<drawData>
+				<defaultData>
+					<layer>91</layer>
+					<offset>(0,0,0)</offset>
+				</defaultData>
+				<dataEast>
+					<layer>-5</layer>
+				</dataEast>
+				<dataNorth>
+					<layer>-5</layer>
+				</dataNorth>
+			</drawData-->
+			<!--renderNodeProperties>
+				<li>
+					<nodeClass>CombatExtended.PawnRenderNode_Apparel</nodeClass>
+					<workerClass>CombatExtended.PawnRenderNodeWorker_Drafted</workerClass>
+					<texPath>Apparel/Shields/TA_HussarShield/TA_HussarShield_Wing</texPath>
+					<shaderTypeDef>CutoutComplex</shaderTypeDef>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<drawData>
+						<scale>1</scale>
+						<defaultData>
+							<layer>80</layer>
+							<offset>(0, 0, 0)</offset>
+						</defaultData>
+						<dataEast>
+							<layer>-5</layer>
+						</dataEast>
+						<dataNorth>
+							<layer>-5</layer>
+						</dataNorth>
+					</drawData>
+				</li>
+			</renderNodeProperties-->
+		</apparel>
+		<modExtensions>
+			<li Class="CombatExtended.ShieldDefExtension">
+				<shieldCoverage>
+					<li>FullHead</li>
+					<li>Neck</li>
+					<li>Hands</li>
+					<li>Arms</li>
+					<li>Shoulders</li>
+					<li>Torso</li>
+				</shieldCoverage>
+			</li>
+		</modExtensions>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

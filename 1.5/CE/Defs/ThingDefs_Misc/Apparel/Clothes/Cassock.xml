@@ -25,6 +25,11 @@
 			<li>ApparelMisc</li>
 		</thingCategories>
 		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>22</layer>
+				</defaultData>
+			</drawData>
 			<shellRenderedBehindHead>true</shellRenderedBehindHead>
 			<developmentalStageFilter>Adult</developmentalStageFilter>
 			<bodyPartGroups>

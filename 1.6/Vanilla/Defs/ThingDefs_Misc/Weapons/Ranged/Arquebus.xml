@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- ==================== Flintlock Musket ==================== -->
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>TA_Bullet_Arquebus</defName>
+		<label>musket bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+
+  <ThingDef ParentName="BaseMakeableGun">
+    <defName>TA_Arquebus</defName>
+    <label>matchlock arquebus</label>
+    <description>.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Weapons/Ranged/TA_Arquebus</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
+    <costList>
+		<Steel>55</Steel>
+		<WoodLog>11</WoodLog>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>Gun</li>
+      <li>SimpleGun</li>
+      <li>NeolithicRangedHeavy</li>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+      </recipeUsers>
+      <researchPrerequisite>Vanilla_GunpowderWeaponry</researchPrerequisite>
+    </recipeMaker>
+	<generateCommonality>1</generateCommonality>
+	<statBases>
+		<WorkToMake>11000</WorkToMake>
+		<Mass>4</Mass>
+		<AccuracyTouch>0.75</AccuracyTouch>
+		<AccuracyShort>0.7</AccuracyShort>
+		<AccuracyMedium>0.55</AccuracyMedium>
+		<AccuracyLong>0.4</AccuracyLong>
+		<RangedWeapon_Cooldown>3.8</RangedWeapon_Cooldown>
+	</statBases>
+	<verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>TA_Bullet_Arquebus</defaultProjectile>
+			<warmupTime>1.5</warmupTime>
+			<range>30.9</range>
+			<soundCast>Shot_Revolver</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</li>
+	</verbs>
+	<tools>
+		<li>
+			<label>stock</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2</cooldownTime>
+		</li>
+		<li>
+			<label>barrel</label>
+			<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>2</cooldownTime>
+		</li>
+	</tools>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef Name="TA_LobstertailHelmet_Base" ParentName="ArmorSmithableBase" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>9500</WorkToMake>
+			<Mass>2.3</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">5</Bulk>
+			<WornBulk MayRequire="CETeam.CombatExtended">0</WornBulk>
+			<StuffEffectMultiplierArmor>2.8</StuffEffectMultiplierArmor>
+			<Insulation_Cold>4</Insulation_Cold>			
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets />
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<parentTagDef>ApparelHead</parentTagDef>
+			<renderSkipFlags>
+				<li>Hair</li>
+			</renderSkipFlags>
+			<bodyPartGroups>
+				<li>FullHead</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+				<li MayRequire="CETeam.CombatExtended">OnHead</li>
+				<li MayRequire="CETeam.CombatExtended">StrappedHead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+						<parts>
+							<li>Eye</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+						<parts>
+							<li>Eye</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+						<parts>
+							<li>Jaw</li>
+							<li>Nose</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+						<parts>
+							<li>Jaw</li>
+							<li>Nose</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_LobstertailHelmet_Base">
+		<defName>TA_LobstertailHelmet</defName>
+		<label>lobstertail helmet</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_LobsterHelmet/TA_LobsterHelmet_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Apparel/Helmets/TA_LobsterHelmet/TA_LobsterHelmet</wornGraphicPath>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorDecent</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_LobstertailHelmet_Base">
+		<defName>TA_HussarHelmet</defName>
+		<label>hussar helmet</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_HussarHelmet/TA_HussarHelmet_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Apparel/Helmets/TA_HussarHelmet/TA_HussarHelmet</wornGraphicPath>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorDecent</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_LobstertailHelmet_Base">
+		<defName>TA_SipahiHelmet</defName>
+		<label>sipahi helmet</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_SipahiHelmet/TA_SipahiHelmet_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Apparel/Helmets/TA_SipahiHelmet/TA_SipahiHelmet</wornGraphicPath>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorDecent</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+
+</Defs>

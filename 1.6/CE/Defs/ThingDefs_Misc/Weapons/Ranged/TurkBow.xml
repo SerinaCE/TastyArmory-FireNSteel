@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!--Bow-->
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>TA_TurkBow</defName>
+		<label>turkish warbow</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Ranged/TA_TurkBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Bow_Large</soundInteract>
+		<costList>
+			<Leather_Plain>20</Leather_Plain>
+			<WoodLog>30</WoodLog>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>1</Mass>
+			<SightsEfficiency>0.8</SightsEfficiency>
+			<ShotSpread>1</ShotSpread>
+			<SwayFactor>2</SwayFactor>
+			<Bulk MayRequire="CETeam.CombatExtended">6.00</Bulk>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>NeolithicRangedHeavy</li>
+			<li>NeolithicRangedChief</li>
+			<li>CE_Bow</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_TurkBow_Steel</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>30</range>
+				<soundCast>Bow_Large</soundCast>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<ammoSet>AmmoSet_TurkBow</ammoSet>
+				<AmmoGenPerMagOverride>5</AmmoGenPerMagOverride>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>Snapshot</aiAimMode>
+			</li>
+		</comps>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.6</cooldownTime>
+				<armorPenetrationBlunt>0.65</armorPenetrationBlunt>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.1,1.1</DrawSize>
+				<DrawOffset>0,0</DrawOffset>
+			</li>
+		</modExtensions>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<researchPrerequisite>RecurveBow</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<rotateInShelves>false</rotateInShelves>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef Name="TA_CloseHelmet_Base" ParentName="ArmorSmithableBase" Abstract="True">
+		<description>.</description>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>66</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>175</MaxHitPoints>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>3.3</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">5</Bulk>
+			<WornBulk MayRequire="CETeam.CombatExtended">1</WornBulk>
+			<StuffEffectMultiplierArmor>3.5</StuffEffectMultiplierArmor>
+			<Insulation_Cold>4</Insulation_Cold>			
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets />
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<parentTagDef>ApparelHead</parentTagDef>
+			<bodyPartGroups>
+				<li>FullHead</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+				<li MayRequire="CETeam.CombatExtended">OnHead</li>
+				<li MayRequire="CETeam.CombatExtended">StrappedHead</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorBasic</li>
+				<li>MedievalArmorDecent</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_CloseHelmet_Base">
+		<label>close helmet</label>
+		<defName>TA_CloseHelmet_off</defName>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_CloseHelmet/TA_CloseHelmet_off_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit="False" />
+		<apparel>
+			<wornGraphicPath>Apparel/Helmets/TA_CloseHelmet/TA_CloseHelmet_off</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>TA_CloseHelmet_on</SwitchTo>
+				<graphicPath>Apparel/Helmets/TA_CloseHelmet/TA_CloseHelmet_button_on</graphicPath>
+				<Label>close visor</Label>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.0</ArmorRating_Sharp>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.0</ArmorRating_Blunt>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+						<parts>
+							<li>Jaw</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+						<parts>
+							<li>Jaw</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_CloseHelmet_Base" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+		<label>close helmet</label>
+		<defName>TA_CloseHelmet_on</defName>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_CloseHelmet/TA_CloseHelmet_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedStatOffsets>
+			<AimingAccuracy MayRequire="CETeam.CombatExtended">-0.4</AimingAccuracy>
+			<MeleeHitChance>-2</MeleeHitChance>
+			<Suppressability MayRequire="CETeam.CombatExtended">-0.2</Suppressability>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Apparel/Helmets/TA_CloseHelmet/TA_CloseHelmet</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>TA_CloseHelmet_off</SwitchTo>
+				<graphicPath>Apparel/Helmets/TA_CloseHelmet/TA_CloseHelmet_button_off</graphicPath>
+				<Label>open visor</Label>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+							<li>Jaw</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+							<li>Jaw</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+			defName="TA_TallBoots" or
+			defName="TA_TallGloves" or
+			defName="TA_BuffCoat" or
+			defName="TA_BuffVest" or
+			defName="TA_PaddedDoublet"
+			]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TA_LandsknechtHat"]</xpath>
+		<value>
+			<recipeMaker>
+				<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+			</recipeMaker>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+			defName="TA_Halberd" or
+			defName="TA_Lance" or
+			defName="TA_Pike"
+			]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisite>DankPyon_MilitaryPolearms</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="TA_Pike"]/label</xpath>
+		<value>
+			<label>long pike</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+			defName="DankPyon_Apparel_Hauberk" or
+			defName="DankPyon_Apparel_Heavy_Hauberk" or
+			@Name="DankPyon_HeraldicHauberkBase" or
+			defName="DankPyon_Apparel_AdornedMailShirt"
+			]/apparel/layers</xpath>
+		<value>
+			<li>TA_UnderArmor</li>
+		</value>
+	</Operation>
+
+</Patch>

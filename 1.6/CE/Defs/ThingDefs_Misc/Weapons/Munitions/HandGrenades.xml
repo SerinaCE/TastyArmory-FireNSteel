@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!--bursting grenade throwable-->	
+	<ThingDef ParentName="Bullet_MortarGrenade">
+		<defName>Bullet_MortarGrenade_thrown</defName>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>10</speed>
+			<explosionDelay>80</explosionDelay>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="HandMortarBombBase">
+		<defName>Ammo_MortarGrenade</defName>
+		<label>bursting grenades</label>
+		<description>cast iron shell filled with gunpowder, fitted with fuse.</description>
+		<graphicData>
+			<texPath>Weapons/Munitions/TA_IronGrenade</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<equipmentType>Primary</equipmentType>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<statBases>
+			<Mass>0.9</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">1</Bulk>
+			<MarketValue>12.4</MarketValue>
+			<SightsEfficiency>0.65</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>2.0</generateCommonality>
+		<weaponTags>
+			<li>CE_AI_AOE</li>
+			<li>GrenadeDestructive</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<ammoClass>BurstingShell</ammoClass>
+		<tickerType>Normal</tickerType>
+		<resourceReadoutPriority>First</resourceReadoutPriority>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw bursting bomb</label>
+				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>10.0</range>
+				<minRange>2.9</minRange>
+				<warmupTime>2</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Bullet_MortarGrenade_thrown</defaultProjectile>
+				<onlyManualCast>true</onlyManualCast>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				<ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+		<detonateProjectile>Bullet_MortarGrenade</detonateProjectile>
+	</ThingDef>	
+	
+	<!--smoke grenade throwable-->	
+	<ThingDef ParentName="BaseExplosiveBullet">
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<defName>Bullet_TA_SmokeGrenade_thrown</defName>
+		<label>smoke grenades</label>
+		<graphicData>
+			<texPath>Weapons/Munitions/TA_SmokeGrenade_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.78</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>3.5</explosionRadius>
+			<damageDef>Smoke</damageDef>
+			<suppressionFactor>0.0</suppressionFactor>
+			<dangerFactor>0.0</dangerFactor>
+			<explosionDelay>60</explosionDelay>
+			<postExplosionGasType>BlindSmoke</postExplosionGasType>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<speed>12</speed>
+			<screenShakeFactor>0</screenShakeFactor>
+			<dropsCasings>false</dropsCasings>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="HandMortarBombBase">
+		<defName>Ammo_TA_SmokeGrenade</defName>
+		<label>smoke grenade</label>
+		<description>paper machet shell filled with a gunpowder mix that burns into thick smoke, fitted with fuse.</description>
+		<graphicData>
+			<texPath>Weapons/Munitions/TA_SmokeGrenade</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<equipmentType>Primary</equipmentType>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<statBases>
+			<Mass>0.6</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">1</Bulk>
+			<MarketValue>12.4</MarketValue>
+			<SightsEfficiency>0.65</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>CE_AI_SMOKE</li>
+			<li>GrenadeSmoke</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<ammoClass>Smoke</ammoClass>
+		<tickerType>Normal</tickerType>
+		<resourceReadoutPriority>First</resourceReadoutPriority>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw smoke grenade</label>
+				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>11.0</range>
+				<minRange>2.9</minRange>
+				<warmupTime>2</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Bullet_TA_SmokeGrenade_thrown</defaultProjectile>
+				<onlyManualCast>true</onlyManualCast>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				<ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+		<detonateProjectile>Bullet_TA_SmokeGrenade_thrown</detonateProjectile>
+	</ThingDef>
+
+	<!--glass grenade-->
+	
+	<ThingDef ParentName="BaseFragment"><!-- Flies from around 4 to 35 cells away from the explosion if the angle range is unchanged. -->
+		<defName>Fragment_GlassShard</defName>
+		<label>glass shards</label>
+		<graphicData>
+			<texPath>Things/Projectile/Fragments/Fragment_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Fragment</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<speed>40</speed>
+			<armorPenetrationSharp>0.8</armorPenetrationSharp>
+			<armorPenetrationBlunt>6</armorPenetrationBlunt>
+			<gravityFactor>8</gravityFactor>
+			<tickToTruePos>0</tickToTruePos>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Bullet_TA_GlassGrenade</defName>
+		<label>glass grenade</label>
+		<graphicData>
+			<texPath>Weapons/Munitions/TA_GlassGrenade_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.78</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>1.5</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<explosionDelay>70</explosionDelay>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<speed>12</speed>
+			<suppressionFactor>3.0</suppressionFactor>
+			<dangerFactor>2.0</dangerFactor>
+			<airborneSuppressionFactor>0.25</airborneSuppressionFactor>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_GlassShard>100</Fragment_GlassShard>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+		<defName>Weapon_TA_GlassGrenade</defName>
+		<equipmentType>Primary</equipmentType>
+		<label>glass grenades</label>
+		<description>Doctors hate this small spherical-ish glass bottle filled with gunpowder, fitted with a fuse.</description>
+		<graphicData>
+			<texPath>Weapons/Munitions/TA_GlassGrenade</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Medieval</techLevel>
+		<stackLimit>50</stackLimit>
+		<statBases>
+			<Mass>0.550</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">1</Bulk>
+			<SightsEfficiency>1.0</SightsEfficiency>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>2.0</generateCommonality>
+		<weaponTags>
+			<li>CE_AI_Grenade</li>
+			<li>CE_AI_AOE</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw glass grenade</label>
+				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>11.0</range>
+				<minRange>2.9</minRange>
+				<warmupTime>2</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Bullet_TA_GlassGrenade</defaultProjectile>
+				<onlyManualCast>true</onlyManualCast>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				<ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
+			</li>
+		</verbs>
+		<detonateProjectile>Bullet_TA_GlassGrenade</detonateProjectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="GrenadeRecipeBase">
+		<defName>MakeAmmo_TA_SmokeGrenades</defName>
+		<label>Make smoke grenades x12</label>
+		<description>Craft 12 Smoke Grenades</description>
+		<jobString>Making Smoke Grenades</jobString>
+		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
+        <recipeUsers>
+            <li>ElectricSmithy</li>
+            <li>FueledSmithy</li>
+        </recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Prometheum</li>
+				<li>Cloth</li>
+				<li>WoodLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_TA_SmokeGrenade>12</Ammo_TA_SmokeGrenade>
+		</products>
+		<workAmount>5000</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GrenadeRecipeBase">
+		<defName>MakeAmmo_MortarGrenade</defName>
+		<label>Make bursting grenades x12</label>
+		<description>Craft 12 Bursting Grenades</description>
+		<jobString>Making Bursting Grenades</jobString>
+		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
+        <recipeUsers>
+            <li>ElectricSmithy</li>
+            <li>FueledSmithy</li>
+        </recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>24</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>WoodLog</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_MortarGrenade>12</Ammo_MortarGrenade>
+		</products>
+		<workAmount>5500</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GrenadeRecipeBase">
+		<defName>MakeWeapon_TA_GlassGrenade</defName>
+		<label>Make glass grenades x12</label>
+		<description>Craft 12 Glass Grenades</description>
+		<jobString>Making Glass Grenades</jobString>
+		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
+        <recipeUsers>
+            <li>ElectricSmithy</li>
+            <li>FueledSmithy</li>
+        </recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Weapon_TA_GlassGrenade>12</Weapon_TA_GlassGrenade>
+		</products>
+		<workAmount>5500</workAmount>
+	</RecipeDef>
+
+
+</Defs>

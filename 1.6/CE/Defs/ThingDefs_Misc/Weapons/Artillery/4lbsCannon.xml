@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== 12 Pounder Cannon ==================== -->
+
+	<ThingDef ParentName="BaseTurretGun">
+		<defName>TA_FourPounderCannon_Gun</defName>
+		<label>4-pounder cannon</label>
+		<graphicData>
+			<texPath>Building/TA_LightCannon_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>4-pounder cannon mounted on a carriage.</description>
+		<statBases>
+			<SightsEfficiency>0.7</SightsEfficiency>
+			<ShotSpread>0.10</ShotSpread>
+			<SwayFactor>0.75</SwayFactor>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+			<Mass>1</Mass>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>3.5</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_4lbsCannonBall_Round</defaultProjectile>
+				<warmupTime>2.2</warmupTime>
+				<range>75</range>
+				<soundCast>Shot_CE_Musket</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<recoilPattern>Mounted</recoilPattern>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>6.9</reloadTime>
+				<ammoSet>AmmoSet_4lbsCannon</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TurretMannedBuildableBase">
+		<defName>TA_FourPounderCannon_Turret</defName>
+		<label>4 pounder cannon</label>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Building/TA_Cannon_base</texPath>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.3,0.8)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Building/TA_LightCannon_ico</uiIconPath>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>180</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">110</Bulk>
+			<Beauty>20</Beauty>
+		</statBases>
+		<description>4-pounder light field cannon mounted on a carriage.</description>
+		<costList>
+			<Steel>200</Steel>
+			<WoodLog>150</WoodLog>
+		</costList>
+		<techLevel>Medieval</techLevel>
+		<building>
+			<turretGunDef>TA_FourPounderCannon_Gun</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>2.5</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<researchPrerequisites>
+			<li>CE_Gunpowder</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef Name="TA_Cassock_Base" ParentName="ApparelMakeableBase" Abstract="True">
+		<label>cassock</label>
+		<description>.</description>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>2</Mass>
+			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<apparel>
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Cassock_Base">
+		<defName>TA_CassockClosed</defName>
+		<graphicData>
+			<texPath>Apparel/Clothes/TA_Cassock/TA_Cassock_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<StuffEffectMultiplierInsulation_Cold>1.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>27</layer>
+				</defaultData>
+			</drawData>
+			<wornGraphicPath>Apparel/Clothes/TA_Cassock/TA_Cassock</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>TA_CassockShoulder</SwitchTo>
+				<graphicPath>Apparel/Clothes/TA_CassockShoulder/TA_CassockShoulder_ico</graphicPath>
+				<Label>unbutton</Label>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Cassock_Base">
+		<defName>TA_CassockShoulder</defName>
+		<graphicData>
+			<texPath>Apparel/Clothes/TA_CassockShoulder/TA_CassockShoulder_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit="False" />
+		<statBases>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.7</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>0.50</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>27</layer>
+				</defaultData>
+			</drawData>
+			<wornGraphicPath>Apparel/Clothes/TA_CassockShoulder/TA_CassockShoulder</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>TA_CassockClosed</SwitchTo>
+				<graphicPath>Apparel/Clothes/TA_Cassock/TA_Cassock_ico</graphicPath>
+				<Label>button up</Label>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0</ArmorRating_Sharp>
+						<parts>
+							<li>Torso</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0</ArmorRating_Blunt>
+						<parts>
+							<li>Torso</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

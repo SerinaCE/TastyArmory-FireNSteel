@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="ArmorSmithableBase">
+		<defName>TA_ThreeQuartersPlate</defName>
+		<label>three quarters plate</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Armor/TA_ThreeQuartersPlate/TA_ThreeQuartersPlate_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>160</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>-0.15</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToMake>50000</WorkToMake>
+			<Bulk MayRequire="CETeam.CombatExtended">60</Bulk>
+			<WornBulk MayRequire="CETeam.CombatExtended">3</WornBulk>
+			<Mass>15</Mass>
+			<StuffEffectMultiplierArmor>3.6</StuffEffectMultiplierArmor>
+			<Insulation_Cold>7</Insulation_Cold>
+			<EquipDelay>12</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>23</layer>
+				</defaultData>
+			</drawData>
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Armor/TA_ThreeQuartersPlate/TA_ThreeQuartersPlate</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>TA_UnderArmor</li>
+			</layers>
+			<tags>
+				<li>MedievalArmorDecent</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+							<li>Shoulder</li>
+							<li>Arm</li>
+							<li>Leg</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+							<li>Shoulder</li>
+							<li>Arm</li>
+							<li>Leg</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

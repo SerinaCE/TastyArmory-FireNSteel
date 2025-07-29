@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+	<defName>TA_Hanger</defName>
+	<label>hanger</label>
+	<description>or cutlass</description>
+	<graphicData>
+		<texPath>Weapons/Melee/TA_Hanger</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>0.93</drawSize>
+	</graphicData>
+	<equippedAngleOffset>-25</equippedAngleOffset>
+		<techLevel>Medieval</techLevel>
+		<weaponTags Inherit="False">
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<recipeMaker>
+			<recipeUsers>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>55</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<relicChance>1.5</relicChance>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponMelee</li>
+		</tradeTags>
+		<tools>
+		  <li>
+			<label>handle</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		  <li>
+			<label>point</label>
+			<capacities>
+			  <li>Stab</li>
+			</capacities>
+			<power>16</power>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		  <li>
+			<label>edge</label>
+			<capacities>
+			  <li>Cut</li>
+			</capacities>
+			<power>16</power>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		</tools>
+  </ThingDef>
+	
+</Defs>

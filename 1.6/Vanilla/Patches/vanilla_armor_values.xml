@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+      
+
+    <!--Clothes-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  @Name="TA_Hat_Base" or
+                  @Name="TA_Cassock_Base" or
+                  @Name="TA_Longcoat_Base" or
+                  @Name="TA_Doublet_Base" or
+                  @Name="TA_ShirtSashBelt_Base" or
+                  @Name="TA_Hat_Base"
+                  ]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+    <!--Padded-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  defName="TA_PaddedDoublet" or
+                  defName="TA_BuffCoat"
+                  ]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.50</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  defName="TA_PaddedVest" or
+                  defName="TA_BuffVest"
+                  ]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  defName="TA_TallBoots" or
+                  defName="TA_TallGloves"
+                  ]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+    <!--Armor-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  defName="TA_Bazubands"
+			]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  defName="TA_Gauntlets" or
+				  defName="TA_Gorget" or
+				  defName="TA_Krug" or
+				  defName="TA_Yushman" or
+				  defName="TA_PikemanPlate"
+			]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  defName="TA_Cuirass"
+			]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  defName="TA_ThreeQuartersPlate"
+			]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.82</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+      
+	<!--Helmet-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  @Name="TA_Morion_Base"
+			]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.72</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  defName="TA_Burgonet" or
+				  @Name="TA_BurgonetVisored_Base" or
+				  @Name="TA_LobstertailHelmet_Base"
+			]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.77</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  @Name="TA_CloseHelmet_Base"
+			]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+      
+</Patch>

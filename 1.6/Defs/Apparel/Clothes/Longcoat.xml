@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef Name="TA_Longcoat_Base" ParentName="ApparelMakeableBase" Abstract="True">
+		<label>longcoat</label>
+		<description>.</description>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<equippedStatOffsets />
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>2</Mass>
+			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<apparel>
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Clothes/TA_Longcoat/TA_Longcoat</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="TA_Longcoat_Base">
+		<defName>TA_LongcoatClosed</defName>
+		<graphicData>
+			<texPath>Apparel/Clothes/TA_Longcoat/TA_Longcoat_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<StuffEffectMultiplierInsulation_Cold>1.6</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>-0.2</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>22</layer>
+				</defaultData>
+			</drawData>
+			<wornGraphicPath>Apparel/Clothes/TA_Longcoat/TA_Longcoat</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>TA_LongcoatOpen</SwitchTo>
+				<graphicPath>Apparel/Clothes/TA_LongcoatOpen/TA_LongcoatOpen_ico</graphicPath>
+				<Label>unbutton</Label>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Longcoat_Base">
+		<defName>TA_LongcoatOpen</defName>
+		<graphicData>
+			<texPath>Apparel/Clothes/TA_LongcoatOpen/TA_LongcoatOpen_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit="False" />
+		<statBases>
+			<StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>25</layer>
+				</defaultData>
+			</drawData>
+			<wornGraphicPath>Apparel/Clothes/TA_LongcoatOpen/TA_LongcoatOpen</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VEF.Apparels.CompProperties_SwitchApparel" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<SwitchTo>TA_LongcoatClosed</SwitchTo>
+				<graphicPath>Apparel/Clothes/TA_Longcoat/TA_Longcoat_ico</graphicPath>
+				<Label>button up</Label>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+						<parts>
+							<li>Torso</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+						<parts>
+							<li>Torso</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+</Defs>
