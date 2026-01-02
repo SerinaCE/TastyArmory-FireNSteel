@@ -35,7 +35,6 @@
 				<li>Eyes</li>
 			</bodyPartGroups>
 			<layers>
-				<li MayRequire="CETeam.CombatExtended">OnHead</li>
 				<li>Overhead</li>
 			</layers>
 			<defaultOutfitTags>
