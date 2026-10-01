@@ -40,6 +40,10 @@
 					<layer>23</layer>
 				</defaultData>
 			</drawData>
+			<wornGraphicPath>Apparel/Armor/TA_PikemanPlate/TA_PikemanPlate</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
 			<shellRenderedBehindHead>true</shellRenderedBehindHead>
 			<developmentalStageFilter>Adult</developmentalStageFilter>
 			<bodyPartGroups>
@@ -48,10 +52,6 @@
 				<li>Shoulders</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/Armor/TA_PikemanPlate/TA_PikemanPlate</wornGraphicPath>
-			<layers>
-				<li>Middle</li>
-			</layers>
 			<tags>
 				<li>MedievalMilitary</li>
 				<li>MedievalArmorDecent</li>

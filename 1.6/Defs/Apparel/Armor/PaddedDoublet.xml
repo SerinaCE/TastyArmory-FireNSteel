@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+	<ThingStyleDef>
+		<defName>TA_PaddedDoubletStripy</defName>
+		<overrideLabel>padded doublet</overrideLabel>
+		<wornGraphicPath>Apparel/Armor/TA_PaddedDoubletStripy/TA_PaddedDoubletStripy</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Armor/TA_PaddedDoubletStripy/TA_PaddedDoubletStripy_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+	</ThingStyleDef>
 
 	<!-- ==================== Buffcoat ====================-->
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -9,7 +20,15 @@
 		<graphicData>
 			<texPath>Apparel/Armor/TA_PaddedDoublet/TA_PaddedDoublet_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		<randomStyleChance>0.5</randomStyleChance>
+		<randomStyle>
+			<li>
+				<chance>1</chance>
+				<styleDef>TA_PaddedDoubletStripy</styleDef>
+			</li>
+		</randomStyle>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<skillRequirements>
