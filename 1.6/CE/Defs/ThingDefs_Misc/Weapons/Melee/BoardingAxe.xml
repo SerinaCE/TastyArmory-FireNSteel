@@ -50,7 +50,7 @@
 				<capacities>
 					<li>Demolish</li>
 				</capacities>
-				<power>18</power>
+				<power>16</power>
 				<cooldownTime>2.65</cooldownTime>
 				<chanceFactor>1.2</chanceFactor>
 				<armorPenetrationBlunt>4</armorPenetrationBlunt>

@@ -1,15 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+
+	<ThingStyleDef>
+		<defName>TA_Hanger</defName>
+		<overrideLabel>hanger</overrideLabel>
+		<graphicData>
+			<texPath>Weapons/Melee/TA_Hanger</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>TA_Cutlass</defName>
+		<overrideLabel>cutlass</overrideLabel>
+		<graphicData>
+			<texPath>Weapons/Melee/TA_Cutlass</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
 		<defName>TA_Yatagan</defName>
-		<label>yatagan</label>
-		<description>.</description>
+		<overrideLabel>yatagan</overrideLabel>
 		<graphicData>
 			<texPath>Weapons/Melee/TA_Yatagan</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>0.95</drawSize>
 		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>TA_Katzbalger</defName>
+		<overrideLabel>katzbalger</overrideLabel>
+		<graphicData>
+			<texPath>Weapons/Melee/TA_Katzbalger</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>TA_Shortsword</defName>
+		<label>shortsword</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/TA_Hanger</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.94</drawSize>
+		</graphicData>
+		<randomStyleChance>1</randomStyleChance>
+		<randomStyle>
+			<li>
+				<chance>2</chance>
+				<styleDef>TA_Hanger</styleDef>
+			</li>
+			<li>
+				<chance>3</chance>
+				<styleDef>TA_Cutlass</styleDef>
+			</li>
+			<li>
+				<chance>1</chance>
+				<styleDef>TA_Yatagan</styleDef>
+			</li>
+			<li>
+				<chance>1</chance>
+				<styleDef>TA_Katzbalger</styleDef>
+			</li>
+		</randomStyle>
 		<equippedAngleOffset>-25</equippedAngleOffset>
 		<possessionCount>1</possessionCount>
 		<weaponClasses>
@@ -25,10 +82,10 @@
 		</stuffCategories>
 		<costStuffCount>55</costStuffCount>
 		<statBases>
-			<WorkToMake>95000</WorkToMake>
+			<WorkToMake>10000</WorkToMake>
 			<Mass>0.85</Mass>
 			<Bulk MayRequire="CETeam.CombatExtended">4</Bulk>
-			<MeleeCounterParryBonus>0.45</MeleeCounterParryBonus>
+			<MeleeCounterParryBonus>0.5</MeleeCounterParryBonus>
 		</statBases>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -47,7 +104,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>24</power>
+				<power>19</power>
 				<cooldownTime>1.44</cooldownTime>
 				<armorPenetrationBlunt>0.425</armorPenetrationBlunt>
 				<armorPenetrationSharp>0.5</armorPenetrationSharp>
@@ -72,8 +129,8 @@
 			</skillRequirements>
 		</recipeMaker>
 		<equippedStatOffsets>
-			<MeleeCritChance>0.3</MeleeCritChance>
-			<MeleeParryChance>0.3</MeleeParryChance>
+			<MeleeCritChance>0.28</MeleeCritChance>
+			<MeleeParryChance>0.34</MeleeParryChance>
 			<MeleeDodgeChance>0.25</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<thingSetMakerTags>
