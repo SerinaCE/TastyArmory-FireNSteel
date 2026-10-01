@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
+	<ThingStyleDef>
+		<defName>TA_Morion</defName>
+		<overrideLabel>morion</overrideLabel>
+		<wornGraphicPath>Apparel/Helmets/TA_Morion/TA_Morion</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_Morion/TA_Morion_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>TA_Cabasset</defName>
+		<overrideLabel>cabasset</overrideLabel>
+		<wornGraphicPath>Apparel/Helmets/TA_Cabasset/TA_Cabasset</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_Cabasset/TA_Cabasset_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>TA_PikemansPot</defName>
+		<overrideLabel>pikeman's pot</overrideLabel>
+		<wornGraphicPath>Apparel/Helmets/TA_PikemansPot/TA_PikemansPot</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_PikemansPot/TA_PikemansPot_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+	</ThingStyleDef>
 	
-	<ThingDef Name="TA_Morion_Base" ParentName="ArmorSmithableBase" Abstract="True">
+	<ThingDef ParentName="ArmorSmithableBase">
+		<defName>TA_PikemanHelmet</defName>
+		<label>pikeman's helmet</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_PikemansPot/TA_PikemansPot_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<randomStyleChance>1</randomStyleChance>
+		<randomStyle>
+			<li>
+				<chance>2</chance>
+				<styleDef>TA_Morion</styleDef>
+			</li>
+			<li>
+				<chance>1</chance>
+				<styleDef>TA_Cabasset</styleDef>
+			</li>
+			<li>
+				<chance>1</chance>
+				<styleDef>TA_PikemansPot</styleDef>
+			</li>
+		</randomStyle>
 		<recipeMaker>
 			<researchPrerequisite>Smithing</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
@@ -29,6 +82,15 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<apparel>
+			<wornGraphicPath>Apparel/Helmets/TA_Morion/TA_Morion</wornGraphicPath>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorBasic</li>
+				<li>MedievalArmorDecent</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+			</tags>
 			<parentTagDef>ApparelHead</parentTagDef>
 			<bodyPartGroups>
 				<li>UpperHead</li>
@@ -63,48 +125,6 @@
 		<tradeTags>
 			<li>Armor</li>
 		</tradeTags>
-	</ThingDef>
-
-	<ThingDef ParentName="TA_Morion_Base">
-		<defName>TA_Morion</defName>
-		<label>morion</label>
-		<description>.</description>
-		<graphicData>
-			<texPath>Apparel/Helmets/TA_Morion/TA_Morion_ico</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<apparel>
-			<wornGraphicPath>Apparel/Helmets/TA_Morion/TA_Morion</wornGraphicPath>
-			<tags>
-				<li>MedievalMilitary</li>
-				<li>MedievalArmorBasic</li>
-				<li>MedievalArmorDecent</li>
-				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
-				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
-				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
-			</tags>
-		</apparel>
-	</ThingDef>
-
-	<ThingDef ParentName="TA_Morion_Base">
-		<defName>TA_Cabasset</defName>
-		<label>cabasset</label>
-		<description>.</description>
-		<graphicData>
-			<texPath>Apparel/Helmets/TA_Cabasset/TA_Cabasset_ico</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<apparel>
-			<wornGraphicPath>Apparel/Helmets/TA_Cabasset/TA_Cabasset</wornGraphicPath>
-			<tags>
-				<li>MedievalMilitary</li>
-				<li>MedievalArmorBasic</li>
-				<li>MedievalArmorDecent</li>
-				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
-				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
-				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
-			</tags>
-		</apparel>
 	</ThingDef>
 
 </Defs>

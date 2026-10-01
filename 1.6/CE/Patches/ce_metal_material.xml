@@ -14,8 +14,8 @@
             defName="TA_Burgonet" or
             @Name="TA_BurgonetVisored_Base" or
             @Name="TA_CloseHelmet_Base" or
-            @Name="TA_LobstertailHelmet_Base" or
-            @Name="TA_Morion_Base"
+            defName="TA_CavalryHelmet" or
+            defName="TA_PikemanHelmet"
 			]/stuffCategories</xpath>
 		<value>
             <stuffCategories>
