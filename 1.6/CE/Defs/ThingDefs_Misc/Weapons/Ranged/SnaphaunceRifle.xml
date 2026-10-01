@@ -3,6 +3,16 @@
 
   <!-- ==================== Flintlock Pistol ==================== -->
 
+	<ThingStyleDef>
+		<defName>TA_WheellockRifle</defName>
+		<overrideLabel>wheellock rifle</overrideLabel>
+		<graphicData>
+			<texPath>Weapons/Ranged/TA_WheellockRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
   <ThingDef ParentName="BaseMakeableGun">
     <defName>TA_SnaphaunceRifle</defName>
     <label>Snaphaunce rifle</label>
@@ -13,7 +23,14 @@
       <graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.07</drawSize>
     </graphicData>
-		<equippedAngleOffset>45</equippedAngleOffset>
+	<randomStyleChance>0.1</randomStyleChance>
+	<randomStyle>
+		<li>
+			<chance>1</chance>
+			<styleDef>TA_WheellockRifle</styleDef>
+		</li>
+	</randomStyle>
+	<equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Revolver</soundInteract>
     <weaponClasses>
       <li>RangedLight</li>
